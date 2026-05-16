@@ -1,0 +1,23 @@
+[
+  {
+    "sessionSource": "claude.ai",
+    "sessionMedium": "referral",
+    "sessions": "11",
+    "engagedSessions": "5",
+    "activeUsers": "1"
+  },
+  {
+    "sessionSource": "chatgpt.com",
+    "sessionMedium": "referral",
+    "sessions": "4",
+    "engagedSessions": "3",
+    "activeUsers": "3"
+  },
+  {
+    "sessionSource": "chatgpt.com",
+    "sessionMedium": "(not set)",
+    "sessions": "3",
+    "engagedSessions": "2",
+    "activeUsers": "3"
+  }
+]

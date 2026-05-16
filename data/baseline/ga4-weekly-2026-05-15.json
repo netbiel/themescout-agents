@@ -1,0 +1,26 @@
+{
+  "period": {
+    "this_week": {
+      "start": "2026-05-09",
+      "end": "2026-05-15"
+    },
+    "last_week": {
+      "start": "2026-05-02",
+      "end": "2026-05-08"
+    }
+  },
+  "this_week": {
+    "sessions": "21",
+    "engagedSessions": "2",
+    "activeUsers": "20",
+    "screenPageViews": "23",
+    "averageSessionDuration": "205.53632261904764"
+  },
+  "last_week": {
+    "sessions": "15",
+    "engagedSessions": "6",
+    "activeUsers": "12",
+    "screenPageViews": "27",
+    "averageSessionDuration": "139.07123993333332"
+  }
+}
