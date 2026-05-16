@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+venv/
+.venv/
+env/
+
+# Secrets — NEVER commit
+config/secrets.env
+*.key
+*.pem
+service-account*.json
+
+# Local data
+data/cache/
+data/baseline/raw/
+*.sqlite
+*.db
+
+# Reports (generated, but keep folder)
+reports/daily/*
+reports/weekly-pulse/*
+!reports/daily/.gitkeep
+!reports/weekly-pulse/.gitkeep
+
+# IDE
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Logs
+*.log
+logs/

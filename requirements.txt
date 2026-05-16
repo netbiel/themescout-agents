@@ -1,0 +1,4 @@
+# Will be populated per-sprint. Sprint 0 = empty.
+# Sprint 1 will add: google-analytics-data, pandas, click
+# Sprint 3 will add: praw
+# Sprint 5 will add: schedule, ollama (or llama-cpp-python)

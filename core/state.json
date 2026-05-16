@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "last_updated": "2026-05-16T00:00:00Z",
+  "current_sprint": 0,
+  "sprint_status": "in_progress",
+  "open_loops": [
+    {
+      "id": "baseline-data",
+      "description": "Awaiting GSC/GA4/Clarity baseline data from Piotr",
+      "blocker": true,
+      "created": "2026-05-16"
+    },
+    {
+      "id": "skill-extraction-watch",
+      "description": "Watch for skill extraction opportunities after Sprint 1 and Sprint 3",
+      "blocker": false,
+      "created": "2026-05-16"
+    }
+  ],
+  "baselines": {
+    "gsc_clicks_28d": null,
+    "gsc_impressions_28d": null,
+    "ga4_sessions_28d": null,
+    "ga4_engaged_sessions_28d": null,
+    "llm_citations_count": null,
+    "rich_snippets_count": null,
+    "captured_at": null
+  },
+  "last_run": null,
+  "next_scheduled_run": null,
+  "pending_review_count": 0,
+  "drafts_awaiting_publish": 0,
+  "cost_week_to_date_usd": 0.0,
+  "cost_month_to_date_usd": 0.0,
+  "active_warnings": []
+}

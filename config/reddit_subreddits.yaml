@@ -1,0 +1,25 @@
+# Subreddits monitored by Research module
+# Each entry: subreddit + relevance score + keywords filter
+
+# To be finalized by Piotr in Sprint 3 kickoff. Initial draft below.
+
+monitored:
+  - name: Wordpress
+    priority: high
+    keywords: [theme, template, page builder, kadence, astra, elementor, gutenberg, fse, block theme]
+  - name: ProWordPress
+    priority: high
+    keywords: [theme, custom theme, child theme, performance, lighthouse]
+  - name: web_design
+    priority: medium
+    keywords: [wordpress theme, theme recommendation, design system]
+  - name: webdev
+    priority: low
+    keywords: [wordpress, theme]
+
+# Engagement framework reference (from Piotr's memory):
+# - Evaluate thread fit first (freshness, audience match, expertise angle)
+# - Skip dead/off-topic/promotional-bait threads
+# - Post Tuesday–Thursday 9–11 EST
+# - 3–4 sentence posts, one question or debatable opinion
+# - No direct promotion; ThemeScout mention only when another user explicitly asks

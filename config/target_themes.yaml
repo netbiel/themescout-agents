@@ -1,0 +1,38 @@
+# Themes currently profiled on ThemeScout (44 published as of 2026-05-16)
+# This file tracks the catalog. Editing requires a DECISION entry in decision-log.md.
+
+# Closed list — additions only via approved expansion
+published:
+  # Existing 44 — to be enumerated by Piotr in Sprint 4 setup
+  # Placeholder; will be populated when Theme Collector module is built
+  - slug: placeholder
+    name: "TBD — Piotr to populate"
+
+# Niche premium expansion (approved 2026-05-16, max 5–8)
+expansion_approved:
+  - slug: uncode
+    name: Uncode
+    status: pending
+    rationale: LLM citation potential, low competition
+  - slug: salient
+    name: Salient
+    status: pending
+    rationale: LLM citation potential, low competition
+  - slug: betheme
+    name: BeTheme
+    status: pending
+    rationale: LLM citation potential, niche premium
+  - slug: bridge
+    name: Bridge
+    status: pending
+    rationale: LLM citation potential, niche premium
+  - slug: jupiter-x
+    name: Jupiter X
+    status: pending
+    rationale: LLM citation potential, niche premium
+  - slug: the7
+    name: The7
+    status: pending
+    rationale: LLM citation potential, niche premium
+
+# Beyond this list: requires new DECISION entry

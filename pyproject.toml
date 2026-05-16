@@ -1,0 +1,17 @@
+[project]
+name = "themescout-agent"
+version = "0.1.0"
+description = "Modular AI agent for ThemeScout with human-in-the-loop"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff", "black"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
