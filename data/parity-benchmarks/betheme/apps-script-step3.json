@@ -1,0 +1,556 @@
+{
+  "quick_overview": {
+    "quick_verdict": "Betheme is a massively popular multipurpose theme with an unparalleled library of over 700 pre-built websites, making it excellent for rapid prototyping. However, its significant performance issues, critical compatibility problems with essential plugins like WPML and ACF, and a steep learning curve make it a risky choice for projects requiring high performance or deep customization.",
+    "quick_pros": [
+      {
+        "pro_text": "Huge library of 700+ pre-built sites"
+      },
+      {
+        "pro_text": "Includes a client-friendly branding tool"
+      },
+      {
+        "pro_text": "Good value for simple, single-language sites"
+      }
+    ],
+    "quick_cons": [
+      {
+        "con_text": "Poor performance and Core Web Vitals scores"
+      },
+      {
+        "con_text": "Critical conflicts with WPML and ACF plugins"
+      },
+      {
+        "con_text": "Updates can introduce breaking changes"
+      }
+    ]
+  },
+  "theme_basic": {
+    "theme_author": "muffingroup",
+    "theme_version": "28.2.1",
+    "release_date": "2014-07-09",
+    "last_update": "2025-12-18",
+    "code_quality": "good",
+    "theme_tagline": "Responsive Multipurpose WordPress & WooCommerce Theme",
+    "sales_count": "330739",
+    "distribution_model": "themeforest",
+    "demo_url": "https://themes.muffingroup.com/be/developer/"
+  },
+  "performance_metrics": {
+    "pagespeed_mobile": 68,
+    "pagespeed_desktop": 91,
+    "lcp_mobile": 2.85,
+    "lcp_desktop": 2.76,
+    "cls_mobile": 0,
+    "cls_desktop": 0.02,
+    "test_url": "https://themes.muffingroup.com/be/carcosmetics/",
+    "test_date": "2026-03-04",
+    "pagespeed_link": "",
+    "performance_tier": "needs_work",
+    "performance_interpretation": "The theme's mobile performance needs improvement with a PageSpeed score of 68 and an LCP of 2.85s, while desktop performance is good at 91."
+  },
+  "theme_pricing": {
+    "license_type": "standard_commercial",
+    "pricing_model": "one_time_purchase",
+    "base_price": 60,
+    "support_period_included": 6,
+    "support_renewal_cost": 0,
+    "update_policy": "support_period_updates",
+    "money_back_guarantee": 0,
+    "pricing_tiers": [
+      {
+        "tier_name": "Regular License",
+        "tier_price": 60,
+        "tier_description": "Single site, end users not charged"
+      },
+      {
+        "tier_name": "Extended License",
+        "tier_price": 2950,
+        "tier_description": "Single site, end users can be charged"
+      }
+    ]
+  },
+  "theme_ratings": {
+    "popularity_trend": "stable",
+    "external_ratings": [
+      {
+        "rating_source": "ThemeForest",
+        "rating_score": 4.82,
+        "rating_count": 7000,
+        "rating_url": "https://themeforest.net/item/betheme-responsive-multipurpose-wordpress-theme/reviews/7758048"
+      }
+    ]
+  },
+  "theme_technical": {
+    "min_wp_version": "5.6",
+    "min_php_version": "7.4",
+    "wp_compatibility": "6.9",
+    "last_verification": "2026-01-05",
+    "activity_status": "active"
+  },
+  "handoff_difficulty": {
+    "handoff_score": 5,
+    "handoff_panel_complexity": "complex",
+    "handoff_docs_quality": "good",
+    "handoff_learning_curve": "days",
+    "handoff_recommendation": "Betheme is best suited for agency-led projects where the client has minimal interaction with the backend. For clients who need to be self-sufficient, a theme with a more intuitive interface is recommended.",
+    "handoff_confidence": "medium",
+    "handoff_sources_count": 2,
+    "handoff_verdict_safe": "This theme is safe to hand off if your agency provides ongoing site management, as you can leverage the BeCustom branding tool to create a professional client experience while handling the technical complexity yourself [17].",
+    "handoff_verdict_caution": "Use caution when handing off Betheme to clients who intend to manage their own content, as the theme's complex options panel and page builder can present a significant learning curve for non-technical users [14].",
+    "handoff_verdict_avoid": "Avoid handing this theme over to clients who require full autonomy to make significant structural or design changes, as the developer itself suggests hiring professionals for complex tasks, indicating it is not end-user friendly [14].",
+    "handoff_alternative_themes": "Divi, Avada"
+  },
+  "scenario_performance": {
+    "perf_confidence": "high",
+    "perf_sources_count": 4,
+    "perf_verdict_safe": "Betheme can be a viable option if you are an experienced developer capable of implementing advanced optimization techniques, such as asset unloading, server-level caching, and using a premium CDN to overcome its inherent bloat.",
+    "perf_verdict_caution": "Exercise caution when choosing this theme for performance-critical projects, as independent testing consistently places it among the slowest popular themes, with a particularly poor Largest Contentful Paint score that can harm SEO rankings [1].",
+    "perf_verdict_avoid": "Avoid Betheme if achieving excellent mobile PageSpeed scores and passing Core Web Vitals is a primary project requirement, as both official demos and third-party tests show it fails to meet these standards without extensive and costly optimization efforts [1, 2].",
+    "perf_code_observation": "The vendor's own demo site scored a 68/100 on Google PageSpeed Insights for mobile, which falls into the \"needs work\" category. The Largest Contentful Paint (LCP) of 2.85 seconds is in the \"needs improvement\" range, confirming independent test findings that the theme struggles with Core Web Vitals out of the box [1].",
+    "perf_recommendation": "To mitigate Betheme's performance issues, the use of a high-quality caching plugin like WP Rocket and a Content Delivery Network (CDN) is strongly recommended.",
+    "perf_alternative_themes": "Kadence, GeneratePress, Blocksy"
+  },
+  "scenario_updates": {
+    "updates_confidence": "medium",
+    "updates_sources_count": 1,
+    "updates_verdict_safe": "Updating Betheme is safe if you strictly follow a professional workflow that includes creating a full backup and testing the update on a staging server before deploying it to the live environment.",
+    "updates_verdict_caution": "Proceed with caution when performing major version updates, as users have reported that these can introduce breaking changes to styling and content, requiring manual intervention to fix the site's appearance [13].",
+    "updates_verdict_avoid": "Avoid this theme if you manage a site without access to a staging environment or an easy backup restoration process, because the theme does not offer an official rollback feature to revert a problematic update [13].",
+    "updates_recommendation": "Never update Betheme directly on a live production site. Always use a staging environment to test for potential conflicts or breaking changes, as there is no simple way to roll back to a previous version.",
+    "updates_alternative_themes": "Kadence, GeneratePress"
+  },
+  "plugin_compatibility_enhanced": {
+    "compat_total_tested": 4,
+    "compat_full_compatible": 0,
+    "compat_issues_found": 4,
+    "compat_confidence": "high",
+    "compat_sources_count": 7,
+    "compat_verdict_safe": "Betheme is a safe choice for simple, single-language websites that primarily rely on the bundled plugins like BeBuilder, WPBakery, and Slider Revolution, as these are integrated directly by the developer.",
+    "compat_verdict_caution": "Use caution when building sites that require WooCommerce, as users have reported that having the plugin active can contribute to a slow administrative backend, even if it is not heavily used on the front end [11].",
+    "compat_verdict_avoid": "Absolutely avoid Betheme for projects that depend on WPML for multilingual capabilities or require complex custom fields with ACF, due to documented critical performance issues, translation bugs, and fatal errors [4, 5, 6].",
+    "compat_recommendation": "For best results, stick to the bundled plugins. Avoid using WPML or complex ACF setups, and be mindful of potential performance impacts when adding WooCommerce or Elementor.",
+    "compat_alternative_themes": "",
+    "plugin_compatibility_list": [
+      {
+        "plugin": "WPML",
+        "plugin_category": "multilingual",
+        "compatibility_status": "limited",
+        "compatibility_notes": "Causes severe performance degradation due to excessive database queries and can fail to transfer styles to translated pages, requiring manual rework.",
+        "user_issues": [
+          "[3]",
+          "[4]",
+          "[5]"
+        ]
+      },
+      {
+        "plugin": "Advanced Custom Fields (ACF)",
+        "plugin_category": "developer_tools",
+        "compatibility_status": "limited",
+        "compatibility_notes": "Official support is limited to basic string-based fields. Using more complex fields like taxonomies has been shown to cause fatal PHP errors.",
+        "user_issues": [
+          "[6]"
+        ]
+      },
+      {
+        "plugin": "Elementor",
+        "plugin_category": "page_builder",
+        "compatibility_status": "partial",
+        "compatibility_notes": "While compatible, pairing Betheme with Elementor can add significant JavaScript and CSS bloat, further slowing down the website's load times.",
+        "user_issues": [
+          "[8]",
+          "[10]"
+        ]
+      },
+      {
+        "plugin": "WooCommerce",
+        "plugin_category": "ecommerce",
+        "compatibility_status": "partial",
+        "compatibility_notes": "Users report that having WooCommerce active, even without a full store setup, can lead to a noticeably slower WordPress admin panel and page editor.",
+        "user_issues": [
+          "[11]"
+        ]
+      }
+    ]
+  },
+  "community_pain_points": {
+    "community_total_discussions": 11,
+    "community_analysis_date": "2026-01-05",
+    "community_timeframe": "Last 12 months",
+    "community_methodology_note": "Analysis based on public forums, social media, and review sites.",
+    "community_pain_points": [
+      {
+        "category": "performance",
+        "sentiment": "negative",
+        "source": "WP Rocket [1]",
+        "source_url": "https://wp-rocket.me/blog/fastest-wordpress-themes/",
+        "severity": "critical",
+        "frequency": "common",
+        "title": "Poor Core Web Vitals and PageSpeed Scores",
+        "description": "WP Rocket's official 2025 testing placed it **last among 10 popular themes**, achieving only 82/100 mobile PageSpeed with a 3.3-second Largest Contentful Paint (red zone).",
+        "resolution": "",
+        "version_reported": "unknown"
+      },
+      {
+        "category": "plugin_compat",
+        "sentiment": "negative",
+        "source": "Muffin Group Forum [4]",
+        "source_url": "https://forum.muffingroup.com/betheme/discussion/68905/slow-website-performance-when-wpml-plugin-is-activated",
+        "severity": "critical",
+        "frequency": "common",
+        "title": "WPML Plugin Causes Severe Website Slowness",
+        "description": "Activating WPML causes immediate slowness even with powerful hosting. The root cause: WPML generates excessive database queries that bypass caching optimization.",
+        "resolution": "",
+        "version_reported": "unknown"
+      },
+      {
+        "category": "plugin_compat",
+        "sentiment": "negative",
+        "source": "Muffin Group Forum [5]",
+        "source_url": "https://forum.muffingroup.com/betheme/discussion/72487/wpml-problems-with-betheme",
+        "severity": "critical",
+        "frequency": "occasional",
+        "title": "WPML Fails to Transfer Styles to Translated Menus",
+        "description": "When translating menu built in Betheme templates using WPML, all style attributes were not transported into the English version. Styles such as typography and paddings had to be set again manually.",
+        "resolution": "",
+        "version_reported": "unknown"
+      },
+      {
+        "category": "plugin_compat",
+        "sentiment": "negative",
+        "source": "Muffin Group Forum [6]",
+        "source_url": "https://forum.muffingroup.com/betheme/discussion/72989/acf-taxonomy-field-fatal-error",
+        "severity": "critical",
+        "frequency": "verified",
+        "title": "ACF Taxonomy Fields Cause Fatal PHP Errors",
+        "description": "Fatal error: Uncaught TypeError: str_replace(): Argument #2 ($replace) must be of type string in /wp-content/themes/betheme/functions/modules/class-mfn-dynamic-data.php:46",
+        "resolution": "",
+        "version_reported": "unknown"
+      },
+      {
+        "category": "plugin_compat",
+        "sentiment": "negative",
+        "source": "Muffin Group Forum [6]",
+        "source_url": "https://forum.muffingroup.com/betheme/discussion/72989/acf-taxonomy-field-fatal-error",
+        "severity": "major",
+        "frequency": "verified",
+        "title": "Official ACF Support is Severely Limited",
+        "description": "Our ACF support is limited only to basic string based values.",
+        "resolution": "",
+        "version_reported": "unknown"
+      },
+      {
+        "category": "updates",
+        "sentiment": "negative",
+        "source": "Muffin Group Forum [13]",
+        "source_url": "https://forum.muffingroup.com/betheme/discussion/60822/how-can-i-rollback-to-previous-version",
+        "severity": "moderate",
+        "frequency": "common",
+        "title": "Major Updates Introduce Breaking Changes to Styles and Content (unverified in v28.2.1)",
+        "description": "A user updating from v21 to v24 reported: 'Styles and content seem odd'.",
+        "resolution": "",
+        "version_reported": "v21 to v24",
+        "stale": true
+      },
+      {
+        "category": "updates",
+        "sentiment": "negative",
+        "source": "Muffin Group Forum [13]",
+        "source_url": "https://forum.muffingroup.com/betheme/discussion/60822/how-can-i-rollback-to-previous-version",
+        "severity": "major",
+        "frequency": "verified",
+        "title": "No Official Rollback Feature for Problematic Updates",
+        "description": "No rollback option exists through ThemeForest—recovery requires contacting hosting providers for database restoration.",
+        "resolution": "",
+        "version_reported": "unknown"
+      },
+      {
+        "category": "performance",
+        "sentiment": "negative",
+        "source": "Muffin Group Forum [11]",
+        "source_url": "https://forum.muffingroup.com/betheme/discussion/68395/really-slow-speeds-admin-side",
+        "severity": "moderate",
+        "frequency": "common",
+        "title": "Slow WordPress Admin Panel and Page Editor",
+        "description": "Users report slow admin panels and page editor loading, particularly noticeable when WooCommerce is loaded (even if not used).",
+        "resolution": "",
+        "version_reported": "unknown"
+      },
+      {
+        "category": "plugin_compat",
+        "sentiment": "negative",
+        "source": "Elegant Themes Blog [8]",
+        "source_url": "https://www.elegantthemes.com/blog/wordpress/divi-vs-betheme",
+        "severity": "moderate",
+        "frequency": "common",
+        "title": "Elementor Integration Adds Performance Bloat",
+        "description": "Pairing the theme with Elementor \"adds heavy JavaScript, multiple CSS files, and third-party integrations that increase load times\".",
+        "resolution": "",
+        "version_reported": "unknown"
+      },
+      {
+        "category": "cost",
+        "sentiment": "negative",
+        "source": "Reddit [15]",
+        "source_url": "https://www.reddit.com/r/Wordpress/comments/1hr59af/betheme_license_for_multiple_websites/",
+        "severity": "moderate",
+        "frequency": "verified",
+        "title": "Inflexible Per-Site Licensing Model is Costly for Agencies",
+        "description": "Agencies cannot obtain unlimited/multi-site licenses, requiring separate $69 purchases per client—creating scale disadvantages for high-volume operations.",
+        "resolution": "",
+        "version_reported": "unknown"
+      },
+      {
+        "category": "support",
+        "sentiment": "negative",
+        "source": "Betheme Blog [14]",
+        "source_url": "https://www.betheme.com/blog/betheme-support-roadmap-finding-help/",
+        "severity": "moderate",
+        "frequency": "common",
+        "title": "Delayed Resolution for Complex Support Issues",
+        "description": "Complex issues require 'private admin/FTP access submission,' delaying resolution by days.",
+        "resolution": "",
+        "version_reported": "unknown"
+      }
+    ],
+    "community_praise_stats": [
+      {
+        "category": "development",
+        "sentiment": "positive",
+        "positive_aspect": "Massive library of pre-built sites",
+        "strength": "Over 700 pre-built designs available for rapid prototyping and client presentations.",
+        "title": "Unparalleled Demo Library for Rapid Prototyping",
+        "description": "Betheme remains excellent for rapid prototyping and client presentations using its 700+ pre-built designs. The ThemeForest page lists over 700 demos.",
+        "frequency": "frequent",
+        "percentage": 0,
+        "source": "ThemeForest [16]",
+        "source_url": "https://themeforest.net/item/betheme-responsive-multipurpose-wordpress-theme/7758048"
+      },
+      {
+        "category": "handoff",
+        "sentiment": "positive",
+        "positive_aspect": "Client branding tool available",
+        "strength": "Includes a 'BeCustom Branding Tool' to rebrand the WordPress admin for a professional client experience.",
+        "title": "Built-in White-Labeling for Client Handoff",
+        "description": "Betheme provides a 'BeCustom Branding Tool' to rebrand the WordPress admin for client handoff.",
+        "frequency": "verified",
+        "percentage": 0,
+        "source": "Muffin Group Support [17]",
+        "source_url": "https://support.muffingroup.com/video-tutorials/how-to-rebrand-be-and-wp-admin-with-the-becustom-branding-tool/"
+      },
+      {
+        "category": "marketplace",
+        "sentiment": "positive",
+        "positive_aspect": "Good value for specific use cases",
+        "strength": "Recommended for English-only small business sites, saving 40+ hours of design time for a $69 price.",
+        "title": "Excellent Value for Single-Language Business Sites",
+        "description": "For \"English-only small business sites\", the theme is recommended as \"✅ Worth the $69; 700 demos save 40+ hours design time\".",
+        "frequency": "common",
+        "percentage": 0,
+        "source": "ThemeForest [16]",
+        "source_url": "https://themeforest.net/item/betheme-responsive-multipurpose-wordpress-theme/7758048"
+      }
+    ]
+  },
+  "faq": {
+    "faq_items": [
+      {
+        "faq_question": "Is Betheme fast and good for Core Web Vitals?",
+        "faq_answer": "No, Betheme generally performs poorly in speed tests. An independent 2025 analysis by WP Rocket ranked it last among 10 popular themes, highlighting a slow Largest Contentful Paint of 3.3 seconds, which fails Google's Core Web Vitals standards [1].",
+        "faq_category": "performance",
+        "faq_source_ids": "1"
+      },
+      {
+        "faq_question": "Does Betheme have problems with the WPML plugin for multilingual sites?",
+        "faq_answer": "Yes, there are critical issues. Users report that activating WPML with Betheme can cause extreme slowness due to excessive database queries and may also break theme styles on translated pages, requiring manual fixes [4, 5].",
+        "faq_category": "compatibility",
+        "faq_source_ids": "4,5"
+      },
+      {
+        "faq_question": "What are the limitations of using Advanced Custom Fields (ACF) with Betheme?",
+        "faq_answer": "The theme developer has stated that official support for ACF is limited to \"basic string based values.\" Using more complex field types, such as taxonomy fields, can result in fatal PHP errors, making it unsuitable for advanced custom development [6].",
+        "faq_category": "compatibility",
+        "faq_source_ids": "6"
+      },
+      {
+        "faq_question": "Can I buy a multi-site or agency license for Betheme?",
+        "faq_answer": "No, Betheme is sold on ThemeForest with a standard license that requires a separate purchase for each client website. There is no multi-site or unlimited agency license available, which can be costly for developers building many sites [15].",
+        "faq_category": "pricing",
+        "faq_source_ids": "15"
+      },
+      {
+        "faq_question": "What is the main advantage of using Betheme?",
+        "faq_answer": "Its primary advantage is the massive library of over 700 professionally designed, importable pre-built websites. This feature allows developers and agencies to rapidly prototype and launch websites for a wide variety of industries, saving significant design time [16].",
+        "faq_category": "general",
+        "faq_source_ids": "43"
+      },
+      {
+        "faq_question": "Is it safe to update Betheme, or will it break my site?",
+        "faq_answer": "Updates can be risky. Users have reported that major version updates can cause styling and content to break [13]. The theme lacks an official rollback feature, so it is critical to test all updates on a staging server before applying them to a live site.",
+        "faq_category": "updates",
+        "faq_source_ids": "13"
+      }
+    ],
+    "faq_generation_note": ""
+  },
+  "human_summary": {
+    "summary_paragraphs": [
+      "<!-- wp:paragraph -->\n<p>Betheme is one of the most successful themes on the ThemeForest marketplace, celebrated for its immense versatility and an enormous library of over 700 pre-built websites. This vast selection makes it an attractive option for freelancers and agencies looking to quickly deploy professional-looking sites across a multitude of niches. Its included BeCustom tool also allows for white-labeling the WordPress dashboard, which is a valuable feature when handing projects over to clients.</p>\n<!-- /wp:paragraph -->",
+      "<!-- wp:paragraph -->\n<p>Despite its popularity and vast feature set, the theme carries significant technical debt. Performance is a primary concern, as both independent tests and user reports confirm that Betheme struggles with speed and Core Web Vitals. This inherent bloat means that achieving a fast-loading website requires considerable optimization effort, often involving premium caching plugins and a CDN, which may be beyond the scope of a standard project budget.</p>\n<!-- /wp:paragraph -->",
+      "<!-- wp:paragraph -->\n<p>Furthermore, Betheme suffers from critical compatibility issues with widely-used plugins. It is particularly problematic for multilingual sites using WPML, where it can cause severe performance degradation, and for developers using Advanced Custom Fields, where support is limited and can lead to fatal errors. These limitations, combined with a per-site licensing model and a complex options panel, make Betheme a powerful but potentially troublesome tool that is best suited for experienced developers aware of its shortcomings.</p>\n<!-- /wp:paragraph -->"
+    ],
+    "summary_recommendation": "Betheme is recommended for experienced developers who can leverage its vast demo library for rapid deployment and manage its performance and compatibility drawbacks, but it is not suitable for beginners or projects requiring high performance or multilingual support.",
+    "summary_ideal_for": [
+      "Agencies needing rapid prototyping",
+      "Developers comfortable with performance optimization",
+      "Single-language business websites"
+    ],
+    "summary_not_for": [
+      "Beginners or DIY users",
+      "Performance-critical projects",
+      "Multilingual websites using WPML",
+      "Projects requiring advanced custom fields (ACF)"
+    ],
+    "summary_author_note": ""
+  },
+  "bundled_plugins": [
+    {
+      "plugin_name": "BeBuilder",
+      "plugin_category": "page_builder",
+      "plugin_value": 0,
+      "license_type": "limited",
+      "plugin_functionality": "The theme's native page builder for creating layouts and content."
+    },
+    {
+      "plugin_name": "WPBakery Page Builder",
+      "plugin_category": "page_builder",
+      "plugin_value": 64,
+      "license_type": "limited",
+      "plugin_functionality": "A popular third-party page builder bundled for use with many pre-built sites."
+    },
+    {
+      "plugin_name": "Slider Revolution",
+      "plugin_category": "slider",
+      "plugin_value": 29,
+      "license_type": "limited",
+      "plugin_functionality": "A premium slider plugin for creating advanced and responsive sliders."
+    }
+  ],
+  "demo_gallery": [],
+  "sources_methodology": {
+    "methodology_note": "This analysis is based on a combination of scraped data from the theme's official marketplace page, vendor-provided information, and a review of public discussions from forums and social media.",
+    "analysis_date": "2026-01-05",
+    "data_timeframe": "Last 12 months",
+    "confidence_statement": "Data confidence: HIGH (18 analytical sources, 18 total)",
+    "sources": [
+      {
+        "source_id": "[1]",
+        "source_name": "WP Rocket",
+        "source_url": "https://wp-rocket.me/blog/fastest-wordpress-themes/",
+        "source_type": "review_site"
+      },
+      {
+        "source_id": "[2]",
+        "source_name": "Muffin Group Forum",
+        "source_url": "https://forum.muffingroup.com/betheme/discussion/69636/core-web-vitals-fail-on-simple-mobile-page",
+        "source_type": "forum"
+      },
+      {
+        "source_id": "[3]",
+        "source_name": "WPML Forum",
+        "source_url": "https://wpml.org/forums/topic/extreme-slowness-with-running-wpml/",
+        "source_type": "forum"
+      },
+      {
+        "source_id": "[4]",
+        "source_name": "Muffin Group Forum",
+        "source_url": "https://forum.muffingroup.com/betheme/discussion/68905/slow-website-performance-when-wpml-plugin-is-activated",
+        "source_type": "forum"
+      },
+      {
+        "source_id": "[5]",
+        "source_name": "Muffin Group Forum",
+        "source_url": "https://forum.muffingroup.com/betheme/discussion/72487/wpml-problems-with-betheme",
+        "source_type": "forum"
+      },
+      {
+        "source_id": "[6]",
+        "source_name": "Muffin Group Forum",
+        "source_url": "https://forum.muffingroup.com/betheme/discussion/72989/acf-taxonomy-field-fatal-error",
+        "source_type": "forum"
+      },
+      {
+        "source_id": "[7]",
+        "source_name": "Reddit",
+        "source_url": "https://www.reddit.com/r/Wordpress/comments/1bvb6mn/late_to_the_cpt_party_but_im_really_struggling/",
+        "source_type": "social"
+      },
+      {
+        "source_id": "[8]",
+        "source_name": "Elegant Themes Blog",
+        "source_url": "https://www.elegantthemes.com/blog/wordpress/divi-vs-betheme",
+        "source_type": "review_site"
+      },
+      {
+        "source_id": "[9]",
+        "source_name": "Muffin Group Forum",
+        "source_url": "https://forum.muffingroup.com/betheme/index.php?p=/discussion/74916/be-theme-elements-in-elementor-disappear-after-update-to-27-4-5",
+        "source_type": "forum"
+      },
+      {
+        "source_id": "[10]",
+        "source_name": "Muffin Group Forum",
+        "source_url": "https://forum.muffingroup.com/betheme/discussion/74477/elementor-issues",
+        "source_type": "forum"
+      },
+      {
+        "source_id": "[11]",
+        "source_name": "Muffin Group Forum",
+        "source_url": "https://forum.muffingroup.com/betheme/discussion/68395/really-slow-speeds-admin-side",
+        "source_type": "forum"
+      },
+      {
+        "source_id": "[12]",
+        "source_name": "Muffin Group Forum",
+        "source_url": "https://forum.muffingroup.com/betheme/discussion/comment/220195/",
+        "source_type": "forum"
+      },
+      {
+        "source_id": "[13]",
+        "source_name": "Muffin Group Forum",
+        "source_url": "https://forum.muffingroup.com/betheme/discussion/60822/how-can-i-rollback-to-previous-version",
+        "source_type": "forum"
+      },
+      {
+        "source_id": "[14]",
+        "source_name": "Betheme Blog",
+        "source_url": "https://www.betheme.com/blog/betheme-support-roadmap-finding-help/",
+        "source_type": "official"
+      },
+      {
+        "source_id": "[15]",
+        "source_name": "Reddit",
+        "source_url": "https://www.reddit.com/r/Wordpress/comments/1hr59af/betheme_license_for_multiple_websites/",
+        "source_type": "social"
+      },
+      {
+        "source_id": "[16]",
+        "source_name": "ThemeForest",
+        "source_url": "https://themeforest.net/item/betheme-responsive-multipurpose-wordpress-theme/7758048",
+        "source_type": "marketplace"
+      },
+      {
+        "source_id": "[17]",
+        "source_name": "Muffin Group Support",
+        "source_url": "https://support.muffingroup.com/video-tutorials/how-to-rebrand-be-and-wp-admin-with-the-becustom-branding-tool/",
+        "source_type": "documentation"
+      },
+      {
+        "source_id": "[18]",
+        "source_name": "ThemeForest",
+        "source_url": "https://themeforest.net/item/betheme-responsive-multipurpose-wordpress-theme/reviews/7758048",
+        "source_type": "marketplace"
+      }
+    ]
+  },
+  "search_profile": "Betheme|perf:needs_work(68mob,91desk)|price:one-time($60)|handoff:5/complex|ideal:agencies-needing-rapid-prototyping,developers-comfortable-with-performance-optimization,single-language-business-websites|avoid:beginners-or-diy-users,performance-critical-projects,multilingual-websites-using-wpml|tags:elementor:partial,wpbakery,themeforest,classic-theme,200k+installs"
+}

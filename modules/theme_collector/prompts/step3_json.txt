@@ -1,0 +1,164 @@
+# STEP 3: JSON FORMATTER
+## WPAgent v3.20.1 — WordPress Import Format
+
+## DISTRIBUTION MODEL: ThemeForest
+This theme is sold on ThemeForest (Envato Market).
+RULES:
+- Primary marketplace source: ThemeForest
+- "sales_count" = ThemeForest total sales
+- external_ratings: ThemeForest rating is primary
+
+## CRITICAL:
+1. Output ONLY valid JSON
+2. NO markdown, NO explanation
+3. Use [1], [2] format for IDs
+4. NO [ID] in quick_verdict, summary_paragraphs
+5. NO null values — use "" or 0
+6. Gutenberg format for summary_paragraphs
+7. ALL verdict fields MUST be full sentences (20+ words) or empty string
+8. performance_metrics MUST be populated from pagespeed_data if available
+9. performance_tier MUST match pagespeed_mobile score
+10. Map input fields: lcp_score→lcp_mobile, cls_score→cls_mobile, tested_url→test_url, pagespeed_insights_link→pagespeed_link
+11. handoff_score: Set to 0 - calculated automatically in post-processing
+12. SOURCE INTEGRITY (CRITICAL):
+    a. The sources array MUST contain EVERY URL referenced anywhere in the JSON
+    b. Every [N] in any field (source, user_issues, faq_answer) MUST have matching entry in sources
+    c. Every community_pain_point source_url MUST appear in sources array
+    d. Use consecutive numbering [1],[2],[3]... with NO gaps
+    e. Copy ALL sources from Step 1/Step 2 — do NOT drop any
+    f. Post-processing will fix numbering, but sources MUST be COMPLETE
+13. distribution_model MUST be set to "${distribution_model}"
+14. search_profile: Leave as empty string "" — generated automatically in post-processing
+15. PLUGIN COMPAT INTEGRITY: plugin_compatibility_list in output MUST include every plugin
+    that appears in community_pain_points. If a pain point names a plugin, that plugin
+    must have an entry in plugin_compatibility_list. Do not drop any entries from Step 2.
+16. version_reported: For each community_pain_point, include the theme version from the
+    source thread/article. Use "unknown" if not mentioned in the source.
+17. community_praise_stats: MUST contain at least 3 entries from Step 1/Step 2 praise.
+    Each entry needs: category, positive_aspect, strength, title, description, source, source_url.
+    Do NOT output an empty praise array if Step 1/Step 2 contain praise points.
+18. scope: For each community_pain_point and community_praise_stat, set to "theme", "blocks", or "ecosystem" based on Step 1 [THEME]/[BLOCKS]/[ECOSYSTEM] tags. Default: "theme".
+19. date_reported: For each community_pain_point, set YYYY-MM from Step 1 Date Reported column. Use "date-unknown" if not available.
+20. source_date: For each source in sources array, set YYYY-MM from Step 1 Sources Index Date column.
+21. source_date ENFORCEMENT: Every source in the sources array MUST have source_date populated. Extract from Step 1 Sources Index Date column. This field is MANDATORY — do not leave it empty.
+22. community_timeframe MUST be set to "Last 6 months" — this is the analysis window.
+
+## GUTENBERG FORMAT:
+"summary_paragraphs": [
+  "<!-- wp:paragraph -->\n<p>Text.</p>\n<!-- /wp:paragraph -->"
+]
+
+## INPUT:
+
+### Scraped JSON:
+${scraped_json}
+
+### Step 1:
+${step1_output}
+
+### Step 2:
+${step2_output}
+
+## JSON SCHEMA:
+
+{
+  "quick_overview": {
+    "quick_verdict": "string (NO [ID])",
+    "quick_pros": [{"pro_text": "string max 60 chars"}],
+    "quick_cons": [{"con_text": "string max 60 chars"}]
+  },
+  "theme_basic": {
+    "theme_author": "string", "theme_version": "string", "release_date": "YYYY-MM-DD or empty",
+    "last_update": "YYYY-MM-DD", "code_quality": "basic|good|high|premium",
+    "theme_tagline": "string", "sales_count": "string", "distribution_model": "wordpress_org|themeforest|direct_sale", "demo_url": "URL"
+  },
+  "performance_metrics": {
+    "pagespeed_mobile": 0, "pagespeed_desktop": 0, "lcp_mobile": 0, "lcp_desktop": 0,
+    "cls_mobile": 0, "cls_desktop": 0,
+    "test_url": "URL", "test_date": "YYYY-MM-DD", "pagespeed_link": "URL to report",
+    "performance_tier": "excellent|good|needs_work|poor", "performance_interpretation": "string"
+  },
+  "theme_pricing": {
+    "license_type": "free|freemium|standard_commercial|subscription_based",
+    "pricing_model": "free|one_time_purchase|annual_subscription|lifetime_license",
+    "base_price": 0, "support_period_included": 6, "support_renewal_cost": 0,
+    "update_policy": "lifetime_updates|support_period_updates|major_updates_paid|subscription_only|no_updates",
+    "money_back_guarantee": 0,
+    "pricing_tiers": [{"tier_name":"","tier_price":0,"tier_description":""}]
+  },
+  "theme_ratings": {
+    "popularity_trend": "growing|stable|declining",
+    "external_ratings": [{ "rating_source": "string", "rating_score": 0, "rating_count": 0, "rating_url": "URL" }]
+  },
+  "theme_technical": {
+    "min_wp_version": "string", "min_php_version": "string", "wp_compatibility": "string",
+    "last_verification": "YYYY-MM-DD", "activity_status": "active|outdated|discontinued"
+  },
+  "handoff_difficulty": {
+    "handoff_score": 0, "handoff_panel_complexity": "minimal|moderate|complex|overwhelming",
+    "handoff_docs_quality": "excellent|good|basic|poor", "handoff_learning_curve": "minutes|hours|days|weeks",
+    "handoff_recommendation": "string", "handoff_confidence": "low|medium|high", "handoff_sources_count": 0,
+    "handoff_verdict_safe": "FULL SENTENCE 20+ words or empty", "handoff_verdict_caution": "FULL SENTENCE 20+ words or empty",
+    "handoff_verdict_avoid": "FULL SENTENCE 20+ words or empty", "handoff_alternative_themes": "string"
+  },
+  "scenario_performance": {
+    "perf_confidence": "low|medium|high", "perf_sources_count": 0,
+    "perf_verdict_safe": "FULL SENTENCE or EMPTY if mobile<50",
+    "perf_verdict_caution": "FULL SENTENCE or empty", "perf_verdict_avoid": "FULL SENTENCE or empty",
+    "perf_code_observation": "MUST include actual PageSpeed score",
+    "perf_recommendation": "string", "perf_alternative_themes": "string"
+  },
+  "scenario_updates": {
+    "updates_confidence": "low|medium|high", "updates_sources_count": 0,
+    "updates_verdict_safe": "FULL SENTENCE or empty", "updates_verdict_caution": "FULL SENTENCE or empty",
+    "updates_verdict_avoid": "FULL SENTENCE or empty", "updates_recommendation": "string", "updates_alternative_themes": "string"
+  },
+  "plugin_compatibility_enhanced": {
+    "compat_total_tested": 0, "compat_full_compatible": 0, "compat_issues_found": 0,
+    "compat_confidence": "low|medium|high", "compat_sources_count": 0,
+    "compat_verdict_safe": "FULL SENTENCE or empty", "compat_verdict_caution": "FULL SENTENCE or empty", "compat_verdict_avoid": "FULL SENTENCE or empty",
+    "compat_recommendation": "string", "compat_alternative_themes": "string",
+    "plugin_compatibility_list": [{ "plugin": "string", "plugin_category": "page_builder|ecommerce|seo|forms|caching|multilingual|other",
+      "compatibility_status": "full|partial|limited|none", "compatibility_notes": "string", "user_issues": ["[1]"] }]
+  },
+  "community_pain_points": {
+    "community_total_discussions": 0, "community_analysis_date": "YYYY-MM-DD",
+    "community_timeframe": "Last 6 months", "community_methodology_note": "string",
+    "community_pain_points": [{
+      "category": "performance|handoff|updates|plugin_compat|support|cost|general", "sentiment": "negative",
+      "source": "Source Name [N]", "source_url": "URL", "severity": "critical|major|moderate|minor",
+      "frequency": "string", "title": "string", "description": "string", "resolution": "string",
+      "version_reported": "string (theme version from source, e.g. 8.2.6, or unknown)",
+      "scope": "theme|blocks|ecosystem",
+      "date_reported": "YYYY-MM or date-unknown"
+    }],
+    "community_praise_stats": [{
+      "scope": "theme|blocks|ecosystem",
+      "category": "performance|security|plugin_compat|handoff|updates|support|development|community|marketplace",
+      "sentiment": "positive",
+      "positive_aspect": "string", "strength": "string", "title": "string",
+      "description": "string", "frequency": "frequent|common|occasional|verified",
+      "percentage": 0, "source": "Source Name [N]", "source_url": "URL"
+    }]
+  },
+  "faq": {
+    "faq_items": [{ "faq_question": "string", "faq_answer": "string with [N]",
+      "faq_category": "compatibility|performance|updates|handoff|pricing|support|general", "faq_source_ids": "1,2" }],
+    "faq_generation_note": ""
+  },
+  "human_summary": {
+    "summary_paragraphs": ["<!-- wp:paragraph -->\n<p>...</p>\n<!-- /wp:paragraph -->"],
+    "summary_recommendation": "string",
+    "summary_ideal_for": ["string"], "summary_not_for": ["string"], "summary_author_note": ""
+  },
+  "bundled_plugins": [{ "plugin_name": "string", "plugin_category": "page_builder|ecommerce|seo|forms|media|other",
+    "plugin_value": 0, "license_type": "lifetime|annual|extended|basic|limited", "plugin_functionality": "string" }],
+  "demo_gallery": [],
+  "sources_methodology": {
+    "methodology_note": "string", "analysis_date": "YYYY-MM-DD", "data_timeframe": "Last 12 months", "confidence_statement": "string",
+    "sources": [{ "source_id": "[1]", "source_name": "string", "source_url": "URL", "source_type": "forum|review_site|official|social|marketplace|documentation|changelog", "source_date": "YYYY-MM or date-unknown" }]
+  },
+  "search_profile": ""
+}
+
+Output JSON:

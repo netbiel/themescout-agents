@@ -1,0 +1,180 @@
+# STEP 1: COMMUNITY ANALYSIS
+## WPAgent Data Pipeline v3.20.1
+
+Analyze community feedback for WordPress theme "${theme_name}".
+
+## DISTRIBUTION MODEL: ThemeForest
+This theme is sold on ThemeForest (Envato Market).
+RULES:
+- Primary marketplace source: ThemeForest
+- "sales_count" = ThemeForest total sales
+- external_ratings: ThemeForest rating is primary
+
+## PRODUCT SCOPE (CRITICAL)
+Many WordPress themes have companion plugins (e.g. Kadence Theme + Kadence Blocks, Blocksy + Blocksy Companion, OceanWP + Ocean Extra).
+You MUST tag every pain point and praise point with ONE scope label:
+- `[THEME]` — issue is specific to the base theme (customizer, theme options, header/footer templates, theme code)
+- `[BLOCKS]` — issue is specific to a companion blocks/pro plugin (block editor bugs, custom blocks, pro features, editor extensions)
+- `[ECOSYSTEM]` — issue affects integration between theme and its plugins, or scope is genuinely unclear
+
+SCOPE ASSIGNMENT RULES:
+- Customizer, theme options, header/footer builder within theme → [THEME]
+- Block editor bugs, custom blocks, block styling issues → [BLOCKS]
+- If source explicitly names a companion plugin (e.g. "Kadence Blocks", "Blocksy Companion", "Ocean Extra") → [BLOCKS]
+- If source says just the theme name with no qualifier → [THEME] (default)
+- "After updating everything broke" (no specifics) → [ECOSYSTEM]
+- Plugin compatibility (e.g. WooCommerce conflict) → assign to whichever product the conflict is with
+- If theme has NO known companion plugins, tag everything [THEME]
+- IMPORTANT: [BLOCKS] means specifically the companion BLOCKS plugin (e.g. Kadence Blocks, Blocksy Companion). Other companion plugins like Starter Templates, Email Customizers, or Pro addons are [ECOSYSTEM], not [BLOCKS].
+- Only use [BLOCKS] if the issue specifically involves the block editor, custom blocks, or the blocks plugin by name.
+
+## DATE ENFORCEMENT (CRITICAL)
+For EVERY source in the Sources Index, extract the publication date:
+- Format: YYYY-MM (e.g., 2025-11, 2026-02)
+- Look for: post date, thread date, article publication date, changelog entry date
+- If date cannot be determined, mark as "date-unknown"
+
+DATE-BASED RULES:
+- Sources older than 6 months: tag as [HISTORICAL] in the Sources Index
+- Pain points supported ONLY by [HISTORICAL] sources: severity capped at "moderate" and append "(historical — unconfirmed current)" to title
+- Pain points from the last 3 months: full weight
+- Pain points from 3-6 months ago: normal weight
+- Pain points older than 6 months: include ONLY if critical severity and no resolution found in changelog
+IMPORTANT: WordPress.org support topics, Reddit posts, and blog articles ALWAYS have visible publication dates. "date-unknown" is acceptable ONLY for documentation pages, changelogs, and official product pages without timestamps. If you mark a forum post or Reddit thread as "date-unknown", you are making an error.
+
+## SEVERITY CALIBRATION
+- CRITICAL = site down, data loss, or security vulnerability affecting majority of users. Requires multiple independent confirmations.
+- MAJOR = significant functionality broken, documented workaround exists. Confirmed by 2+ sources.
+- MODERATE = inconvenience, affects specific configurations. Can be single-source if well-documented.
+- MINOR = cosmetic, edge case, single user report without confirmation.
+
+A single user report without confirmation is NEVER critical.
+Environment-specific issues (one hosting provider, one server config) are maximum MODERATE.
+- Issues specific to ONE hosting provider (Hostinger, Azure, etc.) are maximum MODERATE regardless of impact.
+- Issues from a SINGLE user report with no independent confirmation are maximum MODERATE.
+- An official troubleshooting guide existing for an issue does NOT elevate its severity — it means the vendor is aware, not that the issue is critical.
+
+## RULES:
+1. ONLY EXTRACT data from provided research
+2. CITE with [ID] format
+3. Only include sources with REAL URLs (https://...)
+4. Output in ENGLISH
+5. MINIMUM 8 PAIN POINTS required - dig deep into ALL sources
+6. If fewer than 8 issues found, explicitly note: "Limited negative feedback in sources - found X issues"
+7. COMPLETE SOURCE INDEX: Every URL you reference ANYWHERE must appear in the Sources Index table
+8. SOURCE URL SPECIFICITY (CRITICAL): Every source_url MUST link to a SPECIFIC page, article, or thread — NOT a homepage or domain root.
+   ❌ BAD: https://wpscan.com, https://www.reddit.com/r/Wordpress/, https://www.wordfence.com
+   ✅ GOOD: https://wpscan.com/vulnerability/abc123, https://www.reddit.com/r/Wordpress/comments/xyz/title/, https://www.wordfence.com/blog/2024/02/report-name/
+   If you cannot find a specific URL for a claim, note it as "source URL unavailable" and do NOT use a generic homepage.
+
+## INPUT:
+
+### COMMUNITY RESEARCH:
+${perplexity_text}
+
+### CHANGELOG DATA: No changelog provided.
+
+## OUTPUT STRUCTURE:
+
+### 1. SOURCES INDEX
+**CRITICAL: This table MUST contain EVERY URL referenced in this document.**
+**Every [ID] used below MUST have a row in this table.**
+
+| ID | Source Name | Full URL | Type | Date | Historical? |
+|----|-------------|----------|------|------|-------------|
+
+Types: forum, review_site, official, social, marketplace, documentation, changelog
+Date: YYYY-MM (or "date-unknown")
+Historical: YES if older than 6 months, otherwise NO
+
+### 2. PAIN POINTS (MINIMUM 8 REQUIRED)
+| Scope | Category | Issue | Quote | [ID] | Severity | Frequency | Theme Version | Date Reported |
+|-------|----------|-------|-------|------|----------|-----------|---------------|---------------|
+
+Scope: [THEME], [BLOCKS], [ECOSYSTEM]
+Categories: performance, handoff, updates, plugin_compat, support, cost, general
+Severity: critical, major, moderate, minor (follow SEVERITY CALIBRATION rules above)
+Date Reported: YYYY-MM from source (or "date-unknown")
+
+Theme Version = version of the theme mentioned in the source thread/article.
+Extract from context clues: "I updated to 8.2.6 and...", "using v7.5", "after latest update (8.3)".
+If no version mentioned, write "unknown".
+
+CHANGELOG CROSS-REFERENCE: If changelog data is provided, check if any pain point was addressed in a release. If yes, set resolution to "Fixed in vX.Y.Z" and consider downgrading severity.
+
+VERSION EXTRACTION PRIORITY:
+1. If source explicitly mentions a version ("v8.2.6", "after updating to 1.4") → use that version
+2. If source has a date and changelog is provided → find the theme version active on that date from changelog
+3. If pain point was FIXED in changelog → set version_reported to the version BEFORE the fix
+4. "unknown" is a last resort, not a default. Try steps 1-3 first.
+
+IMPORTANT: Extract ALL issues mentioned, even minor ones. Target 8-15 pain points.
+Look for: bugs, complaints, workarounds, frustrations, limitations, conflicts.
+
+### 3. PRAISE POINTS (MINIMUM 3 REQUIRED — treat as seriously as pain points)
+Actively search ALL sources for positive mentions. Every theme has strengths — find them.
+Look in: official marketing, community forums, reviews, comparison articles, Reddit threads.
+Even pain point sources often contain praise ("despite X, the theme excels at Y").
+
+| Scope | Category | Positive Aspect | Quote/Evidence | [ID] | Frequency |
+|-------|----------|----------------|----------------|------|-----------|
+
+Categories: performance, security, plugin_compat, handoff, updates, support, development, community, marketplace
+Frequency: frequent, common, occasional, verified
+
+EXTRACTION GUIDE — look for these signals:
+- Performance: fast loading, clean code, low bloat, good CWV, "lightweight"
+- Development: granular control, clean output, developer-friendly, good API
+- Plugin compat: "works great with ACF", "best Woo integration", native support
+- Community: active forums, helpful community, fast peer support
+- Security: fast patching, responsible disclosure, proactive security
+- Support: responsive team, quality documentation, video tutorials
+- Updates: frequent releases, transparent changelog, backward compatibility
+- Marketplace: high ratings, growing sales, trusted by agencies
+
+CHANGELOG PRAISE: If changelog shows frequent releases (monthly+), active bugfixing, or security responsiveness — extract as updates/security praise.
+
+RULES:
+- MINIMUM 3 praise points with valid source URLs — this is a HARD requirement like 8 pain points
+- If fewer than 3 found, explicitly note: "Limited positive feedback in sources — found X praise points"
+- DO NOT skip praise just because you found many pain points — balance matters
+- Each praise point MUST have a specific [ID] source reference
+
+### 4. SIGNALS
+
+#### HANDOFF:
+- Panel complexity: "{quote}" [ID]
+- Learning curve: "{quote}" [ID]
+
+#### COMPATIBILITY:
+- {Plugin}: {status} — "{evidence}" [ID]
+Status: full, partial, limited, none
+
+#### PERFORMANCE:
+- Speed: {positive/negative/mixed} — "{evidence}" [ID]
+
+#### UPDATES:
+- Breaking changes: {yes/no} — "{evidence}" [ID]
+- Changelog frequency: {weekly/monthly/quarterly/sporadic} (from changelog data if provided)
+
+### 5. BUNDLED PLUGINS
+| Plugin | Category | [ID] |
+|--------|----------|----- |
+
+### 6. FAQ CANDIDATES
+5-8 questions answerable from data above.
+
+### 7. SCOPE SUMMARY
+Pain points breakdown: X [THEME], Y [BLOCKS], Z [ECOSYSTEM]
+Praise breakdown: X [THEME], Y [BLOCKS], Z [ECOSYSTEM]
+
+### 8. STATS
+Total sources with URLs: X
+Pain points extracted: X (minimum 8 required)
+Praise points extracted: X (minimum 3 required)
+Historical sources (>6mo): X
+Changelog entries analyzed: X
+Confidence: HIGH/MEDIUM/LOW
+
+### 9. SOURCE INTEGRITY CHECK
+List any [ID] used in the document above that is NOT in the Sources Index: (should be NONE)

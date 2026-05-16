@@ -4,5 +4,12 @@ google-auth-oauthlib>=1.2.0
 pandas>=2.1.0
 click>=8.1.0
 
-# Sprint 3 will add: praw
+# Sprint 4: Theme Collector Pipeline
+google-generativeai>=0.8.0
+tenacity>=8.2.0
+pydantic>=2.5.0
+python-dotenv>=1.0.0
+pyyaml>=6.0
+openpyxl>=3.1.0
+
 # Sprint 5 will add: schedule, ollama (or llama-cpp-python)

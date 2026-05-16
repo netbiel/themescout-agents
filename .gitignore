@@ -18,6 +18,9 @@ config/secrets.env
 service-account*.json
 .secret/
 
+# Source pipeline (contains API keys — reference copy in reference/)
+pipline-js/
+
 # Local data
 data/cache/
 data/baseline/raw/

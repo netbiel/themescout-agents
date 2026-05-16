@@ -1,0 +1,208 @@
+# STEP 2: VERDICT SYNTHESIS
+## WPAgent Data Pipeline v3.20.1
+
+Synthesize verdicts for "${theme_name}".
+
+## DISTRIBUTION MODEL: ThemeForest
+This theme is sold on ThemeForest (Envato Market).
+RULES:
+- Primary marketplace source: ThemeForest
+- "sales_count" = ThemeForest total sales
+- external_ratings: ThemeForest rating is primary
+
+## SEVERITY CALIBRATION (RE-VERIFY Step 1 ASSESSMENTS)
+Before synthesizing verdicts, verify Step 1 severity assignments:
+- CRITICAL = site down, data loss, or security vulnerability affecting majority of users. Multiple independent confirmations required.
+- MAJOR = significant functionality broken, documented workaround exists. Confirmed by 2+ sources.
+- MODERATE = inconvenience, affects specific configurations. Can be single-source if well-documented.
+- MINOR = cosmetic, edge case, single user report.
+
+DOWNGRADE if Step 1 over-assigned:
+- Single user report marked critical → downgrade to moderate at most
+- Environment-specific issue marked major → downgrade to moderate
+- Issues tagged "(historical — unconfirmed current)" → do NOT drive current verdicts
+- Issues with scope [BLOCKS] or [ECOSYSTEM] → note separately, do not inflate theme verdicts
+
+## SCOPE-AWARE SYNTHESIS
+Step 1 pain points are tagged [THEME], [BLOCKS], or [ECOSYSTEM].
+- Verdicts in handoff, performance, updates sections: focus on [THEME] issues
+- [BLOCKS] issues: note separately as "Companion plugin note: ..."
+- [ECOSYSTEM] issues: attribute clearly as "Ecosystem integration: ..."
+- In QUICK OVERVIEW: mention scope split, e.g. "X of Y reported issues affect the theme directly; Z relate to companion plugins."
+
+## CRITICAL RULES:
+1. Use [ID] in technical sections
+2. NO [ID] in Quick Verdict and Human Summary
+3. Use ACF enum values exactly
+4. ONLY use [ID] numbers that exist in Step 1 Sources Index
+
+## VERDICT RULES (VERY IMPORTANT):
+- Each verdict_safe, verdict_caution, verdict_avoid MUST be a FULL SENTENCE
+- Minimum 20 words per verdict
+- NEVER write just "Safe", "Caution", or "Avoid"
+- If no data available, leave the field EMPTY
+
+## ACF ENUMS:
+- panel_complexity: minimal | moderate | complex | overwhelming
+- docs_quality: excellent | good | basic | poor
+- learning_curve: minutes | hours | days | weeks
+- code_quality: basic | good | high | premium
+- compatibility_status: full | partial | limited | none
+- severity: critical | major | moderate | minor
+- performance_tier: excellent | good | needs_work | poor
+
+## PAGESPEED INTERPRETATION:
+### Mobile Score Tiers:
+- 90-100: EXCELLENT | 70-89: GOOD | 50-69: NEEDS_WORK | 0-49: POOR
+
+### Core Web Vitals:
+- LCP ≤2.5s: Good | 2.5-4s: Needs improvement | >4s: Poor
+- CLS ≤0.1: Good | 0.1-0.25: Needs improvement | >0.25: Poor
+
+### PAGESPEED RULES:
+1. If pagespeed_data exists, USE IT as PRIMARY source
+2. Community feedback is SECONDARY
+3. If mobile < 50, perf_verdict_safe MUST be EMPTY
+4. If mobile >= 90, perf_verdict_avoid should NOT mention slowness
+5. Always state score in perf_code_observation
+
+## PRICING RULES:
+- money_back_guarantee: Number of days. Research from official website.
+  Common values: ThemeForest=0, Elegant Themes=30, ThemeIsle=30, Starter Templates=14, Flavor=30.
+  If unknown, set to 0.
+- ALWAYS check the author official pricing/FAQ page for refund policy.
+
+## RATINGS RULES:
+- ALWAYS populate external_ratings with at least 1 entry.
+- For wordpress_org themes: use WordPress.org rating (stars + review count).
+- For themeforest themes: use ThemeForest rating.
+- Also include G2, Trustpilot, or Capterra if found.
+- rating_url MUST be direct link to the review page.
+
+## INPUT:
+
+### Scraped JSON:
+${scraped_json}
+
+### Step 1 Community Analysis:
+${step1_output}
+
+## OUTPUT:
+
+### 1. QUICK OVERVIEW
+**Quick Verdict:** (2-3 sentences, NO [ID]. Mention scope: "X of Y reported issues affect the theme directly.")
+**Pros:** (3 items, max 60 chars)
+**Cons:** (3 items, max 60 chars)
+
+### 2. HANDOFF
+Panel Complexity: [enum]
+Docs Quality: [enum]
+Learning Curve: [enum]
+NOTE: handoff_score calculated automatically from enums.
+SCALE: 10 = easiest handoff (minimal panel, excellent docs, minutes to learn).
+       1 = hardest handoff (overwhelming panel, poor docs, weeks to learn).
+CONSISTENCY: If learning_curve=weeks, panel MUST be complex or overwhelming.
+             If learning_curve=minutes, panel MUST be minimal or moderate.
+Confidence: low|medium|high
+Sources Count: X
+
+Verdicts (full sentences, 20+ words):
+- Safe if: ...
+- Caution if: ...
+- Avoid if: ...
+
+Recommendation: ...
+Alternatives: ...
+
+### 3. PERFORMANCE
+Confidence: low|medium|high
+Sources Count: X
+
+**PageSpeed Data (from scraped JSON):**
+Map fields: lcp_score→lcp_mobile, cls_score→cls_mobile, tested_url→test_url
+
+Code Observation: "Mobile PageSpeed [X]/100 tested on [url] on [date]. [interpretation]"
+
+Verdicts (aligned with scores):
+- Safe if: ...
+- Caution if: ...
+- Avoid if: ...
+
+Recommendation: ...
+Alternatives: ...
+
+### 4. UPDATES
+Confidence: ...
+Sources Count: ...
+Verdicts:
+- Safe if: ...
+- Caution if: ...
+- Avoid if: ...
+
+Recommendation: ...
+Alternatives: ...
+
+### 5. PLUGIN COMPATIBILITY
+
+## PAIN POINT CROSS-REFERENCE (MANDATORY — DO THIS FIRST):
+Before writing the plugin list, scan ALL pain points from Step 1 and identify every plugin mentioned.
+EVERY plugin named in a pain point MUST appear in plugin_compatibility_list.
+If a pain point mentions "ACF Pro TypeError" → ACF Pro must be in the list.
+If a pain point mentions "WooCommerce mini-cart conflict" → WooCommerce must be in the list.
+Use the pain point severity/description to set the correct compatibility_status:
+  critical/major pain point → partial or none
+  minor/moderate → partial
+  no pain points → full
+
+INCLUDE in the list:
+  - ALL plugins identified in the pain point cross-reference (see above)
+  - ALL other plugins mentioned anywhere in Step 1 or research data
+  - Even if the only available information is a workaround or a single conflict report
+  - WooCommerce: always include — document real compatibility_status based on pain points
+
+EXCLUDE from the list:
+  - Plugins that REQUIRE this theme to function (companion/extension plugins
+    whose name begins with the theme name, e.g. "${theme_name} Footer Text",
+    "${theme_name} Powerpack", "${theme_name} Companion")
+  - Plugins already declared in bundled_plugins
+  - PHP versions or server software
+
+PAGE BUILDER RULE: If theme officially supports/bundles Elementor, WPBakery, Divi, Bricks or Beaver Builder,
+that builder MUST appear in plugin_compatibility_list with correct status:
+  full = bundled or officially supported without issues
+  partial = supported but known conflicts exist
+  none = officially incompatible
+REASON: pipeline reads plugin_compatibility_list to generate builder tags in search_profile.
+Missing builder entry = builder tag missing = wrong search results for users.
+
+Verdicts:
+- Safe if: ...
+- Caution if: ...
+- Avoid if: ...
+
+Plugin List:
+| Plugin | Category | Status | Notes | Issue [IDs] |
+|--------|----------|--------|-------|-------------|
+
+### 6. FAQ
+Refined answers with [ID] citations.
+
+### 7. BUNDLED PLUGINS
+| Plugin | Category | Value USD | License |
+|--------|----------|-----------|--------|
+
+### 8. HUMAN SUMMARY
+3 paragraphs, NO [ID], NO specific metrics.
+If theme has companion plugins with reported issues, 3rd paragraph should note: "Some community reports relate to companion plugins rather than the base theme."
+
+### 9. SOURCES
+Copy ALL sources from Step 1 — do NOT remove any.
+
+### 10. PRAISE EXTRACTION (CRITICAL)
+Step 2 MUST preserve ALL praise points from Step 1 — do NOT drop them.
+If Step 1 has fewer than 3 praise points, actively extract more from:
+  - Performance data (excellent PageSpeed → praise)
+  - Plugin compatibility (strong integration → praise)
+  - Security response (fast patching → praise)
+  - Community feedback (active forum, helpful users → praise)
+MINIMUM 3 praise points in final output. This is not optional.
