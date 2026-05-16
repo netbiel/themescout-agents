@@ -2,50 +2,297 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>ThemeScout Agent — Dashboard (placeholder)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThemeScout Agent — Dashboard</title>
   <style>
+    :root {
+      --bg: #fafaf8;
+      --card: #ffffff;
+      --border: #e5e5e3;
+      --text: #1a1a1a;
+      --text-muted: #6b6b6b;
+      --accent: #2563eb;
+      --green: #16a34a;
+      --yellow: #ca8a04;
+      --orange: #ea580c;
+      --red: #dc2626;
+      --up: #16a34a;
+      --down: #dc2626;
+      --flat: #6b6b6b;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      max-width: 720px;
-      margin: 4rem auto;
-      padding: 0 1.5rem;
-      color: #1a1a1a;
-      background: #fafaf8;
+      background: var(--bg);
+      color: var(--text);
       line-height: 1.6;
     }
-    h1 { font-weight: 600; }
-    code {
-      background: #ebebe8;
-      padding: 0.1em 0.3em;
-      border-radius: 3px;
-      font-size: 0.92em;
-    }
-    .placeholder {
-      background: #fff;
-      border: 1px solid #ddd;
-      padding: 1.5rem;
+    .container { max-width: 960px; margin: 0 auto; padding: 2rem 1.5rem; }
+    header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2rem; }
+    header h1 { font-size: 1.5rem; font-weight: 600; }
+    header .meta { font-size: 0.85rem; color: var(--text-muted); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
       border-radius: 8px;
-      margin-top: 2rem;
+      padding: 1.25rem;
     }
+    .card h2 { font-size: 0.85rem; font-weight: 500; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 0.75rem; }
+    .card .value { font-size: 2rem; font-weight: 600; }
+    .card .sub { font-size: 0.85rem; color: var(--text-muted); margin-top: 0.25rem; }
+    .delta-up { color: var(--up); }
+    .delta-down { color: var(--down); }
+    .delta-flat { color: var(--flat); }
+    .zone { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 4px; font-size: 0.85rem; font-weight: 500; }
+    .zone-green { background: #dcfce7; color: var(--green); }
+    .zone-yellow { background: #fef9c3; color: var(--yellow); }
+    .zone-orange { background: #ffedd5; color: var(--orange); }
+    .zone-red { background: #fee2e2; color: var(--red); }
+    .wide { grid-column: 1 / -1; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    th { text-align: left; font-weight: 500; color: var(--text-muted); padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--border); }
+    td { padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--border); }
+    tr:last-child td { border-bottom: none; }
+    .sources-bar { height: 6px; background: var(--accent); border-radius: 3px; margin-top: 0.25rem; }
+    .status-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 0.5rem; }
+    .status-ok { background: var(--green); }
+    .status-warn { background: var(--yellow); }
+    .status-err { background: var(--red); }
+    .open-loops li { padding: 0.4rem 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+    .open-loops li:last-child { border-bottom: none; }
+    .blocker-tag { font-size: 0.75rem; background: #fee2e2; color: var(--red); padding: 0.1rem 0.4rem; border-radius: 3px; margin-left: 0.5rem; }
+    .error-box { background: #fee2e2; border: 1px solid var(--red); padding: 1rem; border-radius: 8px; color: var(--red); margin-bottom: 1rem; }
+    #loading { text-align: center; padding: 4rem; color: var(--text-muted); }
+    footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.8rem; color: var(--text-muted); text-align: center; }
   </style>
 </head>
 <body>
-  <h1>ThemeScout Agent</h1>
-  <p>Dashboard placeholder — to be built in Sprint 2.</p>
+  <div class="container">
+    <div id="loading">Loading dashboard data...</div>
+    <div id="app" style="display:none">
 
-  <div class="placeholder">
-    <strong>Coming soon:</strong>
-    <ul>
-      <li>Live status (last run, next run, cost zone)</li>
-      <li>Pending review queue (Reddit drafts, WP drafts, pipeline outputs)</li>
-      <li>Metrics trend (vs last week, vs baseline)</li>
-      <li>Recent activity stream</li>
-      <li>Navigation: Reports / Decision Log / Drafts / State</li>
-    </ul>
+      <header>
+        <h1>ThemeScout Agent</h1>
+        <div class="meta">
+          Sprint <span id="sprint">—</span> &middot;
+          <span id="sprint-status">—</span> &middot;
+          Updated <span id="last-updated">—</span>
+        </div>
+      </header>
+
+      <div id="errors"></div>
+
+      <!-- Status cards -->
+      <div class="grid">
+        <div class="card">
+          <h2>Sessions (7d)</h2>
+          <div class="value" id="sessions">—</div>
+          <div class="sub" id="sessions-delta"></div>
+        </div>
+        <div class="card">
+          <h2>Engaged Sessions (7d)</h2>
+          <div class="value" id="engaged">—</div>
+          <div class="sub" id="engaged-delta"></div>
+        </div>
+        <div class="card">
+          <h2>Active Users (7d)</h2>
+          <div class="value" id="users">—</div>
+          <div class="sub" id="users-delta"></div>
+        </div>
+        <div class="card">
+          <h2>Cost Zone</h2>
+          <div class="value"><span id="cost-zone" class="zone">—</span></div>
+          <div class="sub">Week: $<span id="cost-week">0.00</span> &middot; Month: $<span id="cost-month">0.00</span></div>
+        </div>
+      </div>
+
+      <!-- LLM Referrals -->
+      <div class="grid">
+        <div class="card wide">
+          <h2>LLM Referrals (28d)</h2>
+          <table>
+            <thead><tr><th>Source</th><th>Sessions</th><th>Engaged</th><th>Users</th></tr></thead>
+            <tbody id="llm-table"></tbody>
+          </table>
+          <div id="llm-empty" class="sub" style="display:none; padding-top:0.5rem;">No LLM referrals found.</div>
+        </div>
+      </div>
+
+      <!-- Traffic Sources -->
+      <div class="grid">
+        <div class="card wide">
+          <h2>Top Traffic Sources (28d)</h2>
+          <table>
+            <thead><tr><th>Source / Medium</th><th>Sessions</th><th>Engaged</th><th>Users</th><th></th></tr></thead>
+            <tbody id="sources-table"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Open Loops -->
+      <div class="grid">
+        <div class="card wide">
+          <h2>Open Loops</h2>
+          <ul class="open-loops" id="open-loops"></ul>
+        </div>
+      </div>
+
+      <footer>
+        ThemeScout Agent Dashboard &middot; Serve with <code>python serve.py</code> from repo root
+      </footer>
+    </div>
   </div>
 
-  <p style="margin-top: 2rem; font-size: 0.9em; color: #666;">
-    For now, see <code>core/agent-charter.md</code> and <code>core/decision-log.md</code> for system status.
-  </p>
+  <script>
+    const BASE = '..';
+
+    async function loadJSON(path) {
+      const r = await fetch(`${BASE}/${path}`);
+      if (!r.ok) throw new Error(`Failed to load ${path}: ${r.status}`);
+      return r.json();
+    }
+
+    function delta(thisVal, lastVal) {
+      const t = parseFloat(thisVal), l = parseFloat(lastVal);
+      if (isNaN(t) || isNaN(l) || l === 0) return { text: '', cls: 'delta-flat' };
+      const pct = ((t - l) / l * 100).toFixed(1);
+      const arrow = pct > 0 ? '\u2191' : pct < 0 ? '\u2193' : '\u2192';
+      const cls = pct > 0 ? 'delta-up' : pct < 0 ? 'delta-down' : 'delta-flat';
+      return { text: `${arrow} ${Math.abs(pct)}% vs last week (${l})`, cls };
+    }
+
+    function costZone(weekUsd) {
+      if (weekUsd >= 30) return { label: 'Red', cls: 'zone-red' };
+      if (weekUsd >= 15) return { label: 'Orange', cls: 'zone-orange' };
+      if (weekUsd >= 5) return { label: 'Yellow', cls: 'zone-yellow' };
+      return { label: 'Green', cls: 'zone-green' };
+    }
+
+    function setDelta(id, d) {
+      const el = document.getElementById(id);
+      el.textContent = d.text;
+      el.className = `sub ${d.cls}`;
+    }
+
+    async function init() {
+      const errors = [];
+
+      // Load state
+      let state = null;
+      try {
+        state = await loadJSON('core/state.json');
+      } catch (e) { errors.push(e.message); }
+
+      // Find latest baseline file
+      let weekly = null;
+      try {
+        // Try today-1 and go back a few days
+        const today = new Date();
+        for (let i = 1; i <= 7; i++) {
+          const d = new Date(today);
+          d.setDate(d.getDate() - i);
+          const ds = d.toISOString().slice(0, 10);
+          try {
+            weekly = await loadJSON(`data/baseline/ga4-weekly-${ds}.json`);
+            break;
+          } catch (_) {}
+        }
+        if (!weekly) throw new Error('No GA4 weekly data found');
+      } catch (e) { errors.push(e.message); }
+
+      // Load sources
+      let sources = null, llm = null;
+      try {
+        const today = new Date();
+        for (let i = 1; i <= 7; i++) {
+          const d = new Date(today);
+          d.setDate(d.getDate() - i);
+          const ds = d.toISOString().slice(0, 10);
+          try {
+            sources = await loadJSON(`data/baseline/ga4-sources-28d-${ds}.json`);
+            llm = await loadJSON(`data/baseline/ga4-llm-referrals-28d-${ds}.json`);
+            break;
+          } catch (_) {}
+        }
+      } catch (e) { errors.push(e.message); }
+
+      // Render errors
+      if (errors.length) {
+        document.getElementById('errors').innerHTML = errors.map(e =>
+          `<div class="error-box">${e}</div>`
+        ).join('');
+      }
+
+      // Render state
+      if (state) {
+        document.getElementById('sprint').textContent = state.current_sprint;
+        document.getElementById('sprint-status').textContent = state.sprint_status;
+        document.getElementById('last-updated').textContent = state.last_updated?.slice(0, 10) || '—';
+        document.getElementById('cost-week').textContent = (state.cost_week_to_date_usd || 0).toFixed(2);
+        document.getElementById('cost-month').textContent = (state.cost_month_to_date_usd || 0).toFixed(2);
+        const z = costZone(state.cost_week_to_date_usd || 0);
+        const zoneEl = document.getElementById('cost-zone');
+        zoneEl.textContent = z.label;
+        zoneEl.className = `zone ${z.cls}`;
+
+        // Open loops
+        const loopsList = document.getElementById('open-loops');
+        if (state.open_loops?.length) {
+          loopsList.innerHTML = state.open_loops.map(l =>
+            `<li>${l.description}${l.blocker ? '<span class="blocker-tag">blocker</span>' : ''}</li>`
+          ).join('');
+        } else {
+          loopsList.innerHTML = '<li>No open loops</li>';
+        }
+      }
+
+      // Render weekly metrics
+      if (weekly) {
+        const tw = weekly.this_week || {};
+        const lw = weekly.last_week || {};
+
+        document.getElementById('sessions').textContent = tw.sessions || '—';
+        document.getElementById('engaged').textContent = tw.engagedSessions || '—';
+        document.getElementById('users').textContent = tw.activeUsers || '—';
+
+        setDelta('sessions-delta', delta(tw.sessions, lw.sessions));
+        setDelta('engaged-delta', delta(tw.engagedSessions, lw.engagedSessions));
+        setDelta('users-delta', delta(tw.activeUsers, lw.activeUsers));
+      }
+
+      // Render LLM referrals
+      const llmTable = document.getElementById('llm-table');
+      if (llm && llm.length) {
+        llmTable.innerHTML = llm.map(r =>
+          `<tr><td>${r.sessionSource}</td><td>${r.sessions}</td><td>${r.engagedSessions}</td><td>${r.activeUsers}</td></tr>`
+        ).join('');
+      } else {
+        document.getElementById('llm-empty').style.display = 'block';
+      }
+
+      // Render sources
+      const srcTable = document.getElementById('sources-table');
+      if (sources && sources.length) {
+        const maxSessions = Math.max(...sources.map(s => parseInt(s.sessions)));
+        srcTable.innerHTML = sources.map(r => {
+          const pct = (parseInt(r.sessions) / maxSessions * 100).toFixed(0);
+          return `<tr>
+            <td>${r.sessionSource} / ${r.sessionMedium}</td>
+            <td>${r.sessions}</td>
+            <td>${r.engagedSessions}</td>
+            <td>${r.activeUsers}</td>
+            <td style="width:80px"><div class="sources-bar" style="width:${pct}%"></div></td>
+          </tr>`;
+        }).join('');
+      }
+
+      // Show app
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('app').style.display = 'block';
+    }
+
+    init();
+  </script>
 </body>
 </html>
