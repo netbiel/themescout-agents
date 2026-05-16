@@ -1,0 +1,688 @@
+{
+  "quick_overview": {
+    "quick_verdict": "Kadence is a powerful and highly customizable theme with a generous free version, making it a strong choice for developers and agencies. However, its potential is undermined by a pattern of unstable updates that can cause fatal errors and significant, well-documented conflicts with major plugins like WPML and WooCommerce.",
+    "quick_pros": [
+      {
+        "pro_text": "Powerful header and footer builder"
+      },
+      {
+        "pro_text": "Exceptionally feature-rich free version"
+      },
+      {
+        "pro_text": "Good performance when configured correctly"
+      }
+    ],
+    "quick_cons": [
+      {
+        "con_text": "Updates can introduce breaking changes"
+      },
+      {
+        "con_text": "Critical conflicts with WPML and WooCommerce"
+      },
+      {
+        "con_text": "Steep learning curve for non-technical users"
+      }
+    ]
+  },
+  "theme_basic": {
+    "theme_author": "StellarWP",
+    "theme_version": "1.4.5",
+    "release_date": "2020-11-02",
+    "last_update": "2026-02-25",
+    "code_quality": "good",
+    "theme_tagline": "Lightweight WordPress theme with header/footer builder and WooCommerce integration",
+    "sales_count": "400,000+ active installations",
+    "distribution_model": "wordpress_org",
+    "demo_url": "https://www.kadencewp.com/kadence-theme/"
+  },
+  "performance_metrics": {
+    "pagespeed_mobile": 73,
+    "pagespeed_desktop": 89,
+    "lcp_mobile": 1.77,
+    "lcp_desktop": 1.63,
+    "cls_mobile": 0.01,
+    "cls_desktop": 0.01,
+    "test_url": "https://startertemplatecloud.com/g88/",
+    "test_date": "2026-02-22",
+    "pagespeed_link": "",
+    "performance_tier": "good",
+    "performance_interpretation": "The theme achieved a good Mobile PageSpeed score of 73/100 with excellent Core Web Vitals in a test conducted on 2026-02-22. However, this test was performed on a third-party starter template, and community feedback is mixed, with some independent tests showing it can be heavier than competitors like GeneratePress [9]."
+  },
+  "theme_pricing": {
+    "license_type": "freemium",
+    "pricing_model": "annual_subscription",
+    "base_price": 0,
+    "support_period_included": 12,
+    "support_renewal_cost": 169,
+    "update_policy": "subscription_only",
+    "money_back_guarantee": 0,
+    "pricing_tiers": [
+      {
+        "tier_name": "Free",
+        "tier_price": 0,
+        "tier_description": "Full theme with header/footer builder, global colors, Kadence Blocks"
+      },
+      {
+        "tier_name": "Express (Yearly)",
+        "tier_price": 69,
+        "tier_description": "Premium templates and design library. No Pro addon or Blocks Pro"
+      },
+      {
+        "tier_name": "Plus (Yearly)",
+        "tier_price": 169,
+        "tier_description": "Kadence Pro, Blocks Pro, Shopkit. Recommended for agency work"
+      },
+      {
+        "tier_name": "Ultimate (Yearly)",
+        "tier_price": 299,
+        "tier_description": "Full suite, all plugins, white-label, unlimited sites"
+      }
+    ]
+  },
+  "theme_ratings": {
+    "popularity_trend": "growing",
+    "external_ratings": [
+      {
+        "rating_source": "WordPress.org",
+        "rating_score": 4.8,
+        "rating_count": 700,
+        "rating_url": "https://wordpress.org/support/theme/kadence/reviews/"
+      }
+    ]
+  },
+  "theme_technical": {
+    "min_wp_version": "6.3",
+    "min_php_version": "7.4",
+    "wp_compatibility": "6.9",
+    "last_verification": "2026-02-26",
+    "activity_status": "active"
+  },
+  "handoff_difficulty": {
+    "handoff_score": 5,
+    "handoff_panel_complexity": "complex",
+    "handoff_docs_quality": "good",
+    "handoff_learning_curve": "days",
+    "handoff_recommendation": "This theme is best suited for developer-led projects. For client handoffs, create a simplified editing guide or use user role restrictions to hide more complex panels.",
+    "handoff_confidence": "high",
+    "handoff_sources_count": 2,
+    "handoff_verdict_safe": "Kadence is safe to hand off in agency environments where developers can provide structured training and ongoing support for clients who will not be making complex layout changes themselves.",
+    "handoff_verdict_caution": "Use caution when handing off Kadence to moderately tech-savvy clients, as the sheer number of options in the Customizer and block settings can be overwhelming without proper guidance [21].",
+    "handoff_verdict_avoid": "Avoid handing off Kadence to non-technical clients who need to manage their own site, as the steep learning curve and non-intuitive workflow for beginners can lead to frustration and support requests [18].",
+    "handoff_alternative_themes": "GeneratePress, Astra, Blocksy"
+  },
+  "scenario_performance": {
+    "perf_confidence": "medium",
+    "perf_sources_count": 4,
+    "perf_verdict_safe": "Kadence is a safe choice for performance-focused projects, as it is capable of achieving excellent PageSpeed scores and fast load times when properly configured and optimized [8].",
+    "perf_verdict_caution": "Use caution if you expect top-tier performance out of the box, as some comparative tests indicate the theme can generate more server requests and be slightly slower than ultra-lightweight alternatives [9].",
+    "perf_verdict_avoid": "Avoid using Kadence on extremely limited or low-resource shared hosting environments where its feature set might introduce performance overhead that the server cannot handle efficiently.",
+    "perf_code_observation": "The theme achieved a good Mobile PageSpeed score of 73/100 with excellent Core Web Vitals in a test conducted on 2026-02-22. However, this test was performed on a third-party starter template, and community feedback is mixed, with some independent tests showing it can be heavier than competitors like GeneratePress [9].",
+    "perf_recommendation": "To achieve optimal speed, users should leverage the theme's built-in performance settings and follow the official optimization guides provided by the developer [11].",
+    "perf_alternative_themes": "GeneratePress, Neve"
+  },
+  "scenario_updates": {
+    "updates_confidence": "high",
+    "updates_sources_count": 5,
+    "updates_verdict_safe": "The theme is safe for professional workflows where developers use a staging environment to rigorously test all theme and plugin updates before deploying them to a live production site.",
+    "updates_verdict_caution": "Exercise extreme caution when updating a live website, as there is a documented pattern of updates introducing breaking changes, including fatal errors and visual bugs in core blocks [12, 14].",
+    "updates_verdict_avoid": "Avoid using Kadence on mission-critical websites where stability is paramount and any downtime from a faulty update is unacceptable, especially if you do not have a staging environment for testing [16].",
+    "updates_recommendation": "Disable automatic updates for the Kadence theme and its companion plugins. Always test updates on a staging server before applying them to your live site to prevent unexpected downtime.",
+    "updates_alternative_themes": "Genesis Framework, Astra"
+  },
+  "plugin_compatibility_enhanced": {
+    "compat_total_tested": 4,
+    "compat_full_compatible": 0,
+    "compat_issues_found": 4,
+    "compat_confidence": "high",
+    "compat_sources_count": 6,
+    "compat_verdict_safe": "Kadence is safe for websites with a simple and well-tested plugin stack, as it generally integrates well with common plugins that do not have deep hooks into the block editor or WooCommerce.",
+    "compat_verdict_caution": "Use caution when building a WooCommerce store, as multiple users have reported fatal memory exhaustion errors that require significant server resources and careful configuration to resolve [5, 6].",
+    "compat_verdict_avoid": "Absolutely avoid using Kadence for multilingual sites that rely on WPML, as the companion Kadence Blocks plugin is known to cause critical fatal errors that make the backend unusable [1, 4].",
+    "compat_recommendation": "Always test plugins on a staging site, especially WPML and WooCommerce, which have known critical conflicts with Kadence and its companion plugins.",
+    "compat_alternative_themes": "Astra, GeneratePress, Blocksy",
+    "plugin_compatibility_list": [
+      {
+        "plugin": "WPML",
+        "plugin_category": "multilingual",
+        "compatibility_status": "none",
+        "compatibility_notes": "The companion Kadence Blocks plugin causes critical fatal errors on WPML's localization page. WPML has officially documented that new blocks are not fully compatible.",
+        "user_issues": [
+          "[1]",
+          "[2]",
+          "[4]"
+        ]
+      },
+      {
+        "plugin": "WooCommerce",
+        "plugin_category": "ecommerce",
+        "compatibility_status": "limited",
+        "compatibility_notes": "Multiple reports of fatal memory exhaustion errors when WooCommerce is active, requiring high server memory limits and careful troubleshooting to ensure stability.",
+        "user_issues": [
+          "[5]",
+          "[6]"
+        ]
+      },
+      {
+        "plugin": "Elementor",
+        "plugin_category": "page_builder",
+        "compatibility_status": "partial",
+        "compatibility_notes": "A conflict with Elementor Pro can cause jQuery errors within the Kadence WooCommerce Email Customizer, breaking its functionality.",
+        "user_issues": [
+          "[7]"
+        ]
+      },
+      {
+        "plugin": "The Events Calendar",
+        "plugin_category": "other",
+        "compatibility_status": "partial",
+        "compatibility_notes": "This plugin, specifically the Event Tickets addon, has been reported to contribute to memory exhaustion errors when used alongside Kadence and WooCommerce.",
+        "user_issues": [
+          "[6]"
+        ]
+      }
+    ]
+  },
+  "community_pain_points": {
+    "community_total_discussions": 31,
+    "community_analysis_date": "2026-02-26",
+    "community_timeframe": "Last 6 months",
+    "community_methodology_note": "Analysis based on user-reported issues from WordPress.org support forums, Reddit discussions, and professional reviews.",
+    "community_pain_points": [
+      {
+        "category": "plugin_compat",
+        "sentiment": "negative",
+        "source": "WordPress.org Support [1]",
+        "source_url": "https://wordpress.org/support/topic/kadence-blocks-triggers-fatal-error-on-wpml-theme-plugin-localization-page/",
+        "severity": "major",
+        "frequency": "Common",
+        "title": "WPML compatibility causes fatal errors (historical — unconfirmed current)",
+        "description": "Kadence Blocks is the culprit, once activated the WPML Theme & plugin localization page immediately triggers a fatal error and can no longer be reached.",
+        "resolution": "Users must deactivate Kadence Blocks to use WPML's localization features. There is no known fix, and WPML has documented the incompatibility [4].",
+        "version_reported": "unknown",
+        "scope": "blocks",
+        "date_reported": "2024-10"
+      },
+      {
+        "category": "plugin_compat",
+        "sentiment": "negative",
+        "source": "Reddit r/Wordpress [5]",
+        "source_url": "https://www.reddit.com/r/Wordpress/comments/1co6ac0/woocommerce_breaking_every_theme_i_try_wth_am_i/",
+        "severity": "major",
+        "frequency": "Common",
+        "title": "WooCommerce causes fatal memory exhaustion errors (historical — unconfirmed current)",
+        "description": "Tried kadence first. Fatal memory error. Did everything to increase memory fix loops and still woo and kadence wouldn't work together.",
+        "resolution": "Resolving this issue requires increasing the WordPress and server memory limits, often beyond typical shared hosting allowances. Careful plugin management is also necessary.",
+        "version_reported": "unknown",
+        "scope": "theme",
+        "date_reported": "2024-05"
+      },
+      {
+        "category": "updates",
+        "sentiment": "negative",
+        "source": "Reddit r/Kadence [12]",
+        "source_url": "https://www.reddit.com/r/Kadence/comments/1laszkk/site_down_critical_error_from_kadence_theme/",
+        "severity": "major",
+        "frequency": "Occasional",
+        "title": "Theme update introduces fatal error, taking site down (historical — unconfirmed current)",
+        "description": "I recently noticed that my website's analytics indicated zero visitors... The customer support representative informed me that the issue lies with the Kadence theme.",
+        "resolution": "Users affected by this type of error must typically restore from a backup or wait for a patch from the developer. Testing updates on a staging server is the recommended prevention.",
+        "version_reported": "unknown",
+        "scope": "theme",
+        "date_reported": "2025-06"
+      },
+      {
+        "category": "updates",
+        "sentiment": "negative",
+        "source": "KadenceWP Support Forums [13]",
+        "source_url": "https://www.kadencewp.com/support-forums/topic/page-builder-and-accordions-broken-after-wp-update/",
+        "severity": "moderate",
+        "frequency": "Common",
+        "title": "Minor plugin updates break block rendering (historical — unconfirmed current)",
+        "description": "Issue with accordion showing broken in editor",
+        "resolution": "The developer acknowledged and fixed this specific bug in a subsequent update [14]. However, it is part of a pattern of updates causing visual regressions.",
+        "version_reported": "unknown",
+        "scope": "blocks",
+        "date_reported": "2024-12"
+      },
+      {
+        "category": "general",
+        "sentiment": "negative",
+        "source": "KadenceWP Help Center [17]",
+        "source_url": "https://www.kadencewp.com/help-center/docs/kadence-theme/troubleshooting-white-blank-screens-in-the-editor-or-customizer/",
+        "severity": "major",
+        "frequency": "Common",
+        "title": "Blank editor screen (White Screen of Death) is a common issue",
+        "description": "This is a common issue that can be caused by a number of things... This guide will walk you through the most common causes and how to fix them.",
+        "resolution": "Kadence provides official documentation [17] for this common problem, which usually involves standard WordPress troubleshooting like deactivating plugins and clearing caches.",
+        "version_reported": "unknown",
+        "scope": "ecosystem",
+        "date_reported": "date-unknown"
+      },
+      {
+        "category": "handoff",
+        "sentiment": "negative",
+        "source": "Reddit r/Wordpress [18]",
+        "source_url": "https://www.reddit.com/r/Wordpress/comments/1hfbsln/issues_with_using_kadence_and_startup_templates/",
+        "severity": "moderate",
+        "frequency": "Frequent",
+        "title": "Steep learning curve for non-technical clients",
+        "description": "Transitioning from Elementor to this new setup feels quite different... find it challenging to make any adjustments without a considerable amount of effort.",
+        "resolution": "Agencies should provide clients with training or simplified documentation to overcome the learning curve. Restricting editor access can also prevent user confusion.",
+        "version_reported": "unknown",
+        "scope": "theme",
+        "date_reported": "date-unknown"
+      },
+      {
+        "category": "handoff",
+        "sentiment": "negative",
+        "source": "KadenceWP Help Center [23]",
+        "source_url": "https://www.kadencewp.com/help-center/docs/kadence-theme/fix-starter-template-import-problems-when-using-hostinger-with-kadence/",
+        "severity": "moderate",
+        "frequency": "Occasional",
+        "title": "Starter Template imports fail on specific hosting (Hostinger)",
+        "description": "If you are using Hostinger for your website hosting, you may run into issues when importing a Starter Template.",
+        "resolution": "The developer provides an official guide [23] with steps to resolve the import issue, which involves adjusting settings within the Hostinger control panel.",
+        "version_reported": "unknown",
+        "scope": "ecosystem",
+        "date_reported": "date-unknown"
+      },
+      {
+        "category": "plugin_compat",
+        "sentiment": "negative",
+        "source": "WordPress.org Support [7]",
+        "source_url": "https://wordpress.org/support/topic/kadence-conflicts-with-elementor-pro/",
+        "severity": "moderate",
+        "frequency": "Occasional",
+        "title": "Conflict with Elementor Pro causes jQuery errors",
+        "description": "Uncaught ReferenceError: jQuery is not defined",
+        "resolution": "The reported conflict occurs specifically in the Kadence WooCommerce Email Customizer. The workaround is to disable Elementor Pro when using this specific feature.",
+        "version_reported": "unknown",
+        "scope": "ecosystem",
+        "date_reported": "date-unknown"
+      }
+    ],
+    "community_praise_stats": [
+      {
+        "scope": "theme",
+        "category": "development",
+        "sentiment": "positive",
+        "positive_aspect": "Powerful and intuitive Header/Footer Builder",
+        "strength": "High",
+        "title": "Best-in-class Header and Footer Builder",
+        "description": "Multiple users and reviewers cite the drag-and-drop header and footer builder as a standout feature, offering flexibility and power that surpasses many premium competitors. One user states, \"It's header builder is the best I've used so far\" [8].",
+        "frequency": "frequent",
+        "percentage": 0,
+        "source": "Reddit r/Wordpress [8]",
+        "source_url": "https://www.reddit.com/r/Wordpress/comments/xoffpg/what_are_your_thoughts_on_kadence_theme/"
+      },
+      {
+        "scope": "theme",
+        "category": "performance",
+        "sentiment": "positive",
+        "positive_aspect": "Excellent performance and speed when configured correctly",
+        "strength": "High",
+        "title": "Capable of Excellent Performance",
+        "description": "Despite some tests showing it can be heavier than alternatives, many users achieve excellent PageSpeed scores. One user reports, \"Kadence Theme is surprisingly fast if we consider the amount of customization it offers... Desktop 95, Mobile 85 on Hostinger shared hosting\" [8].",
+        "frequency": "frequent",
+        "percentage": 0,
+        "source": "Reddit r/Wordpress [8]",
+        "source_url": "https://www.reddit.com/r/Wordpress/comments/xoffpg/what_are_your_thoughts_on_kadence_theme/"
+      },
+      {
+        "scope": "theme",
+        "category": "marketplace",
+        "sentiment": "positive",
+        "positive_aspect": "Highly feature-rich free version",
+        "strength": "Very High",
+        "title": "Generous and Feature-Rich Free Version",
+        "description": "Numerous reviews praise the free version of Kadence as one of the most capable on the market, offering features like global colors, advanced typography, and the header/footer builder that are often restricted to premium tiers in other themes [45, 48, 56].",
+        "frequency": "frequent",
+        "percentage": 0,
+        "source": "DIY DREAMSITE Review [45]",
+        "source_url": "https://diydreamsite.com/kadence-theme-review/"
+      },
+      {
+        "scope": "ecosystem",
+        "category": "updates",
+        "sentiment": "positive",
+        "positive_aspect": "Frequent updates with regular bug fixes and new features",
+        "strength": "High",
+        "title": "Active Development and Frequent Updates",
+        "description": "The official changelog for Kadence Blocks shows that updates are released frequently, often on a weekly or bi-weekly basis, indicating a strong commitment to active development, maintenance, and feature enhancement [14].",
+        "frequency": "frequent",
+        "percentage": 0,
+        "source": "Kadence Blocks Changelog [14]",
+        "source_url": "https://www.kadencewp.com/kadence-blocks/changelog/"
+      },
+      {
+        "scope": "theme",
+        "category": "support",
+        "sentiment": "positive",
+        "positive_aspect": "Good documentation and help center for core features",
+        "strength": "Moderate",
+        "title": "Comprehensive Official Documentation",
+        "description": "The official help center provides extensive documentation and troubleshooting guides for common issues, such as the blank editor screen, demonstrating a proactive approach to supporting users with known problems [17, 22].",
+        "frequency": "common",
+        "percentage": 0,
+        "source": "KadenceWP Help Center [17]",
+        "source_url": "https://www.kadencewp.com/help-center/docs/kadence-theme/troubleshooting-white-blank-screens-in-the-editor-or-customizer/"
+      }
+    ]
+  },
+  "faq": {
+    "faq_items": [
+      {
+        "faq_question": "Is Kadence theme compatible with WPML for multilingual sites?",
+        "faq_answer": "No. The companion Kadence Blocks plugin has a critical incompatibility that causes fatal errors when WPML is active, making it unsuitable for this purpose [1, 4].",
+        "faq_category": "compatibility",
+        "faq_source_ids": "1,4"
+      },
+      {
+        "faq_question": "Does Kadence work well with WooCommerce?",
+        "faq_answer": "It has deep integration, but there are multiple reports of fatal memory exhaustion errors [5, 6]. It requires a hosting environment with high memory limits and thorough testing to run a stable store.",
+        "faq_category": "compatibility",
+        "faq_source_ids": "5,6"
+      },
+      {
+        "faq_question": "Is Kadence a fast theme?",
+        "faq_answer": "It can be very fast, with some users achieving excellent PageSpeed scores [8]. However, independent tests suggest it can be heavier and generate more requests than competitors like GeneratePress [9].",
+        "faq_category": "performance",
+        "faq_source_ids": "8,9"
+      },
+      {
+        "faq_question": "Are updates to Kadence stable?",
+        "faq_answer": "No. There is a documented pattern of updates introducing breaking changes, including fatal errors that can take a site down and visual bugs that break block rendering [12, 14, 15].",
+        "faq_category": "updates",
+        "faq_source_ids": "12,14,15"
+      },
+      {
+        "faq_question": "Is Kadence a good theme for beginners or for client handoff?",
+        "faq_answer": "It is generally not recommended for beginners due to its steep learning curve and extensive options panel [18, 21]. It is better suited for developers or for agency handoffs that include client training.",
+        "faq_category": "handoff",
+        "faq_source_ids": "18,21"
+      },
+      {
+        "faq_question": "What should I do if my editor screen goes blank when using Kadence?",
+        "faq_answer": "This is a common issue, and Kadence provides an official troubleshooting guide [17]. The typical solution involves clearing caches, checking for plugin conflicts, and ensuring adequate server memory.",
+        "faq_category": "general",
+        "faq_source_ids": "17"
+      },
+      {
+        "faq_question": "Are there known issues with specific hosting providers?",
+        "faq_answer": "Yes, the developer has documented issues with Hostinger that can block starter template imports [23] and users have reported editor rendering problems on Azure hosting [18].",
+        "faq_category": "general",
+        "faq_source_ids": "18,23"
+      }
+    ],
+    "faq_generation_note": "Generated from recurring community pain points and common user questions."
+  },
+  "human_summary": {
+    "summary_paragraphs": [
+      "<!-- wp:paragraph -->\n<p>Kadence is a modern, powerful WordPress theme that has gained significant popularity for its extensive customization options and a remarkably capable free version. It appeals strongly to developers and agencies who can leverage its advanced features, such as the best-in-class header and footer builder, to create sophisticated and visually appealing websites. When configured correctly, the theme is also capable of delivering excellent performance, making it a versatile tool for a wide range of projects.</p>\n<!-- /wp:paragraph -->",
+      "<!-- wp:paragraph -->\n<p>However, the theme's power and flexibility come with significant trade-offs, primarily concerning stability and ease of use. There is a consistent pattern of theme and plugin updates introducing breaking changes, ranging from visual glitches to fatal errors that can bring a site offline. Furthermore, Kadence suffers from severe, well-documented incompatibilities with major plugins, most notably critical errors with WPML and memory exhaustion issues with WooCommerce, which pose a serious risk for multilingual and e-commerce sites.</p>\n<!-- /wp:paragraph -->",
+      "<!-- wp:paragraph -->\n<p>Many of the most severe reported issues, such as the fatal errors with multilingual plugins, stem from the companion Kadence Blocks plugin rather than the theme itself. However, since the theme and blocks are designed as an integrated system, users will likely experience these issues as a single product problem. This ecosystem-wide instability, combined with a steep learning curve, makes Kadence a challenging choice for beginners or for mission-critical projects that demand unwavering reliability.</p>\n<!-- /wp:paragraph -->"
+    ],
+    "summary_recommendation": "Kadence is recommended for experienced WordPress developers and agencies who can manage its complexity and mitigate the risks associated with updates and plugin conflicts. It is not ideal for beginners or for mission-critical sites that require maximum stability out of the box.",
+    "summary_ideal_for": [
+      "Developers and agencies",
+      "Performance-focused websites",
+      "Users needing a powerful free theme"
+    ],
+    "summary_not_for": [
+      "Beginners or non-technical users",
+      "Multilingual sites using WPML",
+      "Low-resource hosting environments"
+    ],
+    "summary_author_note": ""
+  },
+  "bundled_plugins": [
+    {
+      "plugin_name": "Kadence Blocks",
+      "plugin_category": "other",
+      "plugin_value": 0,
+      "license_type": "basic",
+      "plugin_functionality": "Provides a suite of custom Gutenberg blocks to extend the core editor functionality."
+    },
+    {
+      "plugin_name": "Kadence Starter Templates",
+      "plugin_category": "other",
+      "plugin_value": 0,
+      "license_type": "basic",
+      "plugin_functionality": "Allows users to import pre-built website designs to accelerate the development process."
+    },
+    {
+      "plugin_name": "Kadence WooCommerce Email Designer",
+      "plugin_category": "ecommerce",
+      "plugin_value": 0,
+      "license_type": "basic",
+      "plugin_functionality": "Provides tools to customize the default WooCommerce email templates."
+    }
+  ],
+  "demo_gallery": [],
+  "sources_methodology": {
+    "methodology_note": "This analysis combines scraped data from official sources with a manual review of 31 community discussions and professional reviews to identify recurring user-reported issues and praise points.",
+    "analysis_date": "2026-02-26",
+    "data_timeframe": "Last 12 months",
+    "confidence_statement": "Confidence is high. The findings are supported by multiple independent sources, including official developer documentation acknowledging some of the key issues.",
+    "sources": [
+      {
+        "source_id": "[1]",
+        "source_name": "WordPress.org Support",
+        "source_url": "https://wordpress.org/support/topic/kadence-blocks-triggers-fatal-error-on-wpml-theme-plugin-localization-page/",
+        "source_type": "forum",
+        "source_date": "2024-10"
+      },
+      {
+        "source_id": "[2]",
+        "source_name": "WPML Support Forum",
+        "source_url": "https://wpml.org/forums/topic/kadence-blocks-plugin-incompatible-with-wpml-triggers-fatal-error-on-wpml-theme-plugin-localizati/",
+        "source_type": "forum",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[3]",
+        "source_name": "WPML Support Forum",
+        "source_url": "https://wpml.org/forums/topic/choice-of-acf-field-not-being-translated/",
+        "source_type": "forum",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[4]",
+        "source_name": "WPML Errata",
+        "source_url": "https://wpml.org/errata/kadence-blocks-new-blocks-are-not-compatible-yet/",
+        "source_type": "documentation",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[5]",
+        "source_name": "Reddit r/Wordpress",
+        "source_url": "https://www.reddit.com/r/Wordpress/comments/1co6ac0/woocommerce_breaking_every_theme_i_try_wth_am_i/",
+        "source_type": "social",
+        "source_date": "2024-05"
+      },
+      {
+        "source_id": "[6]",
+        "source_name": "WordPress.org Support",
+        "source_url": "https://wordpress.org/support/topic/memory-exhaustion-with-event-tickets-on-latest-version-6-13-2-1/",
+        "source_type": "forum",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[7]",
+        "source_name": "WordPress.org Support",
+        "source_url": "https://wordpress.org/support/topic/kadence-conflicts-with-elementor-pro/",
+        "source_type": "forum",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[8]",
+        "source_name": "Reddit r/Wordpress",
+        "source_url": "https://www.reddit.com/r/Wordpress/comments/xoffpg/what_are_your_thoughts_on_kadence_theme/",
+        "source_type": "social",
+        "source_date": "2022-09"
+      },
+      {
+        "source_id": "[9]",
+        "source_name": "BlogAid",
+        "source_url": "https://blogaid.net/theme-speed-tests-astra-kadence-genesis-generatepress-deep-case-study/",
+        "source_type": "review_site",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[10]",
+        "source_name": "WordPress.org Support",
+        "source_url": "https://wordpress.org/support/topic/core-web-vitals-failing-on-mobile/",
+        "source_type": "forum",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[11]",
+        "source_name": "KadenceWP Help Center",
+        "source_url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/getting-started-with-kadence-performance/",
+        "source_type": "documentation",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[12]",
+        "source_name": "Reddit r/Kadence",
+        "source_url": "https://www.reddit.com/r/Kadence/comments/1laszkk/site_down_critical_error_from_kadence_theme/",
+        "source_type": "social",
+        "source_date": "2025-06"
+      },
+      {
+        "source_id": "[13]",
+        "source_name": "KadenceWP Support Forums",
+        "source_url": "https://www.kadencewp.com/support-forums/topic/page-builder-and-accordions-broken-after-wp-update/",
+        "source_type": "forum",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[14]",
+        "source_name": "Kadence Blocks Changelog",
+        "source_url": "https://www.kadencewp.com/kadence-blocks/changelog/",
+        "source_type": "changelog",
+        "source_date": "2024-12"
+      },
+      {
+        "source_id": "[15]",
+        "source_name": "KadenceWP Support Forums",
+        "source_url": "https://www.kadencewp.com/support-forums/topic/advanced-text-background-padding-is-no-longer-being-applied-since-the-6-9-update/",
+        "source_type": "forum",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[16]",
+        "source_name": "Reddit r/Wordpress",
+        "source_url": "https://www.reddit.com/r/Wordpress/comments/1gulfex/i_completely_dont_understand_why_wp_devs_make/",
+        "source_type": "social",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[17]",
+        "source_name": "KadenceWP Help Center",
+        "source_url": "https://www.kadencewp.com/help-center/docs/kadence-theme/troubleshooting-white-blank-screens-in-the-editor-or-customizer/",
+        "source_type": "documentation",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[18]",
+        "source_name": "Reddit r/Wordpress",
+        "source_url": "https://www.reddit.com/r/Wordpress/comments/1hfbsln/issues_with_using_kadence_and_startup_templates/",
+        "source_type": "social",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[19]",
+        "source_name": "WordPress.org Support",
+        "source_url": "https://wordpress.org/support/topic/accordion-block-not-working-with-allowed_block_types_all-filter/",
+        "source_type": "forum",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[20]",
+        "source_name": "KadenceWP Help Center",
+        "source_url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/kadence-blocks-errors-when-script_debug-is-enabled/",
+        "source_type": "documentation",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[21]",
+        "source_name": "Planetshine Review",
+        "source_url": "https://planetshine.net/is-kadence-a-good-wordpress-theme-detailed-review-pros-cons-features-and-user-feedback/",
+        "source_type": "review_site",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[22]",
+        "source_name": "Webidextrous Review",
+        "source_url": "https://webidextrous.com/kadence-wordpress-theme-a-comprehensive-2025-review/",
+        "source_type": "review_site",
+        "source_date": "2025-XX"
+      },
+      {
+        "source_id": "[23]",
+        "source_name": "KadenceWP Help Center",
+        "source_url": "https://www.kadencewp.com/help-center/docs/kadence-theme/fix-starter-template-import-problems-when-using-hostinger-with-kadence/",
+        "source_type": "documentation",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[24]",
+        "source_name": "WordPress.org Plugins",
+        "source_url": "https://wordpress.org/plugins/kadence-starter-templates/",
+        "source_type": "official",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[25]",
+        "source_name": "KadenceWP Help Center",
+        "source_url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/quick-start-guide-for-plus-and-ultimate-plan-members/",
+        "source_type": "documentation",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[26]",
+        "source_name": "KadenceWP Support Forums",
+        "source_url": "https://www.kadencewp.com/support-forums/topic/cant-add-or-edit-page/",
+        "source_type": "forum",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[27]",
+        "source_name": "KadenceWP Support Forums",
+        "source_url": "https://www.kadencewp.com/support-forums/topic/kadence-theme-info-box-issues-on-my-site-help-me/",
+        "source_type": "forum",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[45]",
+        "source_name": "DIY DREAMSITE Review",
+        "source_url": "https://diydreamsite.com/kadence-theme-review/",
+        "source_type": "review_site",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[48]",
+        "source_name": "ThemeIsle Review",
+        "source_url": "https://themeisle.com/blog/kadence-theme-review/",
+        "source_type": "review_site",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[56]",
+        "source_name": "WPKube Review",
+        "source_url": "https://www.wpkube.com/kadence-theme-review/",
+        "source_type": "review_site",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[77]",
+        "source_name": "WordPress.org Support",
+        "source_url": "https://wordpress.org/support/topic/white-screen-when-editing-fatal-error/",
+        "source_type": "forum",
+        "source_date": "date-unknown"
+      }
+    ]
+  },
+  "search_profile": "Kadence|perf:good(73mob,89desk)|price:free|handoff:5/complex|ideal:developers-and-agencies,performance-focused-websites,users-needing-a-powerful-free-theme|avoid:beginners-or-non-technical-users,multilingual-sites-using-wpml,low-resource-hosting-environments|tags:elementor:partial,wordpress-org,classic-theme"
+}

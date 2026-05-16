@@ -1,0 +1,600 @@
+{
+  "quick_overview": {
+    "quick_verdict": "Uncode is a visually impressive theme with a vast library of demos and wireframes, but it suffers from significant technical issues. Ten of the twelve reported issues affect the theme directly, including major performance problems, risky updates that can cause data loss, and long-standing compatibility bugs with WooCommerce and WPML.",
+    "quick_pros": [
+      {
+        "pro_text": "Pixel-perfect demo layouts"
+      },
+      {
+        "pro_text": "Extensive wireframe library"
+      },
+      {
+        "pro_text": "Active development cycle"
+      }
+    ],
+    "quick_cons": [
+      {
+        "con_text": "Poor out-of-the-box performance"
+      },
+      {
+        "con_text": "Risky updates can break sites"
+      },
+      {
+        "con_text": "Major plugin compatibility bugs"
+      }
+    ]
+  },
+  "theme_basic": {
+    "theme_author": "undsgn",
+    "theme_version": "2.9.2",
+    "release_date": "2015-11-04",
+    "last_update": "2026-02-10",
+    "code_quality": "good",
+    "theme_tagline": "Creative & WooCommerce WordPress Theme",
+    "sales_count": "115400",
+    "distribution_model": "themeforest",
+    "demo_url": "https://undsgn.com/uncode/"
+  },
+  "performance_metrics": {
+    "pagespeed_mobile": 53,
+    "pagespeed_desktop": 41,
+    "lcp_mobile": 3.09,
+    "lcp_desktop": 2.71,
+    "cls_mobile": 0.01,
+    "cls_desktop": 0.02,
+    "test_url": "https://undsgn.com/uncode/homepages/creative-lab/",
+    "test_date": "2026-02-27",
+    "pagespeed_link": "",
+    "performance_tier": "needs_work",
+    "performance_interpretation": "The theme's official demo scored 53/100 on mobile PageSpeed Insights, which is in the 'needs work' tier. The mobile Largest Contentful Paint was 3.09 seconds, which is considered poor and will negatively impact Core Web Vitals."
+  },
+  "theme_pricing": {
+    "license_type": "standard_commercial",
+    "pricing_model": "one_time_purchase",
+    "base_price": 59,
+    "support_period_included": 6,
+    "support_renewal_cost": 0,
+    "update_policy": "support_period_updates",
+    "money_back_guarantee": 0,
+    "pricing_tiers": [
+      {
+        "tier_name": "Regular License",
+        "tier_price": 59,
+        "tier_description": "Single site, end users not charged"
+      },
+      {
+        "tier_name": "Extended License",
+        "tier_price": 2950,
+        "tier_description": "Single site, end users can be charged"
+      }
+    ]
+  },
+  "theme_ratings": {
+    "popularity_trend": "stable",
+    "external_ratings": [
+      {
+        "rating_source": "ThemeForest",
+        "rating_score": 4.89,
+        "rating_count": 3400,
+        "rating_url": "https://themeforest.net/item/uncode-creative-multiuse-wordpress-theme/reviews/13373220"
+      }
+    ]
+  },
+  "theme_technical": {
+    "min_wp_version": "5.0",
+    "min_php_version": "7.4",
+    "wp_compatibility": "6.8",
+    "last_verification": "2026-02-27",
+    "activity_status": "active"
+  },
+  "handoff_difficulty": {
+    "handoff_score": 5,
+    "handoff_panel_complexity": "complex",
+    "handoff_docs_quality": "good",
+    "handoff_learning_curve": "days",
+    "handoff_recommendation": "Uncode is best suited for agencies or developers who can manage the site's complexity post-launch, as handing it off to a client with limited WordPress experience will likely require extensive training and support.",
+    "handoff_confidence": "high",
+    "handoff_sources_count": 2,
+    "handoff_verdict_safe": "This theme is a safe choice if your team is technically proficient with the WPBakery page builder and comfortable managing a theme with a high number of nested options and settings.",
+    "handoff_verdict_caution": "You should be cautious if you are building a site for a non-technical client who will need to make content updates themselves, as the WPBakery interface can be confusing for beginners [11].",
+    "handoff_verdict_avoid": "Avoid this theme if the end-user requires a simple, intuitive, drag-and-drop editing experience for site management, as the backend complexity is a frequent point of friction for those unfamiliar with WPBakery's structure.",
+    "handoff_alternative_themes": "Avada, Enfold"
+  },
+  "scenario_performance": {
+    "perf_confidence": "high",
+    "perf_sources_count": 5,
+    "perf_verdict_safe": "",
+    "perf_verdict_caution": "Use this theme with caution if you expect good performance out-of-the-box, as community reviews and performance tests indicate the theme is slow without significant manual optimization efforts [1].",
+    "perf_verdict_avoid": "Avoid Uncode if your project has strict performance requirements or you lack the technical expertise for advanced optimization, as the theme's mobile PageSpeed score of 53 and poor LCP make it a poor choice for speed-critical websites.",
+    "perf_code_observation": "The theme's official demo scored a 53/100 on mobile PageSpeed Insights, which is in the 'needs work' tier, when tested on 2026-02-27. The mobile Largest Contentful Paint was 3.09 seconds, which is considered poor and will negatively impact Core Web Vitals.",
+    "perf_recommendation": "Users must budget significant time for performance tuning. The theme's reliance on heavy assets and complex structures requires a robust optimization plan, and even the author provides extensive documentation on performance settings, acknowledging the need for it [8].",
+    "perf_alternative_themes": "Kadence, Blocksy, GeneratePress"
+  },
+  "scenario_updates": {
+    "updates_confidence": "high",
+    "updates_sources_count": 4,
+    "updates_verdict_safe": "The theme is safe to update only if you have a robust staging and backup process in place and are comfortable troubleshooting potential issues before deploying updates to a live environment.",
+    "updates_verdict_caution": "Proceed with caution if you manage a live site where downtime is critical, as user reports indicate that theme updates have broken core functionality like mobile navigation and WooCommerce AJAX filters [8, 4].",
+    "updates_verdict_avoid": "Avoid this theme if you cannot risk data loss during updates, as the developer's own documentation warns that low server memory can cause theme options to be completely wiped out during the update process [10].",
+    "updates_recommendation": "Never update Uncode directly on a production site. Always use a staging environment to test for broken functionality, and ensure server settings for PHP memory limit and max input vars meet or exceed the developer's recommendations to prevent data loss.",
+    "updates_alternative_themes": "Themes from the official WordPress.org repository, which undergo stricter review processes."
+  },
+  "plugin_compatibility_enhanced": {
+    "compat_total_tested": 4,
+    "compat_full_compatible": 0,
+    "compat_issues_found": 4,
+    "compat_confidence": "high",
+    "compat_sources_count": 5,
+    "compat_verdict_safe": "This theme is a safe choice if your project primarily uses the bundled WPBakery builder and does not require multilingual functionality on a large scale or compatibility with the Elementor Pro theme builder.",
+    "compat_verdict_caution": "You should be cautious if you plan to build a WooCommerce store, as there are long-standing, unresolved bugs affecting product galleries on the Safari browser and issues with AJAX filters breaking after updates [3, 4].",
+    "compat_verdict_avoid": "Avoid Uncode if your project requires either the Elementor Pro Theme Builder, which is fundamentally incompatible and causes fatal errors, or the WPML plugin for a large site due to officially documented performance degradation [1, 7].",
+    "compat_recommendation": "",
+    "compat_alternative_themes": "",
+    "plugin_compatibility_list": [
+      {
+        "plugin": "Elementor",
+        "plugin_category": "page_builder",
+        "compatibility_status": "none",
+        "compatibility_notes": "The theme is fundamentally incompatible with Elementor Pro's Theme Builder functionality, with multiple user reports of 500 errors when it is active.",
+        "user_issues": [
+          "[1]"
+        ]
+      },
+      {
+        "plugin": "WooCommerce",
+        "plugin_category": "ecommerce",
+        "compatibility_status": "limited",
+        "compatibility_notes": "The theme suffers from a multi-year bug causing product galleries to display incorrectly on the Safari browser, and AJAX filters have been reported to break after theme updates.",
+        "user_issues": [
+          "[3]",
+          "[4]"
+        ]
+      },
+      {
+        "plugin": "WPML",
+        "plugin_category": "multilingual",
+        "compatibility_status": "limited",
+        "compatibility_notes": "WPML's official errata page documents that Uncode can cause severe database query load and performance issues on large, multilingual websites.",
+        "user_issues": [
+          "[7]"
+        ]
+      },
+      {
+        "plugin": "Wordfence",
+        "plugin_category": "security",
+        "compatibility_status": "partial",
+        "compatibility_notes": "The theme is known to generate a false positive security alert in Wordfence for a core file, which can cause unnecessary alarm for users.",
+        "user_issues": [
+          "[14]"
+        ]
+      }
+    ]
+  },
+  "community_pain_points": {
+    "community_total_discussions": 12,
+    "community_analysis_date": "2026-02-27",
+    "community_timeframe": "Last 6 months",
+    "community_methodology_note": "",
+    "community_pain_points": [
+      {
+        "category": "plugin_compat",
+        "sentiment": "negative",
+        "source": "Themeora [1]",
+        "source_url": "https://themeora.com/uncode-theme-review/",
+        "severity": "major",
+        "frequency": "frequent",
+        "title": "Fundamentally incompatible with Elementor Pro Theme Builder (historical — unconfirmed current)",
+        "description": "Uncode is fundamentally incompatible with Elementor Pro's advanced features. Users report 500 errors when attempting to use Elementor Theme Builder for header/footer customization.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "theme",
+        "date_reported": "2024-05"
+      },
+      {
+        "category": "plugin_compat",
+        "sentiment": "negative",
+        "source": "WPML Official Errata [7]",
+        "source_url": "https://wpml.org/errata/uncode-theme-performance-issues-due-to-a-high-number-of-database-requests/",
+        "severity": "major",
+        "frequency": "common",
+        "title": "Causes severe database performance issues on large sites using WPML (historical — unconfirmed current)",
+        "description": "If you are using the Uncode theme with WPML on a large website with numerous pages, you may experience performance issues related to a significant number of database queries.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "ecosystem",
+        "date_reported": "2023-03"
+      },
+      {
+        "category": "updates",
+        "sentiment": "negative",
+        "source": "Undsgn Support [8]",
+        "source_url": "https://support.undsgn.com/hc/en-us/articles/4407895041553-Performance-Settings",
+        "severity": "critical",
+        "frequency": "occasional",
+        "title": "Updates can break core functionality like mobile navigation",
+        "description": "A user reported that a theme update completely broke their website's navigation, expressing frustration with the lack of immediate support for such a critical issue.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "theme",
+        "date_reported": "date-unknown"
+      },
+      {
+        "category": "plugin_compat",
+        "sentiment": "negative",
+        "source": "Undsgn Support [3]",
+        "source_url": "https://support.undsgn.com/hc/en-us/articles/115004168269-Optimise-for-speed",
+        "severity": "major",
+        "frequency": "common",
+        "title": "Long-standing WooCommerce product gallery bug on Safari browser",
+        "description": "For over three years, users have reported a persistent bug where the WooCommerce product grid displays incorrectly on the Safari browser, with product images stacking vertically instead of appearing in a grid.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "theme",
+        "date_reported": "date-unknown"
+      },
+      {
+        "category": "performance",
+        "sentiment": "negative",
+        "source": "Themeora [1]",
+        "source_url": "https://themeora.com/uncode-theme-review/",
+        "severity": "moderate",
+        "frequency": "frequent",
+        "title": "Poor out-of-the-box performance requires significant optimization (historical — unconfirmed current)",
+        "description": "Reviews and tests indicate that the Uncode theme is not fast out of the box, with one GTmetrix test scoring it at 55%, requiring a lot of time spent on optimization to achieve good speeds.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "theme",
+        "date_reported": "2024-05"
+      },
+      {
+        "category": "updates",
+        "sentiment": "negative",
+        "source": "Undsgn Support [10]",
+        "source_url": "https://support.undsgn.com/hc/en-us/articles/115005675389-Theme-Update-Troubleshoot",
+        "severity": "major",
+        "frequency": "common",
+        "title": "Complex update procedure carries risk of theme option data loss",
+        "description": "The theme's update process is risky, as low server settings for PHP memory limits or Max Input Vars can cause all theme options to be reset, resulting in data loss without an automatic recovery method.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "theme",
+        "date_reported": "date-unknown"
+      },
+      {
+        "category": "support",
+        "sentiment": "negative",
+        "source": "Undsgn Support [8]",
+        "source_url": "https://support.undsgn.com/hc/en-us/articles/4407895041553-Performance-Settings",
+        "severity": "major",
+        "frequency": "occasional",
+        "title": "Critical bugs can remain unresolved for multiple years",
+        "description": "Users have expressed frustration that critical, long-standing issues, such as the three-year-old WooCommerce image gallery bug, remain unresolved across multiple theme and WordPress updates.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "theme",
+        "date_reported": "date-unknown"
+      },
+      {
+        "category": "plugin_compat",
+        "sentiment": "negative",
+        "source": "WPHive [4]",
+        "source_url": "https://wphive.com/reviews/uncode-wordpress-theme-review/",
+        "severity": "moderate",
+        "frequency": "occasional",
+        "title": "WooCommerce AJAX filters break after theme updates (historical — unconfirmed current)",
+        "description": "Users report that WooCommerce AJAX filters for product categories and tags, which were previously working, disappeared from the shop page after a recent theme update.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "theme",
+        "date_reported": "2024-05"
+      },
+      {
+        "category": "handoff",
+        "sentiment": "negative",
+        "source": "Uncode Themes [11]",
+        "source_url": "https://uncodethemes.com/optimize-wordpress-speed-website-speed/",
+        "severity": "minor",
+        "frequency": "frequent",
+        "title": "Admin interface built on WPBakery is complex for non-technical clients (historical — unconfirmed current)",
+        "description": "The WPBakery-based admin panel is considered complex for non-technical clients, as it assumes intermediate WordPress knowledge and lacks the visual simplicity of editors like Elementor.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "theme",
+        "date_reported": "2024-05"
+      },
+      {
+        "category": "cost",
+        "sentiment": "negative",
+        "source": "Uncode Themes [13]",
+        "source_url": "https://uncodethemes.com/theme-support-policy-by-uncode-theme/",
+        "severity": "moderate",
+        "frequency": "frequent",
+        "title": "Support expires after 6-12 months and requires paid renewal for continued access",
+        "description": "After the initial support period expires, users lose access to the official help center and must pay for a renewal, being directed to unpaid community forums otherwise.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "ecosystem",
+        "date_reported": "date-unknown"
+      },
+      {
+        "category": "updates",
+        "sentiment": "negative",
+        "source": "ThemeForest Comments [9]",
+        "source_url": "https://themeforest.net/item/uncode-creative-multiuse-wordpress-theme/13373220/comments",
+        "severity": "minor",
+        "frequency": "occasional",
+        "title": "Frontend editor can become unresponsive after updates (historical — unconfirmed current)",
+        "description": "Following an update, a user reported that the content block editor became unresponsive in Chrome and Edge browsers, specifically affecting the editing of product page content.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "theme",
+        "date_reported": "2024-06"
+      },
+      {
+        "category": "general",
+        "sentiment": "negative",
+        "source": "Undsgn Support [14]",
+        "source_url": "https://support.undsgn.com/hc/en-us/articles/14741976929693-Wordfence-false-positive",
+        "severity": "minor",
+        "frequency": "common",
+        "title": "Generates a Wordfence false positive, causing unnecessary security alerts",
+        "description": "The theme includes a file (init.php) that is flagged by Wordfence as suspicious malware, but the developer confirms this is a false positive caused by code intended to prevent unauthorized modifications.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "theme",
+        "date_reported": "date-unknown"
+      }
+    ],
+    "community_praise_stats": [
+      {
+        "scope": "theme",
+        "category": "development",
+        "sentiment": "positive",
+        "positive_aspect": "High-quality, pixel-perfect pre-built demo layouts",
+        "strength": "The theme excels in design capabilities, with 'Pixel-perfect demos with 100+ pre-built layouts'.",
+        "title": "Extensive Library of High-Quality Demo Layouts",
+        "description": "Uncode is praised for its extensive collection of over 100 pixel-perfect, pre-built demo layouts, which allows users to quickly set up professional-looking websites.",
+        "frequency": "frequent",
+        "percentage": 0,
+        "source": "Themeora [1]",
+        "source_url": "https://themeora.com/uncode-theme-review/"
+      },
+      {
+        "scope": "theme",
+        "category": "development",
+        "sentiment": "positive",
+        "positive_aspect": "Extensive library of wireframe templates for rapid building",
+        "strength": "A key strength is the '750+ wireframe templates for rapid page building', allowing for quick mockups and page construction.",
+        "title": "Vast Wireframe Library for Rapid Prototyping",
+        "description": "A significant advantage of Uncode is its library of over 750 wireframe templates, which enables developers and designers to rapidly build page structures and mockups.",
+        "frequency": "frequent",
+        "percentage": 0,
+        "source": "WPHive [4]",
+        "source_url": "https://wphive.com/reviews/uncode-wordpress-theme-review/"
+      },
+      {
+        "scope": "theme",
+        "category": "plugin_compat",
+        "sentiment": "positive",
+        "positive_aspect": "Dedicated and advanced features for WooCommerce integration",
+        "strength": "The theme provides dedicated features for WooCommerce, including a unique product gallery builder and advanced filter options (when functional).",
+        "title": "Advanced and Dedicated WooCommerce Integration",
+        "description": "The theme offers a deep integration with WooCommerce, providing unique features like a custom product gallery builder and advanced filtering options that enhance the e-commerce experience.",
+        "frequency": "common",
+        "percentage": 0,
+        "source": "Uncode Official Site [15]",
+        "source_url": "https://undsgn.com/uncode/woocommerce-theme/"
+      }
+    ]
+  },
+  "faq": {
+    "faq_items": [
+      {
+        "faq_question": "Is Uncode compatible with the Elementor Pro Theme Builder?",
+        "faq_answer": "No, Uncode is fundamentally incompatible with the Elementor Pro Theme Builder. Users report experiencing fatal 500 errors when attempting to use Elementor's header and footer building features with the theme activated [1].",
+        "faq_category": "compatibility",
+        "faq_source_ids": "1"
+      },
+      {
+        "faq_question": "What are the known performance issues with Uncode?",
+        "faq_answer": "Uncode has poor out-of-the-box performance, with tests showing low scores on GTmetrix and Google PageSpeed Insights [1]. It requires significant manual optimization, and when used with WPML on large sites, it can cause a high number of database queries that slow the site down dramatically [7].",
+        "faq_category": "performance",
+        "faq_source_ids": "1,7"
+      },
+      {
+        "faq_question": "Are there any documented compatibility problems between Uncode and WPML?",
+        "faq_answer": "Yes, WPML has an official errata page for Uncode, warning that using the two together on large websites can lead to severe performance degradation due to an excessive number of database requests generated by the theme [7].",
+        "faq_category": "compatibility",
+        "faq_source_ids": "7"
+      },
+      {
+        "faq_question": "What are the common issues when using Uncode with WooCommerce?",
+        "faq_answer": "There is a long-standing bug, reported for over three years, where product galleries display incorrectly as stacked blocks on the Safari browser [3]. Additionally, users have reported that WooCommerce's AJAX product filters can disappear or stop working after a theme update [4].",
+        "faq_category": "compatibility",
+        "faq_source_ids": "3,4"
+      },
+      {
+        "faq_question": "How difficult is the Uncode theme for a non-technical client to manage?",
+        "faq_answer": "Uncode is considered difficult for non-technical clients. It relies on the WPBakery page builder, which has a complex, hierarchical interface that assumes an intermediate level of WordPress knowledge, making it less intuitive than modern block-based or visual editors [11].",
+        "faq_category": "handoff",
+        "faq_source_ids": "11"
+      },
+      {
+        "faq_question": "What is the update process for Uncode, and are there risks involved?",
+        "faq_answer": "The update process carries significant risks. The developer's own documentation states that insufficient server resources (like low PHP memory) can cause all theme options to be wiped out during an update, leading to data loss [10]. Users also report that updates can break core site functionality, such as mobile navigation [8].",
+        "faq_category": "updates",
+        "faq_source_ids": "10,8"
+      },
+      {
+        "faq_question": "Why does Wordfence flag Uncode with a 'suspicious' file alert?",
+        "faq_answer": "Wordfence flags a file within Uncode (`/core/plugins_activation/init.php`) as suspicious because it contains code designed to prevent unauthorized modifications. This is a false positive; the code is intentional, but its structure triggers the security scanner's malware detection patterns [14].",
+        "faq_category": "general",
+        "faq_source_ids": "14"
+      },
+      {
+        "faq_question": "Does Uncode require a caching plugin to perform well?",
+        "faq_answer": "Yes, a caching plugin is essential for acceptable performance. The theme's own documentation and community feedback confirm that significant optimization, including caching, image compression, and other performance-tuning techniques, is required to achieve good loading speeds [8, 1].",
+        "faq_category": "performance",
+        "faq_source_ids": "8,1"
+      }
+    ],
+    "faq_generation_note": ""
+  },
+  "human_summary": {
+    "summary_paragraphs": [
+      "<!-- wp:paragraph -->\n<p>Uncode is a popular and feature-rich multipurpose theme from ThemeForest, celebrated for its extensive library of visually stunning pre-built demo sites and wireframe templates. Its pixel-perfect design and vast customization options make it an attractive choice for creative agencies, portfolio websites, and businesses looking to build a highly stylized online presence without starting from scratch.</p>\n<!-- /wp:paragraph -->",
+      "<!-- wp:paragraph -->\n<p>Despite its visual appeal, the theme is plagued by serious technical problems that potential buyers must consider. Users should expect poor out-of-the-box performance that requires extensive optimization to achieve acceptable loading speeds. The update process is particularly risky, with documented cases of breaking changes and even the potential for complete data loss of theme options on servers with insufficient memory. Furthermore, major compatibility issues with popular plugins like Elementor Pro, WPML, and WooCommerce (specifically on the Safari browser) are long-standing and can be deal-breakers for many projects.</p>\n<!-- /wp:paragraph -->",
+      "<!-- wp:paragraph -->\n<p>Ultimately, Uncode is best suited for experienced developers who can navigate its complex WPBakery-based backend, implement necessary performance fixes, and manage a rigorous staging and backup protocol for updates. Non-technical users or those building projects with strict performance or plugin compatibility requirements should approach with extreme caution or consider more stable, performance-oriented alternatives that offer a more reliable user experience.</p>\n<!-- /wp:paragraph -->"
+    ],
+    "summary_recommendation": "Ultimately, Uncode is best suited for experienced developers who can navigate its complex WPBakery-based backend, implement necessary performance fixes, and manage a rigorous staging and backup protocol for updates. Non-technical users or those building projects with strict performance or plugin compatibility requirements should approach with extreme caution or consider more stable, performance-oriented alternatives that offer a more reliable user experience.",
+    "summary_ideal_for": [
+      "Creative agencies",
+      "Portfolio websites",
+      "Experienced developers comfortable with WPBakery"
+    ],
+    "summary_not_for": [
+      "Beginners or non-technical clients",
+      "Projects with strict performance requirements",
+      "Sites requiring Elementor Pro or large-scale WPML integration"
+    ],
+    "summary_author_note": ""
+  },
+  "bundled_plugins": [
+    {
+      "plugin_name": "WPBakery Page Builder",
+      "plugin_category": "page_builder",
+      "plugin_value": 64,
+      "license_type": "bundled",
+      "plugin_functionality": "Primary page builder for creating and managing layouts and content."
+    },
+    {
+      "plugin_name": "Slider Revolution",
+      "plugin_category": "media",
+      "plugin_value": 109,
+      "license_type": "bundled",
+      "plugin_functionality": "Advanced slider and presentation creation tool."
+    },
+    {
+      "plugin_name": "LayerSlider",
+      "plugin_category": "media",
+      "plugin_value": 25,
+      "license_type": "bundled",
+      "plugin_functionality": "Alternative premium slider plugin for creating animated sliders and carousels."
+    }
+  ],
+  "demo_gallery": [],
+  "sources_methodology": {
+    "methodology_note": "Analysis based on public user reviews, official documentation, and third-party performance tests.",
+    "analysis_date": "2026-02-27",
+    "data_timeframe": "Last 12 months",
+    "confidence_statement": "Confidence is high due to the volume of user feedback on ThemeForest and specific, documented issues from plugin authors like WPML.",
+    "sources": [
+      {
+        "source_id": "[1]",
+        "source_name": "Themeora",
+        "source_url": "https://themeora.com/uncode-theme-review/",
+        "source_type": "review_site",
+        "source_date": "2024-05"
+      },
+      {
+        "source_id": "[2]",
+        "source_name": "Reddit",
+        "source_url": "https://www.reddit.com/r/elementor/comments/y1kid5/can_i_make_my_theme_compatible_with_elementor_pro/",
+        "source_type": "social",
+        "source_date": "2022-10"
+      },
+      {
+        "source_id": "[3]",
+        "source_name": "Undsgn Support",
+        "source_url": "https://support.undsgn.com/hc/en-us/articles/115004168269-Optimise-for-speed",
+        "source_type": "documentation",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[4]",
+        "source_name": "WPHive",
+        "source_url": "https://wphive.com/reviews/uncode-wordpress-theme-review/",
+        "source_type": "review_site",
+        "source_date": "2024-05"
+      },
+      {
+        "source_id": "[5]",
+        "source_name": "Reddit",
+        "source_url": "https://www.reddit.com/r/Wordpress/comments/1d9mqks/uncode_woocommerce_singleproduct_display_messing/",
+        "source_type": "social",
+        "source_date": "2024-05"
+      },
+      {
+        "source_id": "[6]",
+        "source_name": "WordPress.org Forums",
+        "source_url": "https://wordpress.org/support/topic/ajax-filters-not-showing-on-shop-product-catalogue-uncode-theme/",
+        "source_type": "forum",
+        "source_date": "2024-05"
+      },
+      {
+        "source_id": "[7]",
+        "source_name": "WPML Official Errata",
+        "source_url": "https://wpml.org/errata/uncode-theme-performance-issues-due-to-a-high-number-of-database-requests/",
+        "source_type": "official",
+        "source_date": "2023-03"
+      },
+      {
+        "source_id": "[8]",
+        "source_name": "Undsgn Support",
+        "source_url": "https://support.undsgn.com/hc/en-us/articles/4407895041553-Performance-Settings",
+        "source_type": "documentation",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[9]",
+        "source_name": "ThemeForest Comments",
+        "source_url": "https://themeforest.net/item/uncode-creative-multiuse-wordpress-theme/13373220/comments",
+        "source_type": "marketplace",
+        "source_date": "2024-06"
+      },
+      {
+        "source_id": "[10]",
+        "source_name": "Undsgn Support",
+        "source_url": "https://support.undsgn.com/hc/en-us/articles/115005675389-Theme-Update-Troubleshoot",
+        "source_type": "documentation",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[11]",
+        "source_name": "Uncode Themes",
+        "source_url": "https://uncodethemes.com/optimize-wordpress-speed-website-speed/",
+        "source_type": "official",
+        "source_date": "2024-05"
+      },
+      {
+        "source_id": "[12]",
+        "source_name": "Reddit",
+        "source_url": "https://www.reddit.com/r/Wordpress/comments/1ew6y6b/handing_over_websites_to_clients_built_using_paid/",
+        "source_type": "social",
+        "source_date": "2024-05"
+      },
+      {
+        "source_id": "[13]",
+        "source_name": "Uncode Themes",
+        "source_url": "https://uncodethemes.com/theme-support-policy-by-uncode-theme/",
+        "source_type": "official",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[14]",
+        "source_name": "Undsgn Support",
+        "source_url": "https://support.undsgn.com/hc/en-us/articles/14741976929693-Wordfence-false-positive",
+        "source_type": "documentation",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[15]",
+        "source_name": "Uncode Official Site",
+        "source_url": "https://undsgn.com/uncode/woocommerce-theme/",
+        "source_type": "official",
+        "source_date": "date-unknown"
+      }
+    ]
+  },
+  "search_profile": "Uncode|perf:needs_work(53mob,41desk)|price:one-time-purchase($59)|handoff:5/complex|ideal:creative-agencies,portfolio-websites,experienced-developers-comfortable-with-wpbakery|avoid:beginners-or-non-technical-clients,projects-with-strict-performance-requirements,sites-requiring-elementor-pro-or-large-scale-wpml-integration|tags:elementor:incompatible,wpbakery,themeforest,classic-theme,security:major-historical,100k+installs"
+}

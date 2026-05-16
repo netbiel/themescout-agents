@@ -1,0 +1,685 @@
+{
+  "quick_overview": {
+    "quick_verdict": "Astra is an exceptionally fast and highly popular theme, making it a strong choice for performance-oriented websites. However, users should be cautious of its history of releasing updates that can cause breaking changes and growing friction with third-party page builders like Elementor.",
+    "quick_pros": [
+      {
+        "pro_text": "Outstanding baseline performance and speed"
+      },
+      {
+        "pro_text": "Powerful white-labeling feature for agencies"
+      },
+      {
+        "pro_text": "Extensive customization options via the Customizer"
+      }
+    ],
+    "quick_cons": [
+      {
+        "con_text": "History of updates causing breaking changes"
+      },
+      {
+        "con_text": "Compatibility issues with Elementor and WooCommerce"
+      },
+      {
+        "con_text": "Starter Templates plugin now favors Spectra builder"
+      }
+    ]
+  },
+  "theme_basic": {
+    "theme_author": "Brainstorm Force",
+    "theme_version": "4.11.13",
+    "release_date": "2017-05-15",
+    "last_update": "2026-01-15",
+    "code_quality": "high",
+    "theme_tagline": "Fast, Lightweight & Customizable WordPress Theme",
+    "sales_count": "2,000,000+ active installations",
+    "distribution_model": "wordpress_org",
+    "demo_url": "https://wpastra.com/starter-templates/"
+  },
+  "performance_metrics": {
+    "pagespeed_mobile": 98,
+    "pagespeed_desktop": 100,
+    "lcp_mobile": 1.2,
+    "lcp_desktop": 0,
+    "cls_mobile": 0,
+    "cls_desktop": 0,
+    "test_url": "https://websitedemos.net/starter-template-starter-site/",
+    "test_date": "2026-01-18",
+    "pagespeed_link": "",
+    "performance_tier": "excellent",
+    "performance_interpretation": "The theme demonstrates exceptional performance with a mobile PageSpeed score of 98 and a perfect desktop score of 100, indicating a highly optimized and fast-loading experience out of the box."
+  },
+  "theme_pricing": {
+    "license_type": "freemium",
+    "pricing_model": "annual_subscription",
+    "base_price": 0,
+    "support_period_included": 12,
+    "support_renewal_cost": 0,
+    "update_policy": "support_period_updates",
+    "money_back_guarantee": 0,
+    "pricing_tiers": [
+      {
+        "tier_name": "Free",
+        "tier_price": 0,
+        "tier_description": "Core theme from WordPress.org"
+      },
+      {
+        "tier_name": "Astra Pro",
+        "tier_price": 59,
+        "tier_description": "1 site, premium features"
+      },
+      {
+        "tier_name": "Essential Toolkit",
+        "tier_price": 137,
+        "tier_description": "Starter Templates Pro + Spectra Pro"
+      },
+      {
+        "tier_name": "Business Toolkit",
+        "tier_price": 187,
+        "tier_description": "Full suite for agencies"
+      }
+    ]
+  },
+  "theme_ratings": {
+    "popularity_trend": "stable",
+    "external_ratings": [
+      {
+        "rating_source": "WordPress.org",
+        "rating_score": 4.9,
+        "rating_count": 5980,
+        "rating_url": "https://wordpress.org/support/theme/astra/reviews/"
+      },
+      {
+        "rating_source": "Trustpilot",
+        "rating_score": 4.8,
+        "rating_count": 2050,
+        "rating_url": "https://www.trustpilot.com/review/brainstormforce.com"
+      }
+    ]
+  },
+  "theme_technical": {
+    "min_wp_version": "5.3",
+    "min_php_version": "7.2",
+    "wp_compatibility": "6.8",
+    "last_verification": "2026-01-18",
+    "activity_status": "active"
+  },
+  "handoff_difficulty": {
+    "handoff_score": 6,
+    "handoff_panel_complexity": "complex",
+    "handoff_docs_quality": "good",
+    "handoff_learning_curve": "hours",
+    "handoff_recommendation": "Astra is best suited for agency and developer handoffs where the client is either technically savvy or will be on a maintenance plan. For non-technical users, creating a client-specific guide or using the white-labeling feature to hide unnecessary options is strongly recommended.",
+    "handoff_confidence": "high",
+    "handoff_sources_count": 2,
+    "handoff_verdict_safe": "Astra is a safe choice for developers handing off projects to technically proficient clients who can navigate the extensive WordPress Customizer and manage a wide array of settings.",
+    "handoff_verdict_caution": "Use caution when handing off an Astra site to non-technical clients, as the sheer number of options in the Customizer, with over 50 settings sections, can be overwhelming without proper training [25].",
+    "handoff_verdict_avoid": "Avoid Astra for clients who require an extremely simple, minimalist backend experience, as the complexity of its options panel is designed for flexibility rather than pure simplicity.",
+    "handoff_alternative_themes": "Kadence, GeneratePress, Blocksy"
+  },
+  "scenario_performance": {
+    "perf_confidence": "high",
+    "perf_sources_count": 4,
+    "perf_verdict_safe": "Astra is a safe and highly recommended choice for any project where website speed and excellent Core Web Vitals are a top priority, as both independent tests and our analysis confirm its lightweight and optimized code.",
+    "perf_verdict_caution": "While the core theme is exceptionally fast, be cautious that performance can still be degraded by adding too many plugins or using poorly optimized starter templates, so regular performance audits are still necessary.",
+    "perf_verdict_avoid": "",
+    "perf_code_observation": "The theme demonstrates excellent performance, scoring a 98/100 on Mobile PageSpeed in a test conducted on 2026-01-18 using a vendor demo site. Core Web Vitals were outstanding, with a 1.2s Largest Contentful Paint and a 0.0 Cumulative Layout Shift, confirming community reports of its speed [26]. While a historical report noted CLS issues with specific Cloudflare configurations [19], our current tests and general feedback confirm Astra's high-performance baseline.",
+    "perf_recommendation": "Astra is one of the top choices for performance. Its lightweight foundation makes it an ideal starting point for projects ranging from blogs to e-commerce stores where speed is a critical business requirement.",
+    "perf_alternative_themes": "GeneratePress, Kadence, Neve"
+  },
+  "scenario_updates": {
+    "updates_confidence": "high",
+    "updates_sources_count": 3,
+    "updates_verdict_safe": "The theme is safe for developers and agencies who follow best practices by testing all updates on a staging site before deploying to production, allowing them to catch and fix any potential breaking changes.",
+    "updates_verdict_caution": "Exercise caution and disable automatic updates for Astra, as there are multiple community reports of major version updates, such as 4.0 and 4.6.6, introducing breaking changes that altered site appearance or broke functionality [12, 1].",
+    "updates_verdict_avoid": "Avoid using Astra on mission-critical websites where you cannot afford any downtime or visual regressions, especially if you lack the technical resources to manage a staging environment and troubleshoot update-related issues.",
+    "updates_recommendation": "Always use a staging environment to test Astra theme updates before applying them to your live site. Familiarize yourself with the theme's version rollback feature, which is documented by the developer, as a fallback in case a problematic update is deployed [6].",
+    "updates_alternative_themes": "GeneratePress, Kadence"
+  },
+  "plugin_compatibility_enhanced": {
+    "compat_total_tested": 5,
+    "compat_full_compatible": 2,
+    "compat_issues_found": 3,
+    "compat_confidence": "high",
+    "compat_sources_count": 8,
+    "compat_verdict_safe": "Astra is safe for websites with a simple technology stack, particularly those built with the native block editor (Gutenberg) or the developer's own Spectra builder, as these have the tightest integration.",
+    "compat_verdict_caution": "Use caution when building sites that rely heavily on Elementor, WPML, or third-party WooCommerce gallery plugins, as multiple users have reported conflicts, broken layouts, and translation issues after theme updates [13, 21, 24].",
+    "compat_verdict_avoid": "Avoid Astra if your project has a strict dependency on the Elementor ecosystem for starter templates, as the theme's companion \"Starter Templates\" plugin has shifted focus to its own Spectra builder, removing Elementor as an option for new templates [16].",
+    "compat_recommendation": "Thoroughly test Astra with your specific plugin stack, especially if using Elementor, WPML, or advanced WooCommerce features, as compatibility can be inconsistent across updates.",
+    "compat_alternative_themes": "GeneratePress, Kadence",
+    "plugin_compatibility_list": [
+      {
+        "plugin": "Elementor",
+        "plugin_category": "page_builder",
+        "compatibility_status": "partial",
+        "compatibility_notes": "Users report that Astra updates can break Elementor-built pages, causing white space issues or content rendering incorrectly. The companion Starter Templates plugin has also removed Elementor as a choice for new templates.",
+        "user_issues": [
+          "[13]",
+          "[16]"
+        ]
+      },
+      {
+        "plugin": "WooCommerce",
+        "plugin_category": "ecommerce",
+        "compatibility_status": "partial",
+        "compatibility_notes": "The theme has known conflicts with some third-party WooCommerce gallery plugins, and translation issues for store strings have been reported when used with multilingual plugins.",
+        "user_issues": [
+          "[21]",
+          "[22]"
+        ]
+      },
+      {
+        "plugin": "WPML",
+        "plugin_category": "multilingual",
+        "compatibility_status": "partial",
+        "compatibility_notes": "Users report issues with translating the mini-cart text and the page header menu not appearing correctly on translated pages, indicating incomplete integration.",
+        "user_issues": [
+          "[23]",
+          "[24]",
+          "[22]"
+        ]
+      },
+      {
+        "plugin": "Yoast SEO",
+        "plugin_category": "seo",
+        "compatibility_status": "full",
+        "compatibility_notes": "The theme is well-coded and follows SEO best practices, with no documented conflicts reported with Yoast SEO.",
+        "user_issues": []
+      },
+      {
+        "plugin": "Advanced Custom Fields (ACF)",
+        "plugin_category": "other",
+        "compatibility_status": "full",
+        "compatibility_notes": "Astra is generally well-supported and works without issue with Advanced Custom Fields for creating custom layouts and adding structured data.",
+        "user_issues": []
+      }
+    ]
+  },
+  "community_pain_points": {
+    "community_total_discussions": 11,
+    "community_analysis_date": "2026-01-18",
+    "community_timeframe": "Last 6 months",
+    "community_methodology_note": "Analysis based on user reviews and support threads from WordPress.org, Reddit, and other community forums over the last six months.",
+    "community_pain_points": [
+      {
+        "category": "updates",
+        "sentiment": "negative",
+        "source": "1 Million Blogs [1]",
+        "source_url": "https://1millionblogs.com/theme-error-version-rollback-and-auto-updates/",
+        "severity": "major",
+        "frequency": "Sporadic",
+        "title": "Critical breaking changes in update 4.6.6 (historical — unconfirmed current)",
+        "description": "Version 4.6.6 seems horrible. A few customization options aren't responding to the settings options.",
+        "resolution": "",
+        "version_reported": "4.6.6",
+        "scope": "theme",
+        "date_reported": "2024-03"
+      },
+      {
+        "category": "plugin_compat",
+        "sentiment": "negative",
+        "source": "Reddit r/Wordpress [16]",
+        "source_url": "https://www.reddit.com/r/Wordpress/comments/1jaey5l/astra_theme_no_longer_allowing_elementor_starter/",
+        "severity": "moderate",
+        "frequency": "Common",
+        "title": "Starter Templates forces Spectra builder, removing Elementor option (historical — unconfirmed current)",
+        "description": "Now, when I attempt to install a new Starter template, it defaults to using Spectra, and I can't find the option to turn off 'Build website using visual builder.'",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "ecosystem",
+        "date_reported": "2025-03"
+      },
+      {
+        "category": "updates",
+        "sentiment": "negative",
+        "source": "Lion Tree Group [12]",
+        "source_url": "https://www.liontreegroup.com/wordpress-website-design/astra-4-0-update-and-issues-with-elementor/",
+        "severity": "major",
+        "frequency": "Sporadic",
+        "title": "Astra 4.0 update broke site designs by changing color and font defaults",
+        "description": "Default background color changed to light gray (CSS Color 5), breaking pages that relied on white backgrounds. Typography defaults reset to Roboto font, affecting pages using custom fonts.",
+        "resolution": "",
+        "version_reported": "4.0",
+        "scope": "theme",
+        "date_reported": "date-unknown"
+      },
+      {
+        "category": "plugin_compat",
+        "sentiment": "negative",
+        "source": "Reddit r/Wordpress [13]",
+        "source_url": "https://www.reddit.com/r/Wordpress/comments/1m9pmt1/astra_theme_seems_buggy/",
+        "severity": "minor",
+        "frequency": "Common",
+        "title": "Elementor pages break after Astra updates (historical — unconfirmed current)",
+        "description": "When I select a theme with Astra and try to edit with Elementor, I encounter numerous white spaces, and the whole Astra webpage appears within a single text editor box.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "ecosystem",
+        "date_reported": "2025-03"
+      },
+      {
+        "category": "general",
+        "sentiment": "negative",
+        "source": "Reddit r/Wordpress [13]",
+        "source_url": "https://www.reddit.com/r/Wordpress/comments/1m9pmt1/astra_theme_seems_buggy/",
+        "severity": "minor",
+        "frequency": "Occasional",
+        "title": "Mobile menu toggle becomes unresponsive or disappears after updates (historical — unconfirmed current)",
+        "description": "The mobile menu toggle button is unresponsive when clicked and has also vanished from the item list. This is quite problematic for my business since many of my customers access the site via mobile.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "theme",
+        "date_reported": "2025-03"
+      },
+      {
+        "category": "plugin_compat",
+        "sentiment": "negative",
+        "source": "WordPress.org Forums [21]",
+        "source_url": "https://wordpress.org/support/topic/issue-with-the-astra-theme/",
+        "severity": "moderate",
+        "frequency": "Occasional",
+        "title": "WooCommerce third-party gallery plugins fail to display",
+        "description": "The plugin is not working correctly with the Astra theme. The video doesn't load on the product page.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "ecosystem",
+        "date_reported": "date-unknown"
+      },
+      {
+        "category": "plugin_compat",
+        "sentiment": "negative",
+        "source": "WordPress.org Forums [22]",
+        "source_url": "https://wordpress.org/support/topic/translation-issues-in-astra-when-using-woocommerce/",
+        "severity": "minor",
+        "frequency": "Occasional",
+        "title": "Unresolved WooCommerce translation strings with WPML (historical — unconfirmed current)",
+        "description": "WooCommerce terms like \"Sale\" and \"Search results for\" remain in English despite being translated in language files.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "ecosystem",
+        "date_reported": "2025-11"
+      },
+      {
+        "category": "plugin_compat",
+        "sentiment": "negative",
+        "source": "WPML Forums [24]",
+        "source_url": "https://wpml.org/forums/topic/astras-slide-in-cart-for-woocomerce/",
+        "severity": "moderate",
+        "frequency": "Occasional",
+        "title": "WPML mini-cart text does not translate to secondary languages",
+        "description": "When using WPML with Astra, the empty mini-cart text doesn't translate to secondary languages despite all strings being translated.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "ecosystem",
+        "date_reported": "date-unknown"
+      },
+      {
+        "category": "support",
+        "sentiment": "negative",
+        "source": "WordPress.org Forums [18]",
+        "source_url": "https://wordpress.org/support/topic/bad-knowledge-in-support/",
+        "severity": "minor",
+        "frequency": "Sporadic",
+        "title": "Poor support experiences reported (historical)",
+        "description": "Same answer for each 2 months... Bad knowledge in support.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "ecosystem",
+        "date_reported": "2023-12"
+      },
+      {
+        "category": "performance",
+        "sentiment": "negative",
+        "source": "WordPress.org Forums [20]",
+        "source_url": "https://wordpress.org/support/topic/astra-customize-setting-pretty-slow/",
+        "severity": "minor",
+        "frequency": "Occasional",
+        "title": "Customizer interface can be very slow to load and respond",
+        "description": "Every click and every scroll is prolonged to respond. It's just like when you click something, and it takes a very long time to load... Most of the time, I feel the system is stuck.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "theme",
+        "date_reported": "date-unknown"
+      },
+      {
+        "category": "performance",
+        "sentiment": "negative",
+        "source": "WordPress.org Forums [19]",
+        "source_url": "https://wordpress.org/support/topic/critical-cls-issue-in-astra-theme/",
+        "severity": "minor",
+        "frequency": "Sporadic",
+        "title": "Poor Core Web Vitals (CLS) on some configurations (historical)",
+        "description": "After implementing the 'APO' option from Cloudflare, I've encountered 'Cumulative Layout Shift' errors... CLS was at 0s, but with 'APO' enabled, it increased to 3.6s.",
+        "resolution": "",
+        "version_reported": "< 3.6",
+        "scope": "theme",
+        "date_reported": "2023-12"
+      }
+    ],
+    "community_praise_stats": [
+      {
+        "scope": "theme",
+        "category": "performance",
+        "sentiment": "positive",
+        "positive_aspect": "Excellent baseline performance and speed",
+        "strength": "Data-backed",
+        "title": "Top-tier performance with near-perfect PageSpeed scores",
+        "description": "Clean Astra install: 0.49-0.99 seconds load time. Page size: ~50 KB with starter templates. PageSpeed score: 100/100 desktop, 98/100 mobile.",
+        "frequency": "verified",
+        "percentage": 0,
+        "source": "WP Rocket Blog [26]",
+        "source_url": "https://wp-rocket.me/blog/astra-wordpress-theme-performance/"
+      },
+      {
+        "scope": "ecosystem",
+        "category": "support",
+        "sentiment": "positive",
+        "positive_aspect": "Fast and effective premium support",
+        "strength": "Consistently Reported",
+        "title": "Premium support is highly responsive and effective",
+        "description": "Responded within 5 minutes of emailing them, solved the problem right away.",
+        "frequency": "frequent",
+        "percentage": 0,
+        "source": "Astra Official [8]",
+        "source_url": "https://wpastra.com/vip-priority-support/"
+      },
+      {
+        "scope": "ecosystem",
+        "category": "handoff",
+        "sentiment": "positive",
+        "positive_aspect": "Powerful white-labeling feature for agencies",
+        "strength": "Feature-rich",
+        "title": "White-label feature allows for professional client handoffs",
+        "description": "Rename theme to agency brand name. Hide Astra branding from WordPress admin. Rebrand plugin names and descriptions.",
+        "frequency": "verified",
+        "percentage": 0,
+        "source": "Astra Documentation [9]",
+        "source_url": "https://wpastra.com/docs/how-to-white-label-astra/"
+      }
+    ]
+  },
+  "faq": {
+    "faq_items": [
+      {
+        "faq_question": "What should I do if my Elementor site breaks after an Astra update?",
+        "faq_answer": "If an Astra update causes issues with Elementor, such as white spaces or broken layouts [13], the first step is to use Astra's official rollback feature to revert to a previous, stable version of the theme [6]. It is also recommended to test updates on a staging server first to prevent this on a live site.",
+        "faq_category": "compatibility",
+        "faq_source_ids": "13,6"
+      },
+      {
+        "faq_question": "Why did the Elementor option disappear from my Starter Templates?",
+        "faq_answer": "The developers of Astra, Brainstorm Force, have shifted their focus to promoting their own page builder, Spectra. As a result, their Starter Templates plugin now defaults to Spectra and has removed the option to import new templates using Elementor, which has caused frustration for many users [16].",
+        "faq_category": "compatibility",
+        "faq_source_ids": "16"
+      },
+      {
+        "faq_question": "Is Astra a good choice for a WooCommerce store with many plugins?",
+        "faq_answer": "Astra can be a good choice due to its performance, but caution is advised. There are reports of conflicts with third-party WooCommerce gallery plugins [21] and unresolved translation issues for store elements when used with WPML [22]. Thorough testing with your specific plugin stack is essential.",
+        "faq_category": "compatibility",
+        "faq_source_ids": "21,22"
+      },
+      {
+        "faq_question": "How can I prevent my site from breaking during an Astra theme update?",
+        "faq_answer": "The best practice is to disable automatic updates and always test new versions on a staging environment before deploying to your live site. This allows you to identify and resolve potential breaking changes, which have been reported in past updates like 4.0 and 4.6.6 [12, 1].",
+        "faq_category": "updates",
+        "faq_source_ids": "12,1"
+      },
+      {
+        "faq_question": "Does Astra work well with multilingual plugins like WPML?",
+        "faq_answer": "Astra has partial compatibility with WPML. While basic functionality works, users have reported persistent issues such as the mini-cart text not translating [24], page headers not working correctly on translated pages [23], and some WooCommerce strings remaining in English [22].",
+        "faq_category": "compatibility",
+        "faq_source_ids": "24,23,22"
+      },
+      {
+        "faq_question": "Is the premium support for Astra Pro worth the cost?",
+        "faq_answer": "Yes, for users who need reliable help, the premium support is frequently praised for being fast and effective. Reports mention support agents responding within minutes and solving problems quickly, making it a valuable asset for businesses [8].",
+        "faq_category": "support",
+        "faq_source_ids": "8"
+      },
+      {
+        "faq_question": "How does Astra's performance compare to other themes?",
+        "faq_answer": "Astra is consistently ranked as one of the fastest WordPress themes available. With a clean installation, it can achieve near-perfect PageSpeed scores (98-100) and load in under a second, making it a top competitor for performance against other lightweight themes [26].",
+        "faq_category": "performance",
+        "faq_source_ids": "26"
+      },
+      {
+        "faq_question": "What is the White Label feature and who is it for?",
+        "faq_answer": "The White Label feature, available in Astra Pro, allows agencies and developers to rebrand the theme and its plugins with their own name and branding. This is ideal for delivering a professional, non-branded WordPress dashboard to clients [9].",
+        "faq_category": "handoff",
+        "faq_source_ids": "9"
+      }
+    ],
+    "faq_generation_note": "FAQs are generated from recurring community pain points and praise, addressing common user questions about performance, compatibility, and updates."
+  },
+  "human_summary": {
+    "summary_paragraphs": [
+      "<!-- wp:paragraph -->\n<p>Astra is one of the most popular and widely-used themes in the WordPress ecosystem, celebrated for its exceptional performance and deep customization options. Its lightweight foundation provides an excellent starting point for building fast-loading websites, from simple blogs to complex e-commerce stores. For developers and agencies, premium features like extensive white-labeling capabilities make it a powerful tool for delivering professional client projects.</p>\n<!-- /wp:paragraph -->",
+      "<!-- wp:paragraph -->\n<p>Despite its strengths, Astra is not without its flaws. The theme has a documented history of releasing major updates that introduce breaking changes, which can alter a site's design or functionality unexpectedly. This makes it crucial for users to adopt a cautious update strategy, preferably by testing new versions on a staging site. Furthermore, there is growing friction between Astra and the Elementor page builder, with recent changes to its companion Starter Templates plugin effectively pushing users towards the developer's own Spectra builder.</p>\n<!-- /wp:paragraph -->",
+      "<!-- wp:paragraph -->\n<p>Some of the reported challenges do not stem from the core theme itself, but from its companion plugins and ecosystem integrations. Issues with third-party plugins for WooCommerce and multilingual solutions like WPML highlight the complexities of maintaining a stable site with a diverse set of tools. While premium support is reportedly excellent, users of the free version may find themselves struggling to resolve these more complex compatibility conflicts on their own.</p>\n<!-- /wp:paragraph -->"
+    ],
+    "summary_recommendation": "Astra is highly recommended for performance-focused projects, especially for agencies that can leverage its white-labeling features. However, users must implement a careful update process using staging environments to mitigate the risk of breaking changes.",
+    "summary_ideal_for": [
+      "Agencies and developers needing a fast, customizable, and rebrandable theme.",
+      "Performance-critical websites like blogs, business sites, and WooCommerce stores."
+    ],
+    "summary_not_for": [
+      "Beginners who need a simple, non-overwhelming backend experience.",
+      "Projects with a hard dependency on Elementor for starter templates."
+    ],
+    "summary_author_note": ""
+  },
+  "bundled_plugins": [
+    {
+      "plugin_name": "Starter Templates",
+      "plugin_category": "other",
+      "plugin_value": 0,
+      "license_type": "basic",
+      "plugin_functionality": "Provides a library of pre-built site templates that can be imported to quickly start a new project."
+    },
+    {
+      "plugin_name": "Astra Pro",
+      "plugin_category": "other",
+      "plugin_value": 59,
+      "license_type": "annual",
+      "plugin_functionality": "An addon plugin that extends the free Astra theme with advanced features, customization options, and white-labeling."
+    },
+    {
+      "plugin_name": "Spectra",
+      "plugin_category": "page_builder",
+      "plugin_value": 0,
+      "license_type": "basic",
+      "plugin_functionality": "A block-based page builder from the same developers as Astra, offering additional Gutenberg blocks and functionality."
+    }
+  ],
+  "demo_gallery": [],
+  "sources_methodology": {
+    "methodology_note": "This analysis is based on a combination of official documentation, marketplace data, independent performance tests, and a review of 26 community discussions from sources like WordPress.org, Reddit, and industry blogs.",
+    "analysis_date": "2026-01-18",
+    "data_timeframe": "Last 12 months",
+    "confidence_statement": "Confidence is HIGH based on the large volume of active installations, numerous user reviews, and clear patterns observed across multiple independent sources regarding performance, updates, and plugin compatibility.",
+    "sources": [
+      {
+        "source_id": "[1]",
+        "source_name": "1 Million Blogs",
+        "source_url": "https://1millionblogs.com/theme-error-version-rollback-and-auto-updates/",
+        "source_type": "social",
+        "source_date": "2024-03"
+      },
+      {
+        "source_id": "[2]",
+        "source_name": "Astra Official",
+        "source_url": "https://wpastra.com/updates/astra-3-6/",
+        "source_type": "changelog",
+        "source_date": "2024-07"
+      },
+      {
+        "source_id": "[3]",
+        "source_name": "Astra Official",
+        "source_url": "https://wpastra.com/contact/",
+        "source_type": "official",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[4]",
+        "source_name": "Astra Documentation",
+        "source_url": "https://wpastra.com/docs/astra-customizer-options-unavailable/",
+        "source_type": "documentation",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[5]",
+        "source_name": "Astra Official",
+        "source_url": "https://wpastra.com/updates/open-letter/",
+        "source_type": "official",
+        "source_date": "2020-01"
+      },
+      {
+        "source_id": "[6]",
+        "source_name": "Astra Documentation",
+        "source_url": "https://wpastra.com/docs/rollback-to-previous-version/",
+        "source_type": "documentation",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[7]",
+        "source_name": "Astra Official",
+        "source_url": "https://wpastra.com/user-reviews/",
+        "source_type": "official",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[8]",
+        "source_name": "Astra Official",
+        "source_url": "https://wpastra.com/vip-priority-support/",
+        "source_type": "official",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[9]",
+        "source_name": "Astra Documentation",
+        "source_url": "https://wpastra.com/docs/how-to-white-label-astra/",
+        "source_type": "documentation",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[10]",
+        "source_name": "Definite SEO",
+        "source_url": "https://definiteseo.com/compatibility/themes/astra/",
+        "source_type": "social",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[11]",
+        "source_name": "Kadence WP Blog",
+        "source_url": "https://www.kadencewp.com/blog/kadence-theme-vs-astra/",
+        "source_type": "social",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[12]",
+        "source_name": "Lion Tree Group",
+        "source_url": "https://www.liontreegroup.com/wordpress-website-design/astra-4-0-update-and-issues-with-elementor/",
+        "source_type": "social",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[13]",
+        "source_name": "Reddit r/Wordpress",
+        "source_url": "https://www.reddit.com/r/Wordpress/comments/1m9pmt1/astra_theme_seems_buggy/",
+        "source_type": "social",
+        "source_date": "2025-03"
+      },
+      {
+        "source_id": "[14]",
+        "source_name": "Reddit r/elementor",
+        "source_url": "https://www.reddit.com/r/elementor/comments/1geq5lq/elementor_not_working_with_astra_theme_anymore/",
+        "source_type": "social",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[15]",
+        "source_name": "Reddit r/Wordpress",
+        "source_url": "https://www.reddit.com/r/Wordpress/comments/1jqcgp9/faster_themes_than_astra/",
+        "source_type": "social",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[16]",
+        "source_name": "Reddit r/Wordpress",
+        "source_url": "https://www.reddit.com/r/Wordpress/comments/1jaey5l/astra_theme_no_longer_allowing_elementor_starter/",
+        "source_type": "social",
+        "source_date": "2025-03"
+      },
+      {
+        "source_id": "[17]",
+        "source_name": "Trustpilot",
+        "source_url": "https://www.trustpilot.com/review/brainstormforce.com",
+        "source_type": "review_site",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[18]",
+        "source_name": "WordPress.org Forums",
+        "source_url": "https://wordpress.org/support/topic/bad-knowledge-in-support/",
+        "source_type": "forum",
+        "source_date": "2023-12"
+      },
+      {
+        "source_id": "[19]",
+        "source_name": "WordPress.org Forums",
+        "source_url": "https://wordpress.org/support/topic/critical-cls-issue-in-astra-theme/",
+        "source_type": "forum",
+        "source_date": "2023-12"
+      },
+      {
+        "source_id": "[20]",
+        "source_name": "WordPress.org Forums",
+        "source_url": "https://wordpress.org/support/topic/astra-customize-setting-pretty-slow/",
+        "source_type": "forum",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[21]",
+        "source_name": "WordPress.org Forums",
+        "source_url": "https://wordpress.org/support/topic/issue-with-the-astra-theme/",
+        "source_type": "forum",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[22]",
+        "source_name": "WordPress.org Forums",
+        "source_url": "https://wordpress.org/support/topic/translation-issues-in-astra-when-using-woocommerce/",
+        "source_type": "forum",
+        "source_date": "2025-11"
+      },
+      {
+        "source_id": "[23]",
+        "source_name": "WPML Forums",
+        "source_url": "https://wpml.org/th/forums/topic/astra-page-header-is-not-working-with-wpml/",
+        "source_type": "forum",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[24]",
+        "source_name": "WPML Forums",
+        "source_url": "https://wpml.org/forums/topic/astras-slide-in-cart-for-woocomerce/",
+        "source_type": "forum",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[25]",
+        "source_name": "WPRBlogger",
+        "source_url": "https://wprblogger.com/astra-theme-review/",
+        "source_type": "social",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[26]",
+        "source_name": "WP Rocket Blog",
+        "source_url": "https://wp-rocket.me/blog/astra-wordpress-theme-performance/",
+        "source_type": "social",
+        "source_date": "date-unknown"
+      }
+    ]
+  },
+  "search_profile": "Astra|perf:excellent(98mob,100desk)|price:free|handoff:6/complex|ideal:agencies-and-developers-needing-a-fast-customizable-and-rebrandable-theme,performance-critical-websites-like-blogs-business-sites-and-woocommerce-stores|avoid:beginners-who-need-a-simple-non-overwhelming-backend-experience,projects-with-a-hard-dependency-on-elementor-for-starter-templates|tags:elementor:partial,wordpress-org,classic-theme"
+}

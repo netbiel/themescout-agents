@@ -1,0 +1,610 @@
+{
+  "quick_overview": {
+    "quick_verdict": "Neve is a highly popular and exceptionally fast theme, making it an excellent choice for performance-critical projects and developers. While the core theme is stable and well-maintained, users should be aware of recurring minor bugs with the mobile menu and potential complexities when using the feature-rich Pro version.",
+    "quick_pros": [
+      {
+        "pro_text": "Exceptionally fast and lightweight"
+      },
+      {
+        "pro_text": "Strong developer and agency features (ACF, White Label)"
+      },
+      {
+        "pro_text": "Intuitive Header/Footer builder"
+      }
+    ],
+    "quick_cons": [
+      {
+        "con_text": "Recurring mobile menu bugs"
+      },
+      {
+        "con_text": "Pro version can be overwhelming for beginners"
+      },
+      {
+        "con_text": "Ecosystem conflicts after major plugin updates"
+      }
+    ]
+  },
+  "theme_basic": {
+    "theme_author": "Themeisle",
+    "theme_version": "4.2.2",
+    "release_date": "2018-09-15",
+    "last_update": "2025-12-18",
+    "code_quality": "high",
+    "theme_tagline": "Lightweight, mobile-first theme for WordPress",
+    "sales_count": "200,000+ active installations",
+    "distribution_model": "wordpress_org",
+    "demo_url": "https://themeisle.com/themes/neve/starter-sites/"
+  },
+  "performance_metrics": {
+    "pagespeed_mobile": 92,
+    "pagespeed_desktop": 87,
+    "lcp_mobile": 2.64,
+    "lcp_desktop": 2.29,
+    "cls_mobile": 0.34,
+    "cls_desktop": 0.09,
+    "test_url": "https://demosites.io/marketing-agency-gb/",
+    "test_date": "2026-02-08",
+    "pagespeed_link": "",
+    "performance_tier": "needs_work",
+    "performance_interpretation": "Despite a high mobile score of 92, the performance tier is downgraded to 'needs_work' due to an extremely high CLS score of 0.34 on mobile, indicating significant layout shift issues that negatively impact user experience."
+  },
+  "theme_pricing": {
+    "license_type": "freemium",
+    "pricing_model": "annual_subscription",
+    "base_price": 0,
+    "support_period_included": 12,
+    "support_renewal_cost": 0,
+    "update_policy": "subscription_only",
+    "money_back_guarantee": 0,
+    "pricing_tiers": [
+      {
+        "tier_name": "Personal",
+        "tier_price": 69,
+        "tier_description": "Unlimited sites, Header/Footer/Blog Booster, Custom Layouts"
+      },
+      {
+        "tier_name": "Business",
+        "tier_price": 149,
+        "tier_description": "Personal + WooCommerce Booster, 110+ Starter Sites, LMS Booster"
+      },
+      {
+        "tier_name": "Agency",
+        "tier_price": 259,
+        "tier_description": "Business + White Label, VIP Support"
+      }
+    ]
+  },
+  "theme_ratings": {
+    "popularity_trend": "stable",
+    "external_ratings": [
+      {
+        "rating_source": "WordPress.org",
+        "rating_score": 4.7,
+        "rating_count": 1266,
+        "rating_url": "https://wordpress.org/themes/neve/reviews/"
+      },
+      {
+        "rating_source": "G2",
+        "rating_score": 4.5,
+        "rating_count": 48,
+        "rating_url": "https://www.g2.com/products/neve/reviews"
+      }
+    ]
+  },
+  "theme_technical": {
+    "min_wp_version": "5.5",
+    "min_php_version": "7.4",
+    "wp_compatibility": "6.9",
+    "last_verification": "2026-02-08",
+    "activity_status": "active"
+  },
+  "handoff_difficulty": {
+    "handoff_score": 5,
+    "handoff_panel_complexity": "complex",
+    "handoff_docs_quality": "good",
+    "handoff_learning_curve": "days",
+    "handoff_recommendation": "Neve is an excellent choice for agency-built sites where the client's role is limited to content management. For clients who will take full control, provide training specifically on the Customizer and Pro modules to mitigate confusion.",
+    "handoff_confidence": "high",
+    "handoff_sources_count": 2,
+    "handoff_verdict_safe": "Neve is safe to hand off to clients who will only use the basic content editing and intuitive Header/Footer builder, as these features are straightforward and easy to learn.",
+    "handoff_verdict_caution": "Use caution when handing off a site using Neve Pro to non-technical clients, as the sheer volume of options in the Customizer can be overwhelming and lead to support requests.",
+    "handoff_verdict_avoid": "Avoid handing off Neve to clients who need to make frequent, deep structural changes without a support contract, as the learning curve for mastering all global styles and layout options is significant.",
+    "handoff_alternative_themes": "Kadence, Blocksy"
+  },
+  "scenario_performance": {
+    "perf_confidence": "high",
+    "perf_sources_count": 5,
+    "perf_verdict_safe": "Neve is a safe choice for developers who prioritize a lightweight architecture and fast server response times, as its vanilla JavaScript approach and small footprint provide an excellent foundation for optimization.",
+    "perf_verdict_caution": "Use caution if you are building for a mobile-first audience that is sensitive to user experience, as the tested demo site exhibited a very high Cumulative Layout Shift score of 0.34, which can cause frustrating layout shifts during page load.",
+    "perf_verdict_avoid": "",
+    "perf_code_observation": "The theme achieved a Mobile PageSpeed score of 92/100 when tested on a vendor demo on 2026-02-08. Despite the high overall score, the performance is downgraded due to a poor Cumulative Layout Shift (CLS) score of 0.34 and a Largest Contentful Paint (LCP) of 2.64s, indicating potential visual instability and slower perceived load times for users on mobile devices.",
+    "perf_recommendation": "Neve's performance architecture is top-tier. However, builders must pay close attention to how images, ads, or dynamic content are implemented, as the high CLS score on the demo suggests that improper configuration can easily undermine the theme's fast foundation.",
+    "perf_alternative_themes": "GeneratePress, Astra"
+  },
+  "scenario_updates": {
+    "updates_confidence": "high",
+    "updates_sources_count": 4,
+    "updates_verdict_safe": "The theme is safe for security-conscious users because the development team demonstrates a proactive and responsive approach to patching vulnerabilities and addressing compatibility issues, as seen in the official changelog.",
+    "updates_verdict_caution": "Exercise caution when updating the theme on established client sites, as major version releases have introduced significant reorganizations to the Customizer that can confuse users and require re-learning the interface.",
+    "updates_verdict_avoid": "Avoid using Neve on critical projects where you cannot afford any downtime for testing, as major updates to third-party plugins like Elementor have historically caused temporary fatal errors that required a patch from the theme developer.",
+    "updates_recommendation": "Neve's update cycle is frequent and reliable, which is a strong positive. We recommend always using a staging environment to test major theme and page builder updates before deploying to a live site to prevent unexpected conflicts or UI changes.",
+    "updates_alternative_themes": "Kadence, Astra"
+  },
+  "plugin_compatibility_enhanced": {
+    "compat_total_tested": 3,
+    "compat_full_compatible": 2,
+    "compat_issues_found": 1,
+    "compat_confidence": "high",
+    "compat_sources_count": 3,
+    "compat_verdict_safe": "Neve is a safe choice for building standard WooCommerce and ACF-powered websites, as it has deep, well-maintained integrations with both plugins, which are a primary focus for the development team.",
+    "compat_verdict_caution": "Use caution when major Elementor updates are released, as there is a documented history of fatal errors occurring with Neve immediately following a new version drop, which may require waiting for a compatibility patch.",
+    "compat_verdict_avoid": "Avoid Neve if your project relies on a complex stack of niche plugins without a developer available to debug, as the theme's frequent updates, while good for security, can introduce unforeseen conflicts with less common third-party tools.",
+    "compat_recommendation": "Neve is highly compatible with major plugins like WooCommerce and ACF, but users should test major Elementor updates on a staging site before deploying to production due to a history of temporary conflicts.",
+    "compat_alternative_themes": "",
+    "plugin_compatibility_list": [
+      {
+        "plugin": "Elementor",
+        "plugin_category": "page_builder",
+        "compatibility_status": "partial",
+        "compatibility_notes": "Neve offers deep integration with a dedicated \"Elementor Booster\" module, but major Elementor updates have historically caused fatal errors that required theme patches.",
+        "user_issues": [
+          "[3]"
+        ]
+      },
+      {
+        "plugin": "WooCommerce",
+        "plugin_category": "ecommerce",
+        "compatibility_status": "full",
+        "compatibility_notes": "The theme has a strong and actively maintained integration with WooCommerce, with developers consistently fixing bugs and enhancing the shopping experience.",
+        "user_issues": [
+          "[5]"
+        ]
+      },
+      {
+        "plugin": "Advanced Custom Fields (ACF)",
+        "plugin_category": "developer_tool",
+        "compatibility_status": "full",
+        "compatibility_notes": "Neve is highly regarded by developers for its excellent support for dynamic content and mapping Customizer settings with ACF, making it a strong choice for complex builds.",
+        "user_issues": [
+          "[12]"
+        ]
+      }
+    ]
+  },
+  "community_pain_points": {
+    "community_total_discussions": 10,
+    "community_analysis_date": "2026-02-08",
+    "community_timeframe": "Last 6 months",
+    "community_methodology_note": "",
+    "community_pain_points": [
+      {
+        "category": "plugin_compat",
+        "sentiment": "negative",
+        "source": "SiteCare [3]",
+        "source_url": "https://www.sitecare.com/blog/elementor-3-26-update-fatal-errors/",
+        "severity": "major",
+        "frequency": "Occasional",
+        "title": "Fatal errors after Elementor 3.26 update (historical — unconfirmed current)",
+        "description": "Users experienced significant fatal errors following the Elementor 3.26 update, particularly with themes like Neve that utilize advanced builder integrations and custom layouts.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "ecosystem",
+        "date_reported": "2024-12"
+      },
+      {
+        "category": "updates",
+        "sentiment": "negative",
+        "source": "WordPress.org Mobile Menu Thread [16]",
+        "source_url": "https://wordpress.org/support/topic/neve-mobile-menu-not-working/",
+        "severity": "minor",
+        "frequency": "Common",
+        "title": "Mobile menu (hamburger) is a recurring source of bugs (historical — unconfirmed current)",
+        "description": "The \"Hamburger Menu\" has been a consistent source of bugs, ranging from invisible icons to the menu failing to trigger on mobile devices. Users reported that the mobile menu icon appeared, but clicking it resulted in a blank white box or no action.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "theme",
+        "date_reported": "2025-01"
+      },
+      {
+        "category": "performance",
+        "sentiment": "negative",
+        "source": "WordPress.org Support [4]",
+        "source_url": "https://wordpress.org/support/theme/neve/",
+        "severity": "minor",
+        "frequency": "Occasional",
+        "title": "Excessive temporary file generation in some hosting environments (historical — unconfirmed current)",
+        "description": "A 2025 support report highlighted that Neve was producing thousands of temporary files, which can bloat server storage and slow down disk I/O on lower-end hosting plans.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "theme",
+        "date_reported": "2025-01"
+      },
+      {
+        "category": "general",
+        "sentiment": "negative",
+        "source": "WPScan [1]",
+        "source_url": "https://wpscan.com/vulnerability/cloud-templates-patterns-collection-sensitive-information-exposure",
+        "severity": "minor",
+        "frequency": "Verified",
+        "title": "Companion plugin exposed sensitive information (historical)",
+        "description": "The Cloud Templates & Patterns collection, integral to Neve’s starter site functionality, was found to have insufficient protection on log files in versions prior to 1.2.3, potentially exposing server-side data to unauthenticated actors.",
+        "resolution": "Patched in version 1.2.3 of the plugin.",
+        "version_reported": "< 1.2.3 (plugin)",
+        "scope": "ecosystem",
+        "date_reported": "2023-11"
+      },
+      {
+        "category": "handoff",
+        "sentiment": "negative",
+        "source": "Reddit [7]",
+        "source_url": "https://www.reddit.com/r/Wordpress/comments/10o3f8g/neve_theme_edit_copyright/",
+        "severity": "minor",
+        "frequency": "Common",
+        "title": "Inability to edit footer copyright in the free version causes confusion (historical — unconfirmed current)",
+        "description": "Users often find that the edit-pencil icon for the footer copyright does nothing in the free version, leading to confusion about whether the feature is broken or intentionally locked behind Pro.",
+        "resolution": "Upgrade to Pro or use a child theme.",
+        "version_reported": "unknown",
+        "scope": "theme",
+        "date_reported": "2023-01"
+      },
+      {
+        "category": "handoff",
+        "sentiment": "negative",
+        "source": "Omnisend [6]",
+        "source_url": "https://www.omnisend.com/blog/best-woocommerce-themes/",
+        "severity": "minor",
+        "frequency": "Common",
+        "title": "Option overload and steep learning curve for non-technical users (historical — unconfirmed current)",
+        "description": "While user-friendly, mastering all the options in Neve takes time, and the interface can feel overwhelming for non-technical users once the Pro features are activated.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "theme",
+        "date_reported": "2025-11"
+      },
+      {
+        "category": "updates",
+        "sentiment": "negative",
+        "source": "GitHub Changelog [5]",
+        "source_url": "https://github.com/Codeinwp/neve/blob/master/CHANGELOG.md",
+        "severity": "minor",
+        "frequency": "Occasional",
+        "title": "Major Customizer reorganization in v4.0.1 confused existing users (historical — unconfirmed current)",
+        "description": "Significant reorganizations of the Customizer panels in version 4.0.1 aimed to improve UX but temporarily confused users accustomed to the legacy layout, which required some site administrators to re-adjust their global style settings.",
+        "resolution": "",
+        "version_reported": "4.0.1",
+        "scope": "theme",
+        "date_reported": "2025-02"
+      },
+      {
+        "category": "general",
+        "sentiment": "negative",
+        "source": "Wordfence [2]",
+        "source_url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/29c4942c-2483-4223-952b-075b1a3b355c",
+        "severity": "minor",
+        "frequency": "Verified",
+        "title": "Underlying SDK had an authorization vulnerability (historical)",
+        "description": "The register_reference() function within the ThemeIsle SDK failed to properly validate user identities, which allowed unauthenticated attackers to update specific option values used for tracking promotional activities.",
+        "resolution": "Patched by the developer.",
+        "version_reported": "unknown",
+        "scope": "ecosystem",
+        "date_reported": "2023-01"
+      },
+      {
+        "category": "support",
+        "sentiment": "negative",
+        "source": "WordPress.org Support [4]",
+        "source_url": "https://wordpress.org/support/theme/neve/",
+        "severity": "minor",
+        "frequency": "Common",
+        "title": "Slower support response times for free version users (historical — unconfirmed current)",
+        "description": "Official support response times on public forums range from 2 days to 7 days, with priority given to Pro users through a dedicated ticketing system.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "theme",
+        "date_reported": "2025-01"
+      },
+      {
+        "category": "plugin_compat",
+        "sentiment": "negative",
+        "source": "GitHub Changelog [5]",
+        "source_url": "https://github.com/Codeinwp/neve/blob/master/CHANGELOG.md",
+        "severity": "minor",
+        "frequency": "Verified",
+        "title": "WooCommerce product gallery layout was broken on some viewports (Fixed) (historical — unconfirmed current)",
+        "description": "Version 4.2.0 addressed long-standing issues with broken product gallery layouts on e-commerce sites.",
+        "resolution": "Fixed in version 4.2.0.",
+        "version_reported": "< 4.2.0",
+        "scope": "theme",
+        "date_reported": "2025-11"
+      }
+    ],
+    "community_praise_stats": [
+      {
+        "scope": "theme",
+        "category": "performance",
+        "sentiment": "positive",
+        "positive_aspect": "Excellent performance and Core Web Vitals scores",
+        "strength": "High",
+        "title": "Excellent performance and Core Web Vitals scores",
+        "description": "Neve’s marketing claims of a 28KB default install size and sub-second load times are largely validated by independent testing. Tests showed Neve’s page size at approximately 37.7KB, which remains exceptionally low.",
+        "frequency": "frequent",
+        "percentage": 0,
+        "source": "Nitropack [8]",
+        "source_url": "https://nitropack.io/blog/post/best-wordpress-themes-core-web-vitals"
+      },
+      {
+        "scope": "theme",
+        "category": "performance",
+        "sentiment": "positive",
+        "positive_aspect": "Lightweight architecture using vanilla JavaScript",
+        "strength": "High",
+        "title": "Lightweight architecture using vanilla JavaScript",
+        "description": "By avoiding the jQuery framework for core functionality, Neve eliminates a major source of render-blocking, which directly translates to a 0ms Total Blocking Time (TBT) in many test environments.",
+        "frequency": "frequent",
+        "percentage": 0,
+        "source": "Elegant Themes [9]",
+        "source_url": "https://www.elegantthemes.com/blog/wordpress/fastest-wordpress-themes"
+      },
+      {
+        "scope": "theme",
+        "category": "security",
+        "sentiment": "positive",
+        "positive_aspect": "Proactive security patching and update cycle",
+        "strength": "High",
+        "title": "Proactive security patching and update cycle",
+        "description": "A review of the official Neve changelog from 2023 to late 2025 reveals a highly responsive patch management cycle. The development team at ThemeIsle consistently addresses compatibility warnings and minor security lapses within days of discovery.",
+        "frequency": "verified",
+        "percentage": 0,
+        "source": "GitHub Changelog [5]",
+        "source_url": "https://github.com/Codeinwp/neve/blob/master/CHANGELOG.md"
+      },
+      {
+        "scope": "theme",
+        "category": "development",
+        "sentiment": "positive",
+        "positive_aspect": "Excellent support for developers and dynamic content (ACF)",
+        "strength": "High",
+        "title": "Excellent support for developers and dynamic content (ACF)",
+        "description": "Neve is highly regarded by developers for its support of dynamic properties via ACF. Neve’s ability to map Customizer settings to taxonomy archives and custom post types is essential for advanced projects.",
+        "frequency": "verified",
+        "percentage": 0,
+        "source": "WPShout [12]",
+        "source_url": "https://wpshout.com/neve-theme-review/"
+      }
+    ]
+  },
+  "faq": {
+    "faq_items": [
+      {
+        "faq_question": "Is Neve a fast theme?",
+        "faq_answer": "Yes, Neve is widely considered one of the fastest WordPress themes available. Independent tests confirm its small default install size (around 37KB) and its architecture avoids jQuery, which contributes to excellent Core Web Vitals and sub-second load times on optimized servers [8, 9].",
+        "faq_category": "performance",
+        "faq_source_ids": "8,9"
+      },
+      {
+        "faq_question": "What are the most common bugs reported for Neve?",
+        "faq_answer": "The most frequently reported recurring issue involves the mobile \"hamburger\" menu, which users report can sometimes fail to open or display correctly [16]. Some users on specific hosting environments have also reported issues with the theme generating an excessive number of temporary files [4].",
+        "faq_category": "general",
+        "faq_source_ids": "16,4"
+      },
+      {
+        "faq_question": "Does Neve work well with Elementor and WooCommerce?",
+        "faq_answer": "Yes, Neve is designed for deep integration with both. The Pro version includes an \"Elementor Booster\" module, and the developers actively maintain and improve WooCommerce compatibility [5]. However, users should be cautious, as major Elementor updates have been known to cause temporary fatal errors [3].",
+        "faq_category": "compatibility",
+        "faq_source_ids": "5,3"
+      },
+      {
+        "faq_question": "Is Neve secure?",
+        "faq_answer": "The core theme has a strong security record with a proactive patching cycle [5]. However, moderate vulnerabilities have been discovered and patched in the past within its companion plugins (like the Cloud Templates & Patterns collection) and the underlying ThemeIsle SDK [1, 2].",
+        "faq_category": "security",
+        "faq_source_ids": "5,1,2"
+      },
+      {
+        "faq_question": "Is Neve good for beginners or non-technical users?",
+        "faq_answer": "The free version is generally considered intuitive, especially its visual Header/Footer builder [11]. However, the Pro version adds a large number of options that can create a steep learning curve and feel overwhelming for users who are not technically proficient [6].",
+        "faq_category": "handoff",
+        "faq_source_ids": "11,6"
+      },
+      {
+        "faq_question": "Can I remove the \"Powered by Neve\" credit in the footer?",
+        "faq_answer": "This is a common point of confusion. In the free version, the footer copyright cannot be edited from the Customizer, which leads many users to believe it is a bug [7]. Editing it requires upgrading to Neve Pro or modifying the theme's code directly via a child theme.",
+        "faq_category": "handoff",
+        "faq_source_ids": "7"
+      },
+      {
+        "faq_question": "Is Neve a good theme for agencies?",
+        "faq_answer": "Yes, Neve is highly suitable for agencies. Its high performance, strong developer support for tools like ACF, and agency-specific features like the White Label module in the Pro version make it a popular choice for client work [12].",
+        "faq_category": "handoff",
+        "faq_source_ids": "12"
+      }
+    ],
+    "faq_generation_note": ""
+  },
+  "human_summary": {
+    "summary_paragraphs": [
+      "<!-- wp:paragraph -->\n<p>Neve is a freemium WordPress theme from ThemeIsle that has earned a strong reputation for its exceptional performance and flexibility. Built with a mobile-first approach and a lightweight codebase that avoids jQuery, it consistently ranks among the fastest themes available, making it a top choice for developers, agencies, and anyone prioritizing speed and excellent Core Web Vitals. Its intuitive visual Header/Footer builder and extensive Customizer options provide significant design control for a wide range of projects, from blogs to complex e-commerce stores.</p>\n<!-- /wp:paragraph -->",
+      "<!-- wp:paragraph -->\n<p>While the free version is accessible for beginners, unlocking the theme's full potential with Neve Pro introduces a layer of complexity that can be overwhelming for non-technical users. The most common complaint against the theme is a recurring bug with the mobile menu, which can sometimes fail to function correctly. Users of the free version may also experience slower support response times and will find that certain features, like editing the footer copyright, are locked behind the premium upgrade.</p>\n<!-- /wp:paragraph -->",
+      "<!-- wp:paragraph -->\n<p>Many of the more significant issues reported, such as fatal errors or past security vulnerabilities, are not tied to the core theme itself but rather to its wider ecosystem. These problems often stem from conflicts with major updates to third-party page builders like Elementor or from vulnerabilities within its companion plugins. Despite these occasional ecosystem-related hiccups, Neve's core stability, proactive update schedule, and powerful features make it a reliable and high-performing choice for modern WordPress sites.</p>\n<!-- /wp:paragraph -->"
+    ],
+    "summary_recommendation": "Neve is highly recommended for performance-focused projects, agencies, and developers who can navigate its Pro features, but beginners should be prepared for a learning curve and potential minor bugs.",
+    "summary_ideal_for": [
+      "Developers",
+      "Agencies",
+      "Performance-focused sites",
+      "WooCommerce stores"
+    ],
+    "summary_not_for": [
+      "Non-technical users managing Pro features without support",
+      "Projects requiring absolute stability during third-party plugin updates"
+    ],
+    "summary_author_note": ""
+  },
+  "bundled_plugins": [
+    {
+      "plugin_name": "Cloud Templates & Patterns collection",
+      "plugin_category": "starter_sites",
+      "plugin_value": 0,
+      "license_type": "GPL",
+      "plugin_functionality": "Provides access to a library of pre-built page templates and block patterns to accelerate site building."
+    },
+    {
+      "plugin_name": "Neve Pro (includes modules)",
+      "plugin_category": "pro_addon",
+      "plugin_value": 0,
+      "license_type": "Commercial",
+      "plugin_functionality": "The main premium addon that unlocks advanced features like Header/Footer Booster, Custom Layouts, and WooCommerce Booster."
+    },
+    {
+      "plugin_name": "Elementor Booster (in Pro)",
+      "plugin_category": "page_builder_addon",
+      "plugin_value": 0,
+      "license_type": "Commercial",
+      "plugin_functionality": "A module within Neve Pro that adds extra widgets and controls for sites built with the Elementor page builder."
+    },
+    {
+      "plugin_name": "White Label Module (in Pro)",
+      "plugin_category": "agency_tool",
+      "plugin_value": 0,
+      "license_type": "Commercial",
+      "plugin_functionality": "Allows agencies to rebrand the Neve theme with their own name and branding for client handoff."
+    }
+  ],
+  "demo_gallery": [
+    {
+      "name": "Fitness",
+      "url": "https://neve.themeisle.com/fitness/",
+      "category": "Health"
+    },
+    {
+      "name": "Web Agency",
+      "url": "https://neve.themeisle.com/web-agency/",
+      "category": "Business"
+    },
+    {
+      "name": "Photography",
+      "url": "https://neve.themeisle.com/photography/",
+      "category": "Portfolio"
+    }
+  ],
+  "sources_methodology": {
+    "methodology_note": "",
+    "analysis_date": "2026-02-08",
+    "data_timeframe": "2023-01 to 2026-02",
+    "confidence_statement": "Confidence is high based on 16 diverse sources including official documentation, user forums, and independent reviews.",
+    "sources": [
+      {
+        "source_id": "[1]",
+        "source_name": "WPScan",
+        "source_url": "https://wpscan.com/vulnerability/cloud-templates-patterns-collection-sensitive-information-exposure",
+        "source_type": "official",
+        "source_date": "2023-11"
+      },
+      {
+        "source_id": "[2]",
+        "source_name": "Wordfence",
+        "source_url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/29c4942c-2483-4223-952b-075b1a3b355c",
+        "source_type": "official",
+        "source_date": "2023-01"
+      },
+      {
+        "source_id": "[3]",
+        "source_name": "SiteCare",
+        "source_url": "https://www.sitecare.com/blog/elementor-3-26-update-fatal-errors/",
+        "source_type": "review_site",
+        "source_date": "2024-12"
+      },
+      {
+        "source_id": "[4]",
+        "source_name": "WordPress.org Support",
+        "source_url": "https://wordpress.org/support/theme/neve/",
+        "source_type": "forum",
+        "source_date": "2025-01"
+      },
+      {
+        "source_id": "[5]",
+        "source_name": "GitHub Changelog",
+        "source_url": "https://github.com/Codeinwp/neve/blob/master/CHANGELOG.md",
+        "source_type": "changelog",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[6]",
+        "source_name": "Omnisend",
+        "source_url": "https://www.omnisend.com/blog/best-woocommerce-themes/",
+        "source_type": "review_site",
+        "source_date": "2025-11"
+      },
+      {
+        "source_id": "[7]",
+        "source_name": "Reddit",
+        "source_url": "https://www.reddit.com/r/Wordpress/comments/10o3f8g/neve_theme_edit_copyright/",
+        "source_type": "social",
+        "source_date": "2023-01"
+      },
+      {
+        "source_id": "[8]",
+        "source_name": "Nitropack",
+        "source_url": "https://nitropack.io/blog/post/best-wordpress-themes-core-web-vitals",
+        "source_type": "review_site",
+        "source_date": "2025-10"
+      },
+      {
+        "source_id": "[9]",
+        "source_name": "Elegant Themes",
+        "source_url": "https://www.elegantthemes.com/blog/wordpress/fastest-wordpress-themes",
+        "source_type": "review_site",
+        "source_date": "2025-01"
+      },
+      {
+        "source_id": "[10]",
+        "source_name": "ThemeIsle",
+        "source_url": "https://themeisle.com/themes/neve/",
+        "source_type": "official",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[11]",
+        "source_name": "Themewinter",
+        "source_url": "https://themewinter.com/blog/best-wordpress-themes/",
+        "source_type": "review_site",
+        "source_date": "2025-01"
+      },
+      {
+        "source_id": "[12]",
+        "source_name": "WPShout",
+        "source_url": "https://wpshout.com/neve-theme-review/",
+        "source_type": "review_site",
+        "source_date": "2025-01"
+      },
+      {
+        "source_id": "[13]",
+        "source_name": "WPLift",
+        "source_url": "https://wplift.com/kadence-vs-astra/",
+        "source_type": "review_site",
+        "source_date": "2025-01"
+      },
+      {
+        "source_id": "[14]",
+        "source_name": "Elementor Blog",
+        "source_url": "https://elementor.com/blog/fastest-wordpress-themes/",
+        "source_type": "review_site",
+        "source_date": "2025-10"
+      },
+      {
+        "source_id": "[15]",
+        "source_name": "WPLift (2023)",
+        "source_url": "https://wplift.com/neve-theme-review/",
+        "source_type": "review_site",
+        "source_date": "2023-01"
+      },
+      {
+        "source_id": "[16]",
+        "source_name": "WordPress.org Mobile Menu Thread",
+        "source_url": "https://wordpress.org/support/topic/neve-mobile-menu-not-working/",
+        "source_type": "forum",
+        "source_date": "2025-01"
+      }
+    ]
+  },
+  "search_profile": "Neve|perf:needs_work(92mob,87desk)|price:free|handoff:5/complex|ideal:developers,agencies,performance-focused-sites,woocommerce-stores|avoid:non-technical-users-managing-pro-features-without-support,projects-requiring-absolute-stability-during-third-party-plugin-updates|tags:elementor:partial,wordpress-org,classic-theme"
+}

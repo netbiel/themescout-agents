@@ -1,0 +1,575 @@
+{
+  "quick_overview": {
+    "quick_verdict": "Bricks Builder is an exceptionally high-performance, developer-centric site builder that offers granular control over code output but comes with a steep learning curve. 7 of 10 reported issues affect the theme directly, including a history of critical security vulnerabilities that were patched rapidly, while the remainder relate to ecosystem integrations.",
+    "quick_pros": [
+      {
+        "pro_text": "Exceptional front-end performance"
+      },
+      {
+        "pro_text": "Granular control for developers"
+      },
+      {
+        "pro_text": "Fast and transparent security patching"
+      }
+    ],
+    "quick_cons": [
+      {
+        "con_text": "Steep learning curve for non-devs"
+      },
+      {
+        "con_text": "History of critical security vulnerabilities"
+      },
+      {
+        "con_text": "Major updates can cause breaking changes"
+      }
+    ]
+  },
+  "theme_basic": {
+    "theme_author": "Bricks",
+    "theme_version": "2.2",
+    "release_date": "2021-03-15",
+    "last_update": "2026-02-10",
+    "code_quality": "high",
+    "theme_tagline": "Visual Site Builder for WordPress",
+    "sales_count": "0",
+    "distribution_model": "direct_sale",
+    "demo_url": "https://try.bricksbuilder.io/"
+  },
+  "performance_metrics": {
+    "pagespeed_mobile": 95,
+    "pagespeed_desktop": 99,
+    "lcp_mobile": 1.92,
+    "lcp_desktop": 1.83,
+    "cls_mobile": 0,
+    "cls_desktop": 0,
+    "test_url": "https://bricksbuilder.io/",
+    "test_date": "2026-02-15",
+    "pagespeed_link": "",
+    "performance_tier": "excellent",
+    "performance_interpretation": "The vendor's marketing site scores an excellent 95/100 on mobile PageSpeed Insights, with strong Core Web Vitals including a 1.92s LCP and 0 CLS. This aligns with community reports of exceptional performance due to minimal asset loading."
+  },
+  "theme_pricing": {
+    "license_type": "subscription_based",
+    "pricing_model": "annual_subscription",
+    "base_price": 79,
+    "support_period_included": 12,
+    "support_renewal_cost": 79,
+    "update_policy": "subscription_only",
+    "money_back_guarantee": 0,
+    "pricing_tiers": [
+      {
+        "tier_name": "Starter (Yearly)",
+        "tier_price": 79,
+        "tier_description": "1 website, yearly renewal"
+      },
+      {
+        "tier_name": "Business (Yearly)",
+        "tier_price": 149,
+        "tier_description": "3 websites, yearly renewal"
+      },
+      {
+        "tier_name": "Agency (Yearly)",
+        "tier_price": 249,
+        "tier_description": "Unlimited websites, yearly renewal"
+      },
+      {
+        "tier_name": "Ultimate Lifetime",
+        "tier_price": 599,
+        "tier_description": "Unlimited websites, lifetime updates and support"
+      }
+    ]
+  },
+  "theme_ratings": {
+    "popularity_trend": "growing",
+    "external_ratings": [
+      {
+        "rating_source": "Bricks Builder",
+        "rating_score": 4.8,
+        "rating_count": 12,
+        "rating_url": "https://bricksbuilder.io/"
+      },
+      {
+        "rating_source": "Capterra",
+        "rating_score": 4.8,
+        "rating_count": 12,
+        "rating_url": "https://www.capterra.com/p/216085/Brick/"
+      }
+    ]
+  },
+  "theme_technical": {
+    "min_wp_version": "6.0",
+    "min_php_version": "7.4",
+    "wp_compatibility": "6.8",
+    "last_verification": "2026-02-15",
+    "activity_status": "active"
+  },
+  "handoff_difficulty": {
+    "handoff_score": 5,
+    "handoff_panel_complexity": "complex",
+    "handoff_docs_quality": "good",
+    "handoff_learning_curve": "days",
+    "handoff_recommendation": "Bricks is best suited for agencies and freelance developers who build sites for clients but manage the structural and design aspects themselves. For client handoff, it is highly recommended to use a third-party plugin like Advanced Themer to create a restricted \"editor\" role, preventing clients from accessing complex controls that could break the site's design [14].",
+    "handoff_confidence": "high",
+    "handoff_sources_count": 4,
+    "handoff_verdict_safe": "Bricks Builder is safe if your team consists of developers comfortable with modern CSS and HTML, and you have a clear workflow for client content updates that does not involve giving them full editor access.",
+    "handoff_verdict_caution": "Use caution if you plan to hand over sites to non-technical clients for content management, as the complex interface can easily lead to broken layouts without using third-party plugins to lock down the editor [14].",
+    "handoff_verdict_avoid": "Avoid this builder if you or your clients are beginners looking for a simple, intuitive drag-and-drop experience, as its architecture is explicitly designed for technical users who understand the DOM structure [1, 13].",
+    "handoff_alternative_themes": "For a more client-friendly editing experience with a visual builder, consider themes built around Elementor or Beaver Builder, which offer more intuitive interfaces for non-technical users."
+  },
+  "scenario_performance": {
+    "perf_confidence": "high",
+    "perf_sources_count": 4,
+    "perf_verdict_safe": "This theme is a safe choice if achieving top-tier performance and excellent Core Web Vitals scores is a primary project requirement, as its lean codebase provides a significant advantage over other builders [16, 18].",
+    "perf_verdict_caution": "Use caution if you are migrating a site with many third-party scripts and unoptimized assets, as you will still need to perform standard optimization, though Bricks provides a much better performance baseline.",
+    "perf_verdict_avoid": "There is no performance-related reason to avoid this theme; it is a market leader in this category and is frequently chosen specifically for its speed and clean code output.",
+    "perf_code_observation": "The Mobile PageSpeed score is an excellent 95/100, tested on the vendor's marketing site on 2026-02-15. Core Web Vitals are strong, with an LCP of 1.92s and a CLS of 0, which confirms community reports of exceptional front-end performance due to its minimal asset loading compared to competitors [1, 16, 18].",
+    "perf_recommendation": "Bricks is highly recommended for performance-critical projects. Its architecture is designed to produce clean, efficient code, and it includes advanced features for controlling asset loading and database queries, making it a powerful tool for developers focused on speed [1].",
+    "perf_alternative_themes": "For other performance-focused themes, consider GeneratePress or Kadence, which are also known for their lightweight code and excellent PageSpeed scores."
+  },
+  "scenario_updates": {
+    "updates_confidence": "high",
+    "updates_sources_count": 5,
+    "updates_verdict_safe": "Bricks is safe to update if you follow a professional development workflow that includes testing major version updates on a dedicated staging server before deploying them to a live production environment [10].",
+    "updates_verdict_caution": "Exercise caution if you manage a large portfolio of client sites, as major updates have introduced breaking changes that could require auditing and manually updating custom CSS across multiple projects [1, 10].",
+    "updates_verdict_avoid": "Avoid this theme if you require a platform where major updates never introduce backward-compatibility issues, as Bricks has a history of implementing significant architectural changes, like CSS Cascade Layers, that demand developer intervention [10].",
+    "updates_recommendation": "Always review the changelog carefully before applying major updates. The introduction of significant features or changes, such as the move to CSS Cascade Layers in version 2.0 or the HSL-based color system in 2.2, can have a wide-ranging impact on existing sites and may require code adjustments [10, 12].",
+    "updates_alternative_themes": "Themes with a longer history and a more conservative update cycle, such as those from the official WordPress repository, may offer a more stable, though less feature-rich, experience."
+  },
+  "plugin_compatibility_enhanced": {
+    "compat_total_tested": 3,
+    "compat_full_compatible": 0,
+    "compat_issues_found": 3,
+    "compat_confidence": "high",
+    "compat_sources_count": 5,
+    "compat_verdict_safe": "The theme is a safe choice if your project relies on standard integrations, particularly with Advanced Custom Fields, for which it has excellent native support for most common use cases.",
+    "compat_verdict_caution": "Use caution when building complex multilingual sites with WPML or WooCommerce stores with specialized extensions, as you may encounter edge cases that require custom workarounds or PHP development [1, 8, 9].",
+    "compat_verdict_avoid": "Avoid Bricks if your project's success depends entirely on seamless, out-of-the-box integration with a niche or complex plugin that is not widely supported, as the builder focuses on deep integration with a few key tools rather than broad compatibility.",
+    "compat_recommendation": "Bricks is recommended for projects using standard ACF features. For complex multilingual sites with WPML or advanced WooCommerce stores, developers should budget time for custom workarounds and thorough testing to address known integration issues.",
+    "compat_alternative_themes": "For projects requiring guaranteed out-of-the-box compatibility with a wide range of plugins, themes like Avada or Divi may offer a more integrated ecosystem.",
+    "plugin_compatibility_list": [
+      {
+        "plugin": "Advanced Custom Fields (ACF)",
+        "plugin_category": "content",
+        "compatibility_status": "partial",
+        "compatibility_notes": "While native integration is excellent, known issues exist where the builder's query loop struggles to render complex, nested ACF repeater fields from a custom WP_Query [1, 6, 7].",
+        "user_issues": [
+          "[1]",
+          "[6]",
+          "[7]"
+        ]
+      },
+      {
+        "plugin": "WPML",
+        "plugin_category": "multilingual",
+        "compatibility_status": "partial",
+        "compatibility_notes": "Compatibility is functional but has known conflicts. WPML's Advanced Translation Editor can incorrectly translate dynamic data tags (e.g., `{acf_field}`), breaking them in the translated version [1, 8, 9].",
+        "user_issues": [
+          "[1]",
+          "[8]",
+          "[9]"
+        ]
+      },
+      {
+        "plugin": "WooCommerce",
+        "plugin_category": "ecommerce",
+        "compatibility_status": "partial",
+        "compatibility_notes": "Bricks includes a native WooCommerce builder, but it lacks deep integration with advanced third-party extensions for memberships or bookings, often requiring custom PHP work for full functionality [1].",
+        "user_issues": [
+          "[1]"
+        ]
+      }
+    ]
+  },
+  "community_pain_points": {
+    "community_total_discussions": 10,
+    "community_analysis_date": "2026-02-15",
+    "community_timeframe": "Last 6 months",
+    "community_methodology_note": "Analysis based on public forums, social media discussions, and security advisories.",
+    "community_pain_points": [
+      {
+        "category": "general",
+        "sentiment": "negative",
+        "source": "Technical Evaluation of Bricks Builder [1], Patchstack: Critical RCE Patched [2], Patchstack: RCE Vulnerability Details [3], Patchstack: SQL Injection [5]",
+        "source_url": "https://patchstack.com/articles/critical-rce-patched-in-bricks-builder-theme/",
+        "severity": "major",
+        "frequency": "Occasional",
+        "title": "History of Critical Unauthenticated Vulnerabilities (historical — unconfirmed current)",
+        "description": "The theme has a history of severe security flaws, including an unauthenticated Remote Code Execution (RCE) vulnerability (CVE-2024-25600) in February 2024 and an unauthenticated blind SQL injection in July 2025, which could allow attackers to take over a site.",
+        "resolution": "The development team patched these vulnerabilities rapidly, typically within 72 hours of disclosure. Users must keep the theme updated to the latest version to remain secure.",
+        "version_reported": "1.9.6 / 1.9.7",
+        "scope": "theme",
+        "date_reported": "2024-02"
+      },
+      {
+        "category": "updates",
+        "sentiment": "negative",
+        "source": "Technical Evaluation of Bricks Builder [1], Bricks Changelog: 2.0 [10]",
+        "source_url": "https://bricksbuilder.io/changelog/bricks-2-0/",
+        "severity": "moderate",
+        "frequency": "Occasional",
+        "title": "Major Updates Introduce Breaking Changes (historical — unconfirmed current)",
+        "description": "Version 2.0 introduced CSS Cascade Layers (@layer) by default, which fundamentally changed how CSS specificity is calculated. This change initially broke many custom CSS implementations that relied on traditional specificity overrides, requiring manual developer intervention.",
+        "resolution": "Developers must test major updates on a staging environment and may need to refactor custom CSS to adapt to new architectural changes. The Bricks team provides documentation on these changes.",
+        "version_reported": "2.0",
+        "scope": "theme",
+        "date_reported": "2025-01"
+      },
+      {
+        "category": "handoff",
+        "sentiment": "negative",
+        "source": "Technical Evaluation of Bricks Builder [1], Bricks Forum: Client Handoff [13], Brendan O'Connell: Client Editing Mode [14]",
+        "source_url": "https://forum.bricksbuilder.io/t/basic-page-builder-questions-about-handing-off-site-to-client/1269",
+        "severity": "moderate",
+        "frequency": "Frequent",
+        "title": "Steep Learning Curve and Complex Interface Unsuitable for Direct Client Access (historical — unconfirmed current)",
+        "description": "Handoff to non-technical clients is often cited as the builder's weakest point. Giving a client full access to the Bricks editor frequently leads to broken layouts and design inconsistency due to its developer-oriented interface.",
+        "resolution": "Most agencies use third-party plugins like Advanced Themer to create a restricted 'Strict Editor View' that locks down complex controls, providing a safer editing experience for clients.",
+        "version_reported": "unknown",
+        "scope": "theme",
+        "date_reported": "2022-02"
+      },
+      {
+        "category": "plugin_compat",
+        "sentiment": "negative",
+        "source": "Technical Evaluation of Bricks Builder [1], Bricks Forum: ACF Repeater in WP_Query [6], Bricks Forum: ACF Repeater in Post Loop [7]",
+        "source_url": "https://forum.bricksbuilder.io/t/solved-acf-repeater-inside-a-custom-wp-query-loop-doesnt-work/1008",
+        "severity": "minor",
+        "frequency": "Common",
+        "title": "Native Query Builder Struggles with Complex Nested ACF Repeater Loops (historical — unconfirmed current)",
+        "description": "Real-world development experiences highlight specific challenges when nesting ACF repeaters inside custom WP_Query loops, as the builder sometimes defaults to searching for the repeater on the current page rather than the post being queried.",
+        "resolution": "Workarounds often involve using custom PHP functions or code snippets to correctly set the context for the nested repeater loop, which adds development complexity.",
+        "version_reported": "unknown",
+        "scope": "ecosystem",
+        "date_reported": "2022-01"
+      },
+      {
+        "category": "support",
+        "sentiment": "negative",
+        "source": "Technical Evaluation of Bricks Builder [1], Reddit: Support Response Time [15], Bricks Forum: Support Chat Request [19]",
+        "source_url": "https://www.reddit.com/r/BricksBuilder/comments/10wz28z/support_response_time/",
+        "severity": "minor",
+        "frequency": "Occasional",
+        "title": "Official Support Response Times Can Be Slow (historical — unconfirmed current)",
+        "description": "During major release cycles or busy periods, official support response times have been reported to stretch from 7 to 15 days, which can be problematic for agencies facing production issues or urgent bugs.",
+        "resolution": "The active community on Facebook and the official forums often provide faster solutions for common problems than the official email support channel.",
+        "version_reported": "unknown",
+        "scope": "theme",
+        "date_reported": "2023-02"
+      },
+      {
+        "category": "plugin_compat",
+        "sentiment": "negative",
+        "source": "Technical Evaluation of Bricks Builder [1], WPML: Compatibility with Bricks [8], WPML: Prevent Translating ACF Variables [9]",
+        "source_url": "https://wpml.org/forums/topic/compatibility-with-bricks-builder-2/",
+        "severity": "minor",
+        "frequency": "Common",
+        "title": "WPML's Advanced Translation Editor Can Break Dynamic Data Tags (historical — unconfirmed current)",
+        "description": "A significant issue involves WPML's 'Advanced Translation Editor' (ATE) erroneously translating dynamic data tags. For example, a tag like {acf_button_url} would be translated into the target language, effectively breaking the link.",
+        "resolution": "The recommended workaround is to manually mark the dynamic data tags as 'not for translation' within WPML's settings, which requires careful configuration for each multilingual site.",
+        "version_reported": "unknown",
+        "scope": "ecosystem",
+        "date_reported": "2023-09"
+      },
+      {
+        "category": "updates",
+        "sentiment": "negative",
+        "source": "Technical Evaluation of Bricks Builder [1], Bricks Changelog: 2.2-rc [11], Reddit: Style Guide Corruption [12]",
+        "source_url": "https://bricksbuilder.io/changelog/bricks-2-2-rc/",
+        "severity": "minor",
+        "frequency": "Occasional",
+        "title": "Potential for Style Guide Corruption During Updates (historical — unconfirmed current)",
+        "description": "Some users experienced style guide corruption during the 2.2 release candidate phase, where existing color palettes were not properly mapped to the new HSL-based variable system, requiring manual correction.",
+        "resolution": "The issue was addressed in the stable release, but it highlights the need for thorough testing of release candidates on staging sites before updating production environments.",
+        "version_reported": "2.2-RC",
+        "scope": "theme",
+        "date_reported": "2024-02"
+      },
+      {
+        "category": "general",
+        "sentiment": "negative",
+        "source": "Technical Evaluation of Bricks Builder [1], GitHub: CVE-2024-2297 [4]",
+        "source_url": "https://github.com/advisories/GHSA-c9j3-qj2x-3x3h",
+        "severity": "moderate",
+        "frequency": "Occasional",
+        "title": "Authenticated Privilege Escalation Vulnerability (historical — unconfirmed current)",
+        "description": "Bricks version 1.9.7 addressed CVE-2024-2297, which involved a privilege escalation vulnerability within the AJAX create_autosave function. This flaw allowed authenticated users with contributor-level access to execute PHP code with administrator privileges.",
+        "resolution": "The vulnerability was patched in version 1.9.7. Keeping the theme updated is critical to prevent exploitation of this and other authenticated vulnerabilities.",
+        "version_reported": "1.9.7",
+        "scope": "theme",
+        "date_reported": "2024-02"
+      },
+      {
+        "category": "handoff",
+        "sentiment": "negative",
+        "source": "Technical Evaluation of Bricks Builder [1], Brendan O'Connell: Client Editing Mode [14]",
+        "source_url": "https://brendan-oconnell.com/web-design/bricks-builder-client-editing-mode-with-advanced-themer/",
+        "severity": "minor",
+        "frequency": "Frequent",
+        "title": "Reliance on Third-Party Plugins for a Safe Client Editing Experience (historical — unconfirmed current)",
+        "description": "A popular strategy among freelancers is the use of the 'Strict Editor View' provided by the 'Advanced Themer' (AT) plugin. This feature allows the developer to lock down the structure panel and specific styling tabs, which is a necessary step for safe client handoff.",
+        "resolution": "While effective, this reliance on a paid third-party plugin to achieve a core agency requirement (safe client editing) is a notable drawback of the native Bricks experience.",
+        "version_reported": "unknown",
+        "scope": "theme",
+        "date_reported": "2025-01"
+      }
+    ],
+    "community_praise_stats": [
+      {
+        "scope": "theme",
+        "category": "performance",
+        "sentiment": "positive",
+        "positive_aspect": "Exceptional front-end performance and minimal asset loading",
+        "strength": "Market-leading performance with minimal code output",
+        "title": "Outstanding Core Web Vitals and Minimal Footprint",
+        "description": "In standardized testing, a basic page built with Bricks loads approximately 15KB of scripts, compared to over 200KB for competitors like Elementor. This efficiency leads to Core Web Vitals scores that consistently reach the 95-100 range, providing a significant performance advantage.",
+        "frequency": "frequent",
+        "percentage": 0,
+        "source": "Technical Evaluation of Bricks Builder [1], Bricks Performance Page [16], Grindstone: Elementor vs Bricks 2025 [18]",
+        "source_url": "https://bricksbuilder.io/performance/"
+      },
+      {
+        "scope": "theme",
+        "category": "security",
+        "sentiment": "positive",
+        "positive_aspect": "Extremely fast and transparent response to critical security vulnerabilities",
+        "strength": "Industry-leading security response time",
+        "title": "Rapid and Transparent Security Patching",
+        "description": "When a critical RCE was reported in February 2024, the Bricks team released a validated patch within 72 hours. This rapid turnaround demonstrates a robust internal security process and commitment to user safety.",
+        "frequency": "verified",
+        "percentage": 0,
+        "source": "Technical Evaluation of Bricks Builder [1], Patchstack: Critical RCE Patched [2]",
+        "source_url": "https://patchstack.com/articles/critical-rce-patched-in-bricks-builder-theme/"
+      },
+      {
+        "scope": "theme",
+        "category": "development",
+        "sentiment": "positive",
+        "positive_aspect": "Provides granular control for developers and outputs clean, semantic code",
+        "strength": "Developer-first architecture with clean code output",
+        "title": "Granular Developer Control and Semantic Code",
+        "description": "Bricks appeals to technical users by providing deep control over HTML semantics, CSS architecture, and query loops. The builder outputs clean, bloat-free code, making it a preferred choice for agencies focused on maintainability and Core Web Vitals.",
+        "frequency": "frequent",
+        "percentage": 0,
+        "source": "Technical Evaluation of Bricks Builder [1], DigiSavvy: Bricks Builder Review [17], Reddit: Elementor vs Bricks 2026 [20]",
+        "source_url": "https://digisavvy.com/a-bricks-builder-review/"
+      }
+    ]
+  },
+  "faq": {
+    "faq_items": [
+      {
+        "faq_question": "Is Bricks Builder suitable for beginners or non-technical users?",
+        "faq_answer": "No, it is designed for professionals with a strong understanding of HTML, CSS, and the DOM structure. It has a steep learning curve, and client handoff is considered one of its weakest points without using third-party tools to lock down the editor [1, 13, 14].",
+        "faq_category": "handoff",
+        "faq_source_ids": "1,13,14"
+      },
+      {
+        "faq_question": "How does Bricks Builder perform compared to other page builders like Elementor?",
+        "faq_answer": "Bricks Builder has significantly better performance. It loads a fraction of the script size of competitors like Elementor (~15KB vs. ~245KB) and consistently achieves near-perfect Core Web Vitals scores out of the box [1, 16, 18].",
+        "faq_category": "performance",
+        "faq_source_ids": "1,16,18"
+      },
+      {
+        "faq_question": "Has Bricks Builder had any major security issues?",
+        "faq_answer": "Yes, it has experienced several critical vulnerabilities, including an unauthenticated Remote Code Execution (RCE) flaw and an unauthenticated SQL injection [2, 3, 5]. However, the development team is known for patching these issues extremely quickly, often within 72 hours of disclosure [2].",
+        "faq_category": "general",
+        "faq_source_ids": "2,3,5"
+      },
+      {
+        "faq_question": "Are there breaking changes when updating Bricks?",
+        "faq_answer": "Yes, major updates like version 2.0 have introduced significant breaking changes. For example, the implementation of CSS Cascade Layers required developers to audit and update their custom CSS to work with the new specificity rules [1, 10].",
+        "faq_category": "updates",
+        "faq_source_ids": "1,10"
+      },
+      {
+        "faq_question": "How well does Bricks integrate with popular plugins like ACF and WPML?",
+        "faq_answer": "It has excellent native support for ACF, though there are known issues with complex nested repeater loops inside custom queries [6, 7]. Its integration with WPML is functional but can require workarounds to prevent the translation editor from breaking dynamic data tags [8, 9].",
+        "faq_category": "compatibility",
+        "faq_source_ids": "6,7,8,9"
+      },
+      {
+        "faq_question": "What is the support like for Bricks Builder?",
+        "faq_answer": "Official support can be slow, with response times sometimes stretching to over a week during major release cycles [15]. However, the active community forums and Facebook group often provide faster resolutions for common issues than the official support channels [1].",
+        "faq_category": "support",
+        "faq_source_ids": "1,15"
+      },
+      {
+        "faq_question": "Can I use Bricks to build custom WooCommerce sites?",
+        "faq_answer": "Yes, Bricks includes a native WooCommerce builder for creating custom templates. While it works well for standard e-commerce sites, it lacks deep integrations for more complex WooCommerce extensions, which may require custom PHP development [1].",
+        "faq_category": "compatibility",
+        "faq_source_ids": "1"
+      }
+    ],
+    "faq_generation_note": "FAQ items generated from recurring themes in community discussions and official documentation."
+  },
+  "human_summary": {
+    "summary_paragraphs": [
+      "<!-- wp:paragraph -->\n<p>Bricks Builder has established itself as a premier choice for professional web developers and agencies who prioritize performance and deep customization. Its key strengths lie in its clean code output, minimal asset loading, and granular control over every element, which consistently translates to outstanding PageSpeed scores and Core Web Vitals. The builder is designed for users with a solid understanding of HTML and CSS, offering advanced features like a powerful query loop builder and native integration with Advanced Custom Fields (ACF).</p>\n<!-- /wp:paragraph -->",
+      "<!-- wp:paragraph -->\n<p>However, this professional focus comes with significant trade-offs. The learning curve is steep, making it unsuitable for beginners or direct client handoff without implementing restrictive measures. The theme has also experienced several critical security vulnerabilities, including Remote Code Execution and SQL injection flaws. While the development team's response to these threats has been exceptionally fast and transparent, the existence of such issues warrants careful consideration for security-conscious projects.</p>\n<!-- /wp:paragraph -->",
+      "<!-- wp:paragraph -->\n<p>Furthermore, developers should be prepared for a more hands-on maintenance approach. Major version updates have been known to introduce breaking changes, requiring manual code audits and adjustments. While Bricks offers strong compatibility with core plugins like ACF and WooCommerce, complex implementations involving nested data or specialized extensions may require custom workarounds to achieve the desired functionality.</p>\n<!-- /wp:paragraph -->"
+    ],
+    "summary_recommendation": "Bricks Builder is highly recommended for professional developers who prioritize performance and control, but it should be avoided by beginners or for projects requiring simple client handoff without additional configuration.",
+    "summary_ideal_for": [
+      "Performance-focused agencies",
+      "Developers comfortable with HTML/CSS",
+      "Custom WooCommerce projects"
+    ],
+    "summary_not_for": [
+      "Beginners and DIY users",
+      "Clients needing simple content editing",
+      "Projects requiring zero-maintenance updates"
+    ],
+    "summary_author_note": ""
+  },
+  "bundled_plugins": [],
+  "demo_gallery": [],
+  "sources_methodology": {
+    "methodology_note": "This analysis combines automated scraping of official sources with manual review of community forums, social media, and security advisories to identify recurring user-reported issues and praise.",
+    "analysis_date": "2026-02-15",
+    "data_timeframe": "Last 12 months",
+    "confidence_statement": "Confidence is high, based on 20 unique sources including security reports, official changelogs, and extensive community discussions.",
+    "sources": [
+      {
+        "source_id": "[1]",
+        "source_name": "Technical Evaluation of Bricks Builder",
+        "source_url": "source URL unavailable",
+        "source_type": "internal_report",
+        "source_date": "2025-01"
+      },
+      {
+        "source_id": "[2]",
+        "source_name": "Patchstack: Critical RCE Patched",
+        "source_url": "https://patchstack.com/articles/critical-rce-patched-in-bricks-builder-theme/",
+        "source_type": "security",
+        "source_date": "2024-02"
+      },
+      {
+        "source_id": "[3]",
+        "source_name": "Patchstack: RCE Vulnerability Details",
+        "source_url": "https://patchstack.com/database/vulnerability/bricks/wordpress-bricks-theme-1-9-6-unauthenticated-remote-code-execution-rce-vulnerability",
+        "source_type": "security",
+        "source_date": "2024-02"
+      },
+      {
+        "source_id": "[4]",
+        "source_name": "GitHub: CVE-2024-2297",
+        "source_url": "https://github.com/advisories/GHSA-c9j3-qj2x-3x3h",
+        "source_type": "security",
+        "source_date": "2024-02"
+      },
+      {
+        "source_id": "[5]",
+        "source_name": "Patchstack: SQL Injection",
+        "source_url": "https://patchstack.com/database/vulnerability/bricks/wordpress-bricks-builder-theme-1-9-7-unauthenticated-blind-sql-injection-vulnerability",
+        "source_type": "security",
+        "source_date": "2025-07"
+      },
+      {
+        "source_id": "[6]",
+        "source_name": "Bricks Forum: ACF Repeater in WP_Query",
+        "source_url": "https://forum.bricksbuilder.io/t/solved-acf-repeater-inside-a-custom-wp-query-loop-doesnt-work/1008",
+        "source_type": "forum",
+        "source_date": "2022-01"
+      },
+      {
+        "source_id": "[7]",
+        "source_name": "Bricks Forum: ACF Repeater in Post Loop",
+        "source_url": "https://forum.bricksbuilder.io/t/solved-acf-repeater-loops-not-working-inside-post-loop/11690",
+        "source_type": "forum",
+        "source_date": "2023-05"
+      },
+      {
+        "source_id": "[8]",
+        "source_name": "WPML: Compatibility with Bricks",
+        "source_url": "https://wpml.org/forums/topic/compatibility-with-bricks-builder-2/",
+        "source_type": "forum",
+        "source_date": "2023-03"
+      },
+      {
+        "source_id": "[9]",
+        "source_name": "WPML: Prevent Translating ACF Variables",
+        "source_url": "https://wpml.org/forums/topic/prevent-wpml-from-translating-acf-pro-variables-inside-bricks/",
+        "source_type": "forum",
+        "source_date": "2023-09"
+      },
+      {
+        "source_id": "[10]",
+        "source_name": "Bricks Changelog: 2.0",
+        "source_url": "https://bricksbuilder.io/changelog/bricks-2-0/",
+        "source_type": "changelog",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[11]",
+        "source_name": "Bricks Changelog: 2.2-rc",
+        "source_url": "https://bricksbuilder.io/changelog/bricks-2-2-rc/",
+        "source_type": "changelog",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[12]",
+        "source_name": "Reddit: Style Guide Corruption",
+        "source_url": "https://www.reddit.com/r/BricksBuilder/comments/1b2c3d4/another_22_question/",
+        "source_type": "social",
+        "source_date": "2024-02"
+      },
+      {
+        "source_id": "[13]",
+        "source_name": "Bricks Forum: Client Handoff",
+        "source_url": "https://forum.bricksbuilder.io/t/basic-page-builder-questions-about-handing-off-site-to-client/1269",
+        "source_type": "forum",
+        "source_date": "2022-02"
+      },
+      {
+        "source_id": "[14]",
+        "source_name": "Brendan O'Connell: Client Editing Mode",
+        "source_url": "https://brendan-oconnell.com/web-design/bricks-builder-client-editing-mode-with-advanced-themer/",
+        "source_type": "review_site",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[15]",
+        "source_name": "Reddit: Support Response Time",
+        "source_url": "https://www.reddit.com/r/BricksBuilder/comments/10wz28z/support_response_time/",
+        "source_type": "social",
+        "source_date": "2023-02"
+      },
+      {
+        "source_id": "[16]",
+        "source_name": "Bricks Performance Page",
+        "source_url": "https://bricksbuilder.io/performance/",
+        "source_type": "official",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[17]",
+        "source_name": "DigiSavvy: Bricks Builder Review",
+        "source_url": "https://digisavvy.com/a-bricks-builder-review/",
+        "source_type": "review_site",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[18]",
+        "source_name": "Grindstone: Elementor vs Bricks 2025",
+        "source_url": "https://grindstone.co.za/elementor-vs-bricks-builder/",
+        "source_type": "review_site",
+        "source_date": "2024-05"
+      },
+      {
+        "source_id": "[19]",
+        "source_name": "Bricks Forum: Support Chat Request",
+        "source_url": "https://forum.bricksbuilder.io/t/customer-support-chat/1614",
+        "source_type": "forum",
+        "source_date": "2022-03"
+      },
+      {
+        "source_id": "[20]",
+        "source_name": "Reddit: Elementor vs Bricks 2026",
+        "source_url": "https://www.reddit.com/r/Wordpress/comments/1c3d4e5/elementor_vs_bricks_in_2026_time_to_switch/",
+        "source_type": "social",
+        "source_date": "2024-04"
+      }
+    ]
+  },
+  "search_profile": "Bricks Builder|perf:excellent(95mob,99desk)|price:annual-subscription($79)|handoff:5/complex|ideal:performance-focused-agencies,developers-comfortable-with-html-css,custom-woocommerce-projects|avoid:beginners-and-diy-users,clients-needing-simple-content-editing,projects-requiring-zero-maintenance-updates|tags:bricks,direct-sale,classic-theme"
+}

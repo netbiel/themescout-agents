@@ -1,0 +1,85 @@
+{
+  "themes": {
+    "astra": {
+      "score": 92.3,
+      "match": 12,
+      "mismatch": 1,
+      "common_fields": 13,
+      "extra_in_python": 83,
+      "exempt": 0
+    },
+    "betheme": {
+      "score": 94.7,
+      "match": 89,
+      "mismatch": 5,
+      "common_fields": 96,
+      "extra_in_python": 0,
+      "exempt": 2
+    },
+    "bricks-builder": {
+      "score": 92.6,
+      "match": 87,
+      "mismatch": 7,
+      "common_fields": 96,
+      "extra_in_python": 0,
+      "exempt": 2
+    },
+    "divi": {
+      "score": 88.3,
+      "match": 83,
+      "mismatch": 11,
+      "common_fields": 96,
+      "extra_in_python": 0,
+      "exempt": 2
+    },
+    "generatepress": {
+      "score": 88.3,
+      "match": 83,
+      "mismatch": 11,
+      "common_fields": 96,
+      "extra_in_python": 0,
+      "exempt": 2
+    },
+    "hello-elementor": {
+      "score": 94.7,
+      "match": 89,
+      "mismatch": 5,
+      "common_fields": 96,
+      "extra_in_python": 0,
+      "exempt": 2
+    },
+    "kadence": {
+      "score": 90.9,
+      "match": 10,
+      "mismatch": 1,
+      "common_fields": 11,
+      "extra_in_python": 85,
+      "exempt": 0
+    },
+    "neve": {
+      "score": 92.6,
+      "match": 87,
+      "mismatch": 7,
+      "common_fields": 96,
+      "extra_in_python": 0,
+      "exempt": 2
+    },
+    "oceanwp": {
+      "score": 94.7,
+      "match": 89,
+      "mismatch": 5,
+      "common_fields": 96,
+      "extra_in_python": 0,
+      "exempt": 2
+    },
+    "uncode": {
+      "score": 94.7,
+      "match": 89,
+      "mismatch": 5,
+      "common_fields": 96,
+      "extra_in_python": 0,
+      "exempt": 2
+    }
+  },
+  "average_score": 92.4
+}

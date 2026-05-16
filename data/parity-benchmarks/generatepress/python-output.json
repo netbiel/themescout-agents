@@ -1,0 +1,500 @@
+{
+  "quick_overview": {
+    "quick_verdict": "GeneratePress is a top-tier, performance-focused theme ideal for developers and agencies who value clean code, stability, and granular control. While its developer-centric \"Elements\" system creates a steeper learning curve for beginners, its reputation for rapid security patching and exceptional update stability makes it a highly reliable foundation for professional projects. 4 of the 9 reported issues affect the theme directly; the rest relate to its premium plugins or third-party integrations.",
+    "quick_pros": [
+      {
+        "pro_text": "Industry-leading performance"
+      },
+      {
+        "pro_text": "Exceptional update stability"
+      },
+      {
+        "pro_text": "Powerful developer controls"
+      }
+    ],
+    "quick_cons": [
+      {
+        "con_text": "Steeper learning curve for non-coders"
+      },
+      {
+        "con_text": "Lacks a native white-label feature"
+      },
+      {
+        "con_text": "Core features require GP Premium"
+      }
+    ]
+  },
+  "theme_basic": {
+    "theme_author": "Tom Usborne",
+    "theme_version": "3.6.1",
+    "release_date": "2014-05-26",
+    "last_update": "2025-12-01",
+    "code_quality": "high",
+    "theme_tagline": "Lightweight foundation for WordPress websites",
+    "sales_count": "600,000+ active installations",
+    "distribution_model": "wordpress_org",
+    "demo_url": "https://sites.generatepress.com/nomad/"
+  },
+  "performance_metrics": {
+    "pagespeed_mobile": 76,
+    "pagespeed_desktop": 95,
+    "lcp_mobile": 2.53,
+    "lcp_desktop": 1.85,
+    "cls_mobile": 0,
+    "cls_desktop": 0,
+    "test_url": "https://sites.generatepress.com/nomad/",
+    "test_date": "2026-02-07",
+    "pagespeed_link": "",
+    "performance_tier": "good",
+    "performance_interpretation": "The Mobile PageSpeed score is 76/100, with a Largest Contentful Paint of 2.53 seconds, tested on the official 'Nomad' demo site. This good score is supported by community praise for its lightweight architecture, which uses less than 10KB of CSS and has a dependency-free JavaScript model."
+  },
+  "theme_pricing": {
+    "license_type": "freemium",
+    "pricing_model": "annual_subscription",
+    "base_price": 0,
+    "support_period_included": 12,
+    "support_renewal_cost": 59,
+    "update_policy": "support_period_updates",
+    "money_back_guarantee": 0,
+    "pricing_tiers": [
+      {
+        "tier_name": "GP Premium (Yearly)",
+        "tier_price": 59,
+        "tier_description": "Up to 500 sites, Site Library, premium support, 1 year updates"
+      },
+      {
+        "tier_name": "GP Premium (Lifetime)",
+        "tier_price": 249,
+        "tier_description": "Up to 500 sites, lifetime updates and support"
+      }
+    ]
+  },
+  "theme_ratings": {
+    "popularity_trend": "stable",
+    "external_ratings": [
+      {
+        "rating_source": "WordPress.org",
+        "rating_score": 5,
+        "rating_count": 1380,
+        "rating_url": "https://wordpress.org/themes/generatepress/reviews/"
+      }
+    ]
+  },
+  "theme_technical": {
+    "min_wp_version": "6.5",
+    "min_php_version": "7.4",
+    "wp_compatibility": "6.9",
+    "last_verification": "2026-02-07",
+    "activity_status": "active"
+  },
+  "handoff_difficulty": {
+    "handoff_score": 6,
+    "handoff_panel_complexity": "complex",
+    "handoff_docs_quality": "excellent",
+    "handoff_learning_curve": "days",
+    "handoff_recommendation": "Highly recommended for professional developers and agencies who prioritize performance and maintainability over a purely visual building experience. Beginners may find themes with more integrated visual builders to be a better starting point.",
+    "handoff_confidence": "high",
+    "handoff_sources_count": 5,
+    "handoff_verdict_safe": "GeneratePress is an excellent choice if you are a developer or an agency comfortable with a code-first approach that utilizes hooks, filters, and a powerful \"Elements\" system for deep customization [1, 7].",
+    "handoff_verdict_caution": "You should exercise caution if you are a non-technical user or expect a purely visual, drag-and-drop experience for all theme customizations, as the theme's advanced features require more technical proficiency than competitors [1, 9].",
+    "handoff_verdict_avoid": "Avoid this theme if you require a built-in, one-click white-labeling feature for client projects and do not have the resources to implement custom PHP snippets for branding the WordPress admin area [1, 5, 6].",
+    "handoff_alternative_themes": "Kadence, Blocksy"
+  },
+  "scenario_performance": {
+    "perf_confidence": "high",
+    "perf_sources_count": 3,
+    "perf_verdict_safe": "This theme is a safe choice if your highest priority is building an exceptionally fast website, as its lightweight foundation provides a significant advantage in meeting Core Web Vitals thresholds [1].",
+    "perf_verdict_caution": "Use this theme with caution on complex WooCommerce sites, as you may need to implement a well-documented code snippet to dequeue the 'wc-cart-fragments' script on non-shop pages to prevent performance degradation [1, 4].",
+    "perf_verdict_avoid": "GeneratePress should be avoided if you expect top-tier performance from third-party plugins without any configuration, as optimizing integrations like WooCommerce may require technical intervention to resolve known bottlenecks.",
+    "perf_code_observation": "The Mobile PageSpeed score is 76/100, with a Largest Contentful Paint of 2.53 seconds, tested on the official 'Nomad' demo site on 2026-02-07. This good score is supported by community praise for its lightweight architecture, which uses less than 10KB of CSS and has a dependency-free JavaScript model [1].",
+    "perf_recommendation": "GeneratePress is one of the best choices available for a performance-focused project, providing a clean and fast base that consistently scores well.",
+    "perf_alternative_themes": "Kadence, Astra"
+  },
+  "scenario_updates": {
+    "updates_confidence": "high",
+    "updates_sources_count": 1,
+    "updates_verdict_safe": "GeneratePress is a very safe choice if you prioritize long-term stability and reliable updates, as the development team has a proven track record of maintaining backward compatibility and quickly reverting changes that cause issues [1].",
+    "updates_verdict_caution": "Exercise caution and test updates on a staging site, as a past update (version 3.5.0) temporarily introduced disruptive CSS that affected frontend layouts before the issue was promptly identified and corrected by the developers [1].",
+    "updates_verdict_avoid": "There are no significant reasons to avoid GeneratePress based on its update history; the team's commitment to stability and rapid fixes is a key strength frequently cited by professional users [1].",
+    "updates_recommendation": "The theme's update process is exceptionally reliable and a primary reason for its popularity among professionals. It is highly recommended for projects where long-term stability is critical.",
+    "updates_alternative_themes": "Kadence, Blocksy"
+  },
+  "plugin_compatibility_enhanced": {
+    "compat_total_tested": 3,
+    "compat_full_compatible": 1,
+    "compat_issues_found": 2,
+    "compat_confidence": "high",
+    "compat_sources_count": 3,
+    "compat_verdict_safe": "The theme is a safe choice if you are building within the GeneratePress and GenerateBlocks ecosystem, which offers deep, performance-focused integrations with major plugins like ACF and WooCommerce [1].",
+    "compat_verdict_caution": "Be cautious when using Advanced Custom Fields for custom block development, as major ACF updates have previously caused block registration conflicts that required developers to adjust their custom code to maintain compatibility [1, 8].",
+    "compat_verdict_avoid": "Avoid this theme if you are not prepared to occasionally implement performance workarounds, such as conditionally loading WooCommerce scripts, to resolve known compatibility bottlenecks with certain third-party plugins [1, 4].",
+    "compat_recommendation": "",
+    "compat_alternative_themes": "",
+    "plugin_compatibility_list": [
+      {
+        "plugin": "WooCommerce",
+        "plugin_category": "ecommerce",
+        "compatibility_status": "partial",
+        "compatibility_notes": "The theme integrates deeply with WooCommerce, but a common performance issue with the `wc-cart-fragments` script requires a custom code snippet to resolve on non-shop pages.",
+        "user_issues": [
+          "[1]",
+          "[4]"
+        ]
+      },
+      {
+        "plugin": "Advanced Custom Fields (ACF)",
+        "plugin_category": "other",
+        "compatibility_status": "partial",
+        "compatibility_notes": "While deeply integrated with GenerateBlocks, updates to the ACF block registration API have previously caused conflicts with custom block implementations, requiring code adjustments.",
+        "user_issues": [
+          "[1]",
+          "[8]"
+        ]
+      },
+      {
+        "plugin": "Elementor",
+        "plugin_category": "page_builder",
+        "compatibility_status": "full",
+        "compatibility_notes": "The theme remains fully compatible with Elementor, though community trends indicate a shift towards using the native block editor with GenerateBlocks for better performance.",
+        "user_issues": [
+          "[1]"
+        ]
+      }
+    ]
+  },
+  "community_pain_points": {
+    "community_total_discussions": 9,
+    "community_analysis_date": "2026-02-07",
+    "community_timeframe": "Last 6 months",
+    "community_methodology_note": "",
+    "community_pain_points": [
+      {
+        "category": "general",
+        "sentiment": "negative",
+        "source": "The Technical and Strategic Evolution of GeneratePress [1], Pentest-Tools.com [2], Patchstack [3]",
+        "source_url": "https://example.com/generatepress-analysis-2023-2025",
+        "severity": "moderate",
+        "frequency": "Verified",
+        "title": "GP Premium vulnerable to Reflected Cross-Site Scripting (XSS) (historical — unconfirmed current)",
+        "description": "A reflected XSS vulnerability (CVE-2024-3469) was found in GP Premium versions up to 2.4.0. The issue stemmed from insufficient input sanitization of the message parameter in the inc/verify.php file, allowing unauthenticated attackers to inject malicious scripts via crafted links.",
+        "resolution": "",
+        "version_reported": "<= 2.4.0",
+        "scope": "ecosystem",
+        "date_reported": "2024-06"
+      },
+      {
+        "category": "general",
+        "sentiment": "negative",
+        "source": "The Technical and Strategic Evolution of GeneratePress [1]",
+        "source_url": "https://example.com/generatepress-analysis-2023-2025",
+        "severity": "moderate",
+        "frequency": "Verified",
+        "title": "GP Premium vulnerable to Stored Cross-Site Scripting (XSS) (historical — unconfirmed current)",
+        "description": "A stored XSS vulnerability (CVE-2023-6807) with a medium severity score of 5.4 was reported in the GP Premium plugin, affecting an unknown version.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "ecosystem",
+        "date_reported": "2024-02"
+      },
+      {
+        "category": "general",
+        "sentiment": "negative",
+        "source": "The Technical and Strategic Evolution of GeneratePress [1]",
+        "source_url": "https://example.com/generatepress-analysis-2023-2025",
+        "severity": "minor",
+        "frequency": "Verified",
+        "title": "GenerateBlocks vulnerable to Information Exposure and API leaks (historical — unconfirmed current)",
+        "description": "The GenerateBlocks plugin has faced multiple security issues, including an Information Exposure vulnerability (CVE-2024-1452) and a REST API leak, both rated as medium severity.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "blocks",
+        "date_reported": "2025-08"
+      },
+      {
+        "category": "plugin_compat",
+        "sentiment": "negative",
+        "source": "The Technical and Strategic Evolution of GeneratePress [1], GeneratePress Documentation [4]",
+        "source_url": "https://example.com/generatepress-analysis-2023-2025",
+        "severity": "moderate",
+        "frequency": "Common",
+        "title": "WooCommerce cart fragments script causes performance issues on non-shop pages",
+        "description": "A common performance complaint is the 'Cart Fragments' script from WooCommerce, which loads globally and can slow down non-eCommerce pages. Developers typically resolve this by using a code snippet to conditionally dequeue the script.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "ecosystem",
+        "date_reported": "date-unknown"
+      },
+      {
+        "category": "handoff",
+        "sentiment": "negative",
+        "source": "The Technical and Strategic Evolution of GeneratePress [1], GeneratePress Documentation [5], GeneratePress Forum [6]",
+        "source_url": "https://example.com/generatepress-analysis-2023-2025",
+        "severity": "moderate",
+        "frequency": "Common",
+        "title": "Lacks a native one-click white label feature for agency client handoffs",
+        "description": "GeneratePress does not include a built-in 'one-click' white label feature, which is a common request from agencies. Branding the admin experience for clients requires implementing custom PHP-based solutions.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "theme",
+        "date_reported": "date-unknown"
+      },
+      {
+        "category": "handoff",
+        "sentiment": "negative",
+        "source": "The Technical and Strategic Evolution of GeneratePress [1], By Solopreneurs [9]",
+        "source_url": "https://example.com/generatepress-analysis-2023-2025",
+        "severity": "moderate",
+        "frequency": "Frequent",
+        "title": "Steeper learning curve for non-developers compared to competitors",
+        "description": "The theme presents a steeper learning curve for non-technical users because its advanced features are managed through the code-oriented 'Elements' system rather than a more intuitive visual drag-and-drop builder like those found in Kadence or Blocksy.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "theme",
+        "date_reported": "date-unknown"
+      },
+      {
+        "category": "plugin_compat",
+        "sentiment": "negative",
+        "source": "The Technical and Strategic Evolution of GeneratePress [1], ACF Support Forum [8]",
+        "source_url": "https://example.com/generatepress-analysis-2023-2025",
+        "severity": "minor",
+        "frequency": "Occasional",
+        "title": "Block registration conflicts with Advanced Custom Fields (ACF) updates (historical — unconfirmed current)",
+        "description": "Following an ACF update in early 2025, some custom block implementations experienced conflicts due to changes in the block registration API. The community found that a code adjustment was necessary to fix block registration failures.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "ecosystem",
+        "date_reported": "2025-03"
+      },
+      {
+        "category": "updates",
+        "sentiment": "negative",
+        "source": "The Technical and Strategic Evolution of GeneratePress [1]",
+        "source_url": "https://example.com/generatepress-analysis-2023-2025",
+        "severity": "minor",
+        "frequency": "Verified",
+        "title": "An update temporarily introduced CSS that disrupted frontend layouts (historical — unconfirmed current)",
+        "description": "Version 3.5.0 of the theme briefly introduced a change that caused core WordPress to inject disruptive CSS, affecting frontend layouts. The development team quickly identified and reverted this change to maintain site integrity.",
+        "resolution": "",
+        "version_reported": "3.5.0",
+        "scope": "theme",
+        "date_reported": "2024-10"
+      },
+      {
+        "category": "general",
+        "sentiment": "negative",
+        "source": "The Technical and Strategic Evolution of GeneratePress [1], GeneratePress Forum [7]",
+        "source_url": "https://example.com/generatepress-analysis-2023-2025",
+        "severity": "minor",
+        "frequency": "Common",
+        "title": "Advanced customizations often require custom PHP snippets",
+        "description": "While powerful, achieving advanced customizations such as managing Custom Post Type titles or fixing the WooCommerce cart fragments issue often requires developers to use custom PHP snippets rather than relying on UI options.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "theme",
+        "date_reported": "date-unknown"
+      }
+    ],
+    "community_praise_stats": [
+      {
+        "scope": "theme",
+        "category": "performance",
+        "sentiment": "positive",
+        "positive_aspect": "Industry-leading performance and lightweight architecture",
+        "strength": "High",
+        "title": "Exceptional Performance with Minimal Footprint",
+        "description": "GeneratePress is praised for its industry-leading performance, featuring a baseline of less than 10 KB of CSS and a dependency-free JavaScript model. This lightweight architecture provides a significant advantage in meeting Core Web Vitals thresholds, with a base page weight of around 7.5 KB and only 2 initial HTTP requests [1].",
+        "frequency": "frequent",
+        "percentage": 0,
+        "source": "The Technical and Strategic Evolution of GeneratePress [1]",
+        "source_url": "https://example.com/generatepress-analysis-2023-2025"
+      },
+      {
+        "scope": "theme",
+        "category": "updates",
+        "sentiment": "positive",
+        "positive_aspect": "Exceptional update stability and commitment to backward compatibility",
+        "strength": "High",
+        "title": "Reliable and Stable Updates with a Focus on Backward Compatibility",
+        "description": "The theme is highly regarded for its update stability. A key example was the quick reversal of a feature in late 2024 that caused layout issues, demonstrating a commitment to preserving the integrity of existing client sites. This reliability earns a 'High Confidence' rating from professional developers [1].",
+        "frequency": "frequent",
+        "percentage": 0,
+        "source": "The Technical and Strategic Evolution of GeneratePress [1]",
+        "source_url": "https://example.com/generatepress-analysis-2023-2025"
+      },
+      {
+        "scope": "ecosystem",
+        "category": "security",
+        "sentiment": "positive",
+        "positive_aspect": "Rapid security patching and proactive architectural hardening",
+        "strength": "High",
+        "title": "Proactive Security with Rapid Patching",
+        "description": "The development team demonstrates a strong commitment to security through rapid patching. When a vulnerability was disclosed, a patch (version 2.4.1) was released almost simultaneously, minimizing the window of exposure for users. This rapid response is a cornerstone of the theme's professional reputation [1, 3].",
+        "frequency": "verified",
+        "percentage": 0,
+        "source": "The Technical and Strategic Evolution of GeneratePress [1], Patchstack [3]",
+        "source_url": "https://example.com/generatepress-analysis-2023-2025"
+      }
+    ]
+  },
+  "faq": {
+    "faq_items": [
+      {
+        "faq_question": "Is GeneratePress suitable for beginners?",
+        "faq_answer": "GeneratePress can be used by beginners, but it has a steeper learning curve compared to competitors like Kadence or Blocksy. Its most powerful features are managed through the \"Elements\" system, which is less intuitive than a visual drag-and-drop builder and may require some technical understanding [1, 9].",
+        "faq_category": "general",
+        "faq_source_ids": "1,9"
+      },
+      {
+        "faq_question": "How does GeneratePress compare to themes like Kadence or Blocksy?",
+        "faq_answer": "GeneratePress is often considered more lightweight and developer-focused, prioritizing performance and control through code (hooks and filters). Kadence and Blocksy tend to offer more features and visual customization options out-of-the-box, which can make them easier for non-developers but potentially adds more weight [1, 9].",
+        "faq_category": "general",
+        "faq_source_ids": "1,9"
+      },
+      {
+        "faq_question": "Has GeneratePress had any security vulnerabilities?",
+        "faq_answer": "Yes, the companion plugin GP Premium has had documented vulnerabilities, including a Reflected XSS (CVE-2024-3469) and a Stored XSS (CVE-2023-6807). However, the development team is known for releasing patches extremely quickly, often on the same day as public disclosure, which minimizes user risk [1, 2, 3]. The GenerateBlocks plugin has also had security issues addressed [1].",
+        "faq_category": "general",
+        "faq_source_ids": "1,2,3"
+      },
+      {
+        "faq_question": "How does GeneratePress perform with WooCommerce?",
+        "faq_answer": "GeneratePress has a strong, performance-focused integration with WooCommerce. However, users frequently report performance issues caused by the WooCommerce \"Cart Fragments\" script loading on all pages. The GeneratePress team provides official documentation with a code snippet to fix this, ensuring optimal performance [1, 4].",
+        "faq_category": "performance",
+        "faq_source_ids": "1,4"
+      },
+      {
+        "faq_question": "Does GeneratePress offer a white-label option for agencies?",
+        "faq_answer": "No, GeneratePress does not have a native, one-click white-label feature. Agencies that need to brand the theme for clients must use custom PHP snippets, and the development team provides documentation and forum support for this process [1, 5, 6].",
+        "faq_category": "handoff",
+        "faq_source_ids": "1,5,6"
+      },
+      {
+        "faq_question": "Do I need to know how to code to use GeneratePress?",
+        "faq_answer": "You do not need to know code for basic site setup. However, to unlock the theme's full potential and perform advanced customizations, such as managing custom post type titles or other specific tweaks, a basic understanding of PHP and CSS is often required [1, 7].",
+        "faq_category": "general",
+        "faq_source_ids": "1,7"
+      },
+      {
+        "faq_question": "Is GeneratePress compatible with page builders like Elementor?",
+        "faq_answer": "Yes, GeneratePress is fully compatible with page builders like Elementor. However, the modern best practice recommended by the developer community is to use the native WordPress block editor with the companion GenerateBlocks plugin for superior performance and a more future-proof architecture [1].",
+        "faq_category": "compatibility",
+        "faq_source_ids": "1"
+      },
+      {
+        "faq_question": "What is the \"Elements\" system in GeneratePress?",
+        "faq_answer": "\"Elements\" is a powerful module in GP Premium that allows you to create custom hooks, layouts, and headers/footers that can be conditionally displayed anywhere on your site. It is the core system for advanced, code-based customizations and is a primary reason developers choose the theme for its flexibility [1].",
+        "faq_category": "general",
+        "faq_source_ids": "1"
+      }
+    ],
+    "faq_generation_note": ""
+  },
+  "human_summary": {
+    "summary_paragraphs": [
+      "<!-- wp:paragraph -->\n<p>GeneratePress has earned a stellar reputation as a lightweight, stable, and exceptionally fast WordPress theme. It is a preferred choice for professional developers and agencies who prioritize performance and long-term maintainability. The theme's philosophy is built on a clean, minimalist foundation that adheres strictly to WordPress coding standards, providing a reliable canvas for complex and high-traffic websites. Its update process is particularly praised for its stability, with the development team demonstrating a strong commitment to backward compatibility.</p>\n<!-- /wp:paragraph -->",
+      "<!-- wp:paragraph -->\n<p>The primary trade-off for this performance and control is a steeper learning curve, especially for users accustomed to all-in-one visual builders. While the free version is functional, the theme's true power is unlocked with the GP Premium plugin, which provides access to the Site Library, advanced styling options, and the versatile \"Elements\" module for creating custom layouts and hooks. This developer-centric approach means that advanced customizations often require familiarity with PHP and CSS, making it less accessible for absolute beginners.</p>\n<!-- /wp:paragraph -->",
+      "<!-- wp:paragraph -->\n<p>It is important to note that some community-reported issues are not with the free theme itself, but with its companion plugins, GP Premium and GenerateBlocks, or with complex third-party integrations. While security vulnerabilities have been discovered in these plugins, the developer's response has been consistently rapid, with patches released almost immediately upon disclosure. This proactive security posture, combined with the theme's robust architecture, solidifies its status as a trusted tool for building professional WordPress sites.</p>\n<!-- /wp:paragraph -->"
+    ],
+    "summary_recommendation": "",
+    "summary_ideal_for": [],
+    "summary_not_for": [],
+    "summary_author_note": ""
+  },
+  "bundled_plugins": [
+    {
+      "plugin_name": "GP Premium",
+      "plugin_category": "other",
+      "plugin_value": 59,
+      "license_type": "annual",
+      "plugin_functionality": "Provides access to the Site Library, advanced styling options, and the versatile \"Elements\" module for creating custom layouts and hooks."
+    },
+    {
+      "plugin_name": "GenerateBlocks",
+      "plugin_category": "page_builder",
+      "plugin_value": 39,
+      "license_type": "annual",
+      "plugin_functionality": "A lightweight set of powerful blocks for the WordPress block editor, designed to build websites without a traditional page builder."
+    }
+  ],
+  "demo_gallery": [
+    {
+      "demo_name": "Nomad",
+      "demo_url": "https://sites.generatepress.com/nomad/",
+      "demo_category": "blog",
+      "demo_image_url": ""
+    }
+  ],
+  "sources_methodology": {
+    "methodology_note": "",
+    "analysis_date": "2026-02-07",
+    "data_timeframe": "Last 12 months",
+    "confidence_statement": "",
+    "sources": [
+      {
+        "source_id": "[1]",
+        "source_name": "The Technical and Strategic Evolution of GeneratePress",
+        "source_url": "https://example.com/generatepress-analysis-2023-2025",
+        "source_type": "official",
+        "source_date": "2025-11"
+      },
+      {
+        "source_id": "[2]",
+        "source_name": "Pentest-Tools.com",
+        "source_url": "https://www.pentest-tools.com/vulnerability-scanning/wordpress-security-scanner/gp-premium-2-4-0-cross-site-scripting-cve-2024-3469",
+        "source_type": "review_site",
+        "source_date": "2024-06"
+      },
+      {
+        "source_id": "[3]",
+        "source_name": "Patchstack",
+        "source_url": "https://patchstack.com/database/vulnerability/gp-premium/wordpress-gp-premium-plugin-2-4-0-cross-site-scripting-xss-vulnerability",
+        "source_type": "review_site",
+        "source_date": "2024-06"
+      },
+      {
+        "source_id": "[4]",
+        "source_name": "GeneratePress Documentation",
+        "source_url": "https://generatepress.com/forums/topic/woocommerce-performance-with-menu-cart/",
+        "source_type": "documentation",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[5]",
+        "source_name": "GeneratePress Documentation",
+        "source_url": "https://generatepress.com/knowledgebase/white-label-gp/",
+        "source_type": "documentation",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[6]",
+        "source_name": "GeneratePress Forum",
+        "source_url": "https://generatepress.com/forums/topic/white-label-feature/",
+        "source_type": "forum",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[7]",
+        "source_name": "GeneratePress Forum",
+        "source_url": "https://generatepress.com/forums/topic/show-hide-titles-or-elements-in-custom-post/",
+        "source_type": "forum",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[8]",
+        "source_name": "ACF Support Forum",
+        "source_url": "https://support.advancedcustomfields.com/forums/topic/wp-6-8-gutenberg-blocks-wont-register/",
+        "source_type": "forum",
+        "source_date": "2025-03"
+      },
+      {
+        "source_id": "[9]",
+        "source_name": "By Solopreneurs",
+        "source_url": "https://bysolopreneurs.com/kadence-vs-generatepress-full-comparison/",
+        "source_type": "review_site",
+        "source_date": "date-unknown"
+      }
+    ]
+  },
+  "search_profile": "GeneratePress|perf:good(76mob,95desk)|price:free|handoff:6/complex|tags:elementor,wordpress-org,classic-theme"
+}

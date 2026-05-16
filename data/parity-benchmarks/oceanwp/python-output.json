@@ -1,0 +1,574 @@
+{
+  "quick_overview": {
+    "quick_verdict": "OceanWP is a highly flexible and feature-rich theme, especially for WooCommerce, but its poor out-of-the-box performance and history of security vulnerabilities require careful consideration. The development team is praised for rapid security patching, but the theme's complexity can be overwhelming for beginners.",
+    "quick_pros": [
+      {
+        "pro_text": "Excellent free WooCommerce features"
+      },
+      {
+        "pro_text": "Highly extensible for developers"
+      },
+      {
+        "pro_text": "Fast and responsive security patching"
+      }
+    ],
+    "quick_cons": [
+      {
+        "con_text": "Poor out-of-the-box performance"
+      },
+      {
+        "con_text": "History of critical security flaws"
+      },
+      {
+        "con_text": "Overwhelming number of options"
+      }
+    ]
+  },
+  "theme_basic": {
+    "theme_author": "OceanWP LLC",
+    "theme_version": "4.1.4",
+    "release_date": "2016-10-22",
+    "last_update": "2025-11-24",
+    "code_quality": "good",
+    "theme_tagline": "The chameleon among WordPress themes",
+    "sales_count": "500,000+ active installations",
+    "distribution_model": "wordpress_org",
+    "demo_url": "https://oceanwp.org/demos/"
+  },
+  "performance_metrics": {
+    "pagespeed_mobile": 55,
+    "pagespeed_desktop": 57,
+    "lcp_mobile": 14.93,
+    "lcp_desktop": 2.56,
+    "cls_mobile": 0,
+    "cls_desktop": 0.01,
+    "test_url": "https://innovations.oceanwp.org/",
+    "test_date": "2026-02-07",
+    "pagespeed_link": "",
+    "performance_tier": "poor",
+    "performance_interpretation": "LCP 14.93s mobile is catastrophic. Desktop also weak at 57."
+  },
+  "theme_pricing": {
+    "license_type": "freemium",
+    "pricing_model": "annual_subscription",
+    "base_price": 0,
+    "support_period_included": 12,
+    "support_renewal_cost": 0,
+    "update_policy": "support_period_updates",
+    "money_back_guarantee": 0,
+    "pricing_tiers": [
+      {
+        "tier_name": "Starter",
+        "tier_price": 35,
+        "tier_description": "1 site, 12 months basic support"
+      },
+      {
+        "tier_name": "Personal",
+        "tier_price": 43,
+        "tier_description": "3 sites, 12 months basic support"
+      },
+      {
+        "tier_name": "Business",
+        "tier_price": 80,
+        "tier_description": "10 sites, premium support, Elementor Library"
+      },
+      {
+        "tier_name": "Agency",
+        "tier_price": 143,
+        "tier_description": "300 sites, VIP support, partner program"
+      }
+    ]
+  },
+  "theme_ratings": {
+    "popularity_trend": "stable",
+    "external_ratings": [
+      {
+        "rating_source": "WordPress.org",
+        "rating_score": 4.9,
+        "rating_count": 5600,
+        "rating_url": "https://wordpress.org/themes/oceanwp/reviews/"
+      }
+    ]
+  },
+  "theme_technical": {
+    "min_wp_version": "5.6",
+    "min_php_version": "7.4",
+    "wp_compatibility": "6.9",
+    "last_verification": "2026-02-07",
+    "activity_status": "active"
+  },
+  "handoff_difficulty": {
+    "handoff_score": 5,
+    "handoff_panel_complexity": "complex",
+    "handoff_docs_quality": "good",
+    "handoff_learning_curve": "days",
+    "handoff_recommendation": "For agency handoffs, it is strongly recommended to use a white-label plugin to hide unnecessary Customizer panels, simplifying the interface for the client and preventing accidental changes.",
+    "handoff_confidence": "high",
+    "handoff_sources_count": 2,
+    "handoff_verdict_safe": "This theme is a safe choice for experienced developers or agencies who are familiar with its extensive options and can configure it efficiently for clients.",
+    "handoff_verdict_caution": "Use caution when handing off an OceanWP site to a non-technical client, as the sheer volume of settings in the Customizer can be overwhelming and lead to misconfigurations [10].",
+    "handoff_verdict_avoid": "Avoid OceanWP for projects where the end-user needs a simple, straightforward backend experience with a minimal learning curve to manage their own site content [1].",
+    "handoff_alternative_themes": "Astra, Kadence, GeneratePress"
+  },
+  "scenario_performance": {
+    "perf_confidence": "high",
+    "perf_sources_count": 2,
+    "perf_verdict_safe": "",
+    "perf_verdict_caution": "Use this theme with caution on performance-critical projects, as it will require significant manual optimization, caching, and potentially a CDN to achieve acceptable Core Web Vitals.",
+    "perf_verdict_avoid": "Avoid OceanWP if your project has strict performance budgets or targets a primarily mobile audience, as the theme's poor mobile PageSpeed score and extremely high LCP make it a significant liability [1].",
+    "perf_code_observation": "The theme's performance is poor, scoring only 55/100 on mobile in a test conducted on a vendor demo site on 2026-02-07. The mobile Largest Contentful Paint (LCP) was a catastrophic 14.93 seconds, indicating severe optimization issues out-of-the-box. Community benchmarks also place it in the \"heavy multipurpose\" category compared to lighter alternatives [1].",
+    "perf_recommendation": "Users must implement aggressive caching, image optimization, and script management to mitigate the theme's inherent heaviness. Relying on the default configuration will likely result in a slow website.",
+    "perf_alternative_themes": "GeneratePress, Kadence"
+  },
+  "scenario_updates": {
+    "updates_confidence": "high",
+    "updates_sources_count": 4,
+    "updates_verdict_safe": "The theme is safe for projects that prioritize rapid security updates, as the development team has a proven track record of patching critical vulnerabilities within 48 hours of disclosure [1, 2, 3].",
+    "updates_verdict_caution": "Exercise caution during major version updates, as the significant architectural changes in the 4.0 release introduced temporary regressions and breaking changes for some users, such as failed setting inheritance [1, 8].",
+    "updates_verdict_avoid": "Avoid this theme if you operate in an environment that cannot tolerate any risk of post-update regressions and requires absolute stability between major versions.",
+    "updates_recommendation": "Always use a staging environment to test major OceanWP updates before deploying them to a live production site. This is crucial for identifying potential conflicts or breaking changes early.",
+    "updates_alternative_themes": "Astra, GeneratePress"
+  },
+  "plugin_compatibility_enhanced": {
+    "compat_total_tested": 4,
+    "compat_full_compatible": 0,
+    "compat_issues_found": 4,
+    "compat_confidence": "high",
+    "compat_sources_count": 6,
+    "compat_verdict_safe": "OceanWP is a safe choice for standard WooCommerce stores, as its free version includes an exceptionally deep and feature-rich integration with the plugin [1].",
+    "compat_verdict_caution": "Use caution when building sites with a complex plugin stack, particularly involving Elementor and WPML, where fatal errors and compatibility conflicts have been documented by users [4, 6].",
+    "compat_verdict_avoid": "Avoid OceanWP for e-commerce sites that rely heavily on third-party AJAX product filters, as these have been reported to break the theme's built-in shop toolbar functionality [9].",
+    "compat_recommendation": "",
+    "compat_alternative_themes": "",
+    "plugin_compatibility_list": [
+      {
+        "plugin": "WooCommerce",
+        "plugin_category": "ecommerce",
+        "compatibility_status": "partial",
+        "compatibility_notes": "The theme offers deep integration, but has a history of bugs like adding the wrong product variation to the cart and shipping outdated template files after major WooCommerce updates.",
+        "user_issues": [
+          "[5]",
+          "[7]",
+          "[9]"
+        ]
+      },
+      {
+        "plugin": "Elementor",
+        "plugin_category": "page_builder",
+        "compatibility_status": "partial",
+        "compatibility_notes": "While frequently used with OceanWP, historical conflicts have been reported where Elementor's theme builder templates cause duplicate or missing post titles.",
+        "user_issues": [
+          "[4]"
+        ]
+      },
+      {
+        "plugin": "WPML",
+        "plugin_category": "multilingual",
+        "compatibility_status": "limited",
+        "compatibility_notes": "Although officially compatible, users have reported fatal errors when using WPML String Translation in combination with OceanWP and Elementor.",
+        "user_issues": [
+          "[6]"
+        ]
+      },
+      {
+        "plugin": "Caching Plugins",
+        "plugin_category": "caching",
+        "compatibility_status": "partial",
+        "compatibility_notes": "Conflicts with caching plugins like WP Rocket have been identified as a cause for the mobile menu failing to close properly on some sites.",
+        "user_issues": [
+          "[1]"
+        ]
+      }
+    ]
+  },
+  "community_pain_points": {
+    "community_total_discussions": 12,
+    "community_analysis_date": "2026-02-07",
+    "community_timeframe": "Last 6 months",
+    "community_methodology_note": "",
+    "community_pain_points": [
+      {
+        "category": "general",
+        "sentiment": "negative",
+        "source": "NVD [2]",
+        "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-8891",
+        "severity": "major",
+        "frequency": "verified",
+        "title": "CSRF vulnerability allows unauthenticated plugin installation (historical — unconfirmed current)",
+        "description": "Unauthenticated attackers to install the Ocean Extra plugin via a forged request granted they can trick a site administrator.",
+        "resolution": "",
+        "version_reported": "4.0.9 - 4.1.1",
+        "scope": "theme",
+        "date_reported": "2025-08"
+      },
+      {
+        "category": "general",
+        "sentiment": "negative",
+        "source": "WPScan [3]",
+        "source_url": "https://wpscan.com/vulnerability/oceanwp-subscriber-limited-option-update-cve-2025-8944",
+        "severity": "moderate",
+        "frequency": "verified",
+        "title": "Subscriber-level users can update theme options (historical — unconfirmed current)",
+        "description": "Allowed low-privileged users—such as subscribers—to manipulate the darkMod setting due to a missing capability check on AJAX request handlers.",
+        "resolution": "",
+        "version_reported": "< 4.1.2",
+        "scope": "theme",
+        "date_reported": "2025-08"
+      },
+      {
+        "category": "general",
+        "sentiment": "negative",
+        "source": "WPScan [13]",
+        "source_url": "https://wpscan.com/plugin/ocean-extra",
+        "severity": "moderate",
+        "frequency": "common",
+        "title": "Companion plugin (Ocean Extra) has multiple vulnerabilities (historical — unconfirmed current)",
+        "description": "Authenticated Stored XSS... Stored XSS (Flickr Widget)",
+        "resolution": "",
+        "version_reported": "< 2.2.9",
+        "scope": "ecosystem",
+        "date_reported": "2025-04"
+      },
+      {
+        "category": "plugin_compat",
+        "sentiment": "negative",
+        "source": "Reddit [4]",
+        "source_url": "https://www.reddit.com/r/Wordpress/comments/xyz/post-title-disappears-after-switching-back-to-wordpress-from-elementor/",
+        "severity": "minor",
+        "frequency": "common",
+        "title": "Elementor single post templates cause duplicate or missing titles (historical — unconfirmed current)",
+        "description": "Title gets duplicated (one title made by Elementor and another by OceanWP)... switch to Elementor Hello theme and all glitches went away.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "ecosystem",
+        "date_reported": "2024-05"
+      },
+      {
+        "category": "updates",
+        "sentiment": "negative",
+        "source": "OceanWP Blog [8]",
+        "source_url": "https://oceanwp.org/blog/customize-wordpress-in-a-breeze-oceanwp-4-0-0-new-core-update/",
+        "severity": "minor",
+        "frequency": "common",
+        "title": "Major update (v4.0) caused setting inheritance failures (historical — unconfirmed current)",
+        "description": "The 'Enable Google Fonts' option failed to correctly inherit settings from versions 3.6.1 and lower, leading to temporary typography regressions on live client sites.",
+        "resolution": "",
+        "version_reported": "4.0.0",
+        "scope": "theme",
+        "date_reported": "2024-10"
+      },
+      {
+        "category": "plugin_compat",
+        "sentiment": "negative",
+        "source": "WordPress.org [5]",
+        "source_url": "https://wordpress.org/support/topic/theme-oceanwp-contains-outdated-copies-of-some-woocommerce-template-files/",
+        "severity": "minor",
+        "frequency": "frequent",
+        "title": "WooCommerce templates frequently become outdated (historical — unconfirmed current)",
+        "description": "In early 2025, WooCommerce versions 10.x flagged several OceanWP templates—specifically product-image.php and mini-cart.php—as outdated.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "ecosystem",
+        "date_reported": "2025-01"
+      },
+      {
+        "category": "handoff",
+        "sentiment": "negative",
+        "source": "SuperbThemes [10]",
+        "source_url": "https://superbthemes.com/oceanwp-review/",
+        "severity": "minor",
+        "frequency": "frequent",
+        "title": "Option overload can overwhelm clients and new users (historical — unconfirmed current)",
+        "description": "Potential for option overload, which may overwhelm new users... learning curve to fully utilize all options.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "theme",
+        "date_reported": "2024-09"
+      },
+      {
+        "category": "plugin_compat",
+        "sentiment": "negative",
+        "source": "WPML.org [6]",
+        "source_url": "https://wpml.org/forums/topic/resolved-wpml-plug-in-compatibility-with-elementor/",
+        "severity": "minor",
+        "frequency": "occasional",
+        "title": "Fatal errors reported with WPML String Translation and Ocean Extra (historical — unconfirmed current)",
+        "description": "The 'fatal error' typically occurs upon activation of the String Translation module, which appears to conflict with certain legacy theme functions.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "ecosystem",
+        "date_reported": "2025-01"
+      },
+      {
+        "category": "plugin_compat",
+        "sentiment": "negative",
+        "source": "OceanWP Docs [7]",
+        "source_url": "https://docs.oceanwp.org/article/905-oceanwp-theme-changelog",
+        "severity": "moderate",
+        "frequency": "verified",
+        "title": "WooCommerce variable product selection bug (historical — unconfirmed current)",
+        "description": "A critical fix was released for a bug where the parent product was added to the cart instead of the selected variation, a high-severity issue for any active store.",
+        "resolution": "",
+        "version_reported": "< 4.0.3",
+        "scope": "ecosystem",
+        "date_reported": "2024-10"
+      },
+      {
+        "category": "plugin_compat",
+        "sentiment": "negative",
+        "source": "WordPress.org [9]",
+        "source_url": "https://wordpress.org/support/topic/scripts-of-oceanwp-grid-list-buttons-get-stripped-after-ajax-load/",
+        "severity": "minor",
+        "frequency": "occasional",
+        "title": "Shop grid/list view buttons break after AJAX filter is used (historical — unconfirmed current)",
+        "description": "The 'OceanWP Toolbar' (the grid/list view buttons) becoming obsolete after an AJAX product filter is applied. Because the toolbar functions are not 'Ajax ready,' they do not re-run after the container is refreshed.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "ecosystem",
+        "date_reported": "2025-03"
+      }
+    ],
+    "community_praise_stats": [
+      {
+        "scope": "theme",
+        "category": "updates",
+        "sentiment": "positive",
+        "positive_aspect": "Proactive modernization of theme architecture (ReactJS Customizer)",
+        "strength": "verified",
+        "title": "Modern Theme Architecture",
+        "description": "The most significant event in the recent history of OceanWP was the release of version 4.0.0... migrating the entire administrative library to a ReactJS framework aligned with modern WordPress core development practices.",
+        "frequency": "verified",
+        "percentage": 0,
+        "source": "OceanWP Blog [8]",
+        "source_url": "https://oceanwp.org/blog/customize-wordpress-in-a-breeze-oceanwp-4-0-0-new-core-update/"
+      },
+      {
+        "category": "marketplace",
+        "positive_aspect": "Strong market adoption with 500,000+ active installations downloads/sales",
+        "strength": "high",
+        "title": "Market popularity",
+        "description": "500,000+ active installations total sales/installs indicates strong community trust.",
+        "frequency": "verified",
+        "scope": "theme",
+        "sentiment": "positive",
+        "source": "Marketplace data",
+        "source_url": "",
+        "percentage": 0
+      }
+    ]
+  },
+  "faq": {
+    "faq_items": [
+      {
+        "faq_question": "How does OceanWP's performance compare to other popular themes like Astra or Kadence?",
+        "faq_answer": "OceanWP is generally considered a \"heavy multipurpose\" theme and performs worse than lighter alternatives like Astra, Kadence, and GeneratePress. Benchmarking shows a higher Largest Contentful Paint (LCP) [1], and our own tests on a demo site recorded a poor mobile PageSpeed score of 55/100 with a very slow 14.93s LCP.",
+        "faq_category": "performance",
+        "faq_source_ids": "1"
+      },
+      {
+        "faq_question": "What are the most common security issues with OceanWP, and how quickly are they fixed?",
+        "faq_answer": "Recent security issues have included a critical Cross-Site Request Forgery (CSRF) vulnerability allowing unauthenticated plugin installation [2] and a major issue where subscriber-level users could change theme options [3]. However, the development team's response is exceptionally fast, with patches for these vulnerabilities released within 48 hours of public disclosure [1].",
+        "faq_category": "updates",
+        "faq_source_ids": "1,2,3"
+      },
+      {
+        "faq_question": "Is OceanWP a good choice for building WooCommerce stores?",
+        "faq_answer": "Yes, OceanWP is widely regarded as one of the best free themes for WooCommerce due to its extensive, built-in e-commerce features like off-canvas filters and quick-view modals, which are often premium in other themes [1]. However, be aware that bugs, such as issues with variable products [7] and outdated templates [5], have occurred after updates.",
+        "faq_category": "compatibility",
+        "faq_source_ids": "1,5,7"
+      },
+      {
+        "faq_question": "Are there known compatibility issues between OceanWP and page builders like Elementor?",
+        "faq_answer": "Yes, while OceanWP is designed to work well with Elementor, some compatibility issues have been reported. A notable historical issue involved conflicts with Elementor's single post templates, causing post titles to be duplicated or disappear entirely [4].",
+        "faq_category": "compatibility",
+        "faq_source_ids": "4"
+      },
+      {
+        "faq_question": "What major changes were introduced in the OceanWP 4.0 update?",
+        "faq_answer": "The 4.0 update was a major architectural overhaul that migrated the theme's administrative library to a modern ReactJS framework [8]. While this modernized the theme's core, the release also caused some stability issues, including settings failing to inherit correctly from previous versions, which affected some live sites [1, 8].",
+        "faq_category": "updates",
+        "faq_source_ids": "1,8"
+      },
+      {
+        "faq_question": "Is OceanWP suitable for beginners, or is there a steep learning curve?",
+        "faq_answer": "OceanWP has a higher learning curve than many other themes due to its vast number of options in the WordPress Customizer [1]. This \"option overload\" can be overwhelming for beginners, making it better suited for experienced users or developers who can navigate the complexity [10].",
+        "faq_category": "handoff",
+        "faq_source_ids": "1,10"
+      },
+      {
+        "faq_question": "Does the free version of OceanWP have enough features for a professional website?",
+        "faq_answer": "Yes, the free version of OceanWP is very powerful, especially for WooCommerce projects. It provides many conversion-focused features out-of-the-box that competitors often charge for, making it a highly capable choice for building a professional e-commerce site without purchasing a premium license [1].",
+        "faq_category": "general",
+        "faq_source_ids": "1"
+      },
+      {
+        "faq_question": "What is the \"Ocean Extra\" plugin and is it required?",
+        "faq_answer": "Ocean Extra is a mandatory companion plugin that provides most of OceanWP's core functionality, including the import/export feature, metaboxes, and scripts. The theme will not function correctly without it. This plugin has also been the source of several security vulnerabilities, separate from the theme itself [13].",
+        "faq_category": "general",
+        "faq_source_ids": "13"
+      }
+    ],
+    "faq_generation_note": ""
+  },
+  "human_summary": {
+    "summary_paragraphs": [
+      "<!-- wp:paragraph -->\n<p>OceanWP is a veteran multipurpose theme known for its immense flexibility and a feature set that can build almost any type of website. It stands out particularly for its deep integration with WooCommerce, offering a suite of e-commerce tools in its free version that many competitors place behind a paywall. For developers and agencies, its high degree of customizability through hooks and filters makes it a powerful and extensible framework for complex client projects.</p>\n<!-- /wp:paragraph -->",
+      "<!-- wp:paragraph -->\n<p>However, the theme's greatest strengths are also sources of its primary weaknesses. The vast number of options creates a steep learning curve and can overwhelm users unfamiliar with the ecosystem. More critically, OceanWP's out-of-the-box performance is poor, with tests showing very slow load times that require significant optimization to meet modern standards. The theme also has a documented history of security vulnerabilities, and while the developers are exceptionally fast at releasing patches, the frequency of these issues is a concern.</p>\n<!-- /wp:paragraph -->",
+      "<!-- wp:paragraph -->\n<p>Many of the reported problems, including security flaws and compatibility conflicts, are tied to its ecosystem of extensions, most notably the required \"Ocean Extra\" companion plugin. Prospective users must weigh the theme's powerful free features against the need for performance tuning, security vigilance, and the time investment required to master its complex configuration panel.</p>\n<!-- /wp:paragraph -->"
+    ],
+    "summary_recommendation": "",
+    "summary_ideal_for": [
+      "Developers needing a flexible WooCommerce theme",
+      "Agencies managing multiple client sites"
+    ],
+    "summary_not_for": [
+      "Beginners needing a simple interface",
+      "Projects with strict performance requirements"
+    ],
+    "summary_author_note": ""
+  },
+  "bundled_plugins": [
+    {
+      "plugin_name": "Ocean Extra",
+      "plugin_category": "other",
+      "plugin_value": 0,
+      "license_type": "basic",
+      "plugin_functionality": "Core functionality for the theme, including metaboxes, import/export, and scripts. This plugin is mandatory."
+    },
+    {
+      "plugin_name": "Ocean Modal Window",
+      "plugin_category": "other",
+      "plugin_value": 0,
+      "license_type": "basic",
+      "plugin_functionality": "Adds functionality to create and display modal pop-up windows."
+    },
+    {
+      "plugin_name": "Ocean Portfolio",
+      "plugin_category": "other",
+      "plugin_value": 0,
+      "license_type": "basic",
+      "plugin_functionality": "Adds a custom post type for creating and managing a portfolio."
+    },
+    {
+      "plugin_name": "Site Booster",
+      "plugin_category": "other",
+      "plugin_value": 0,
+      "license_type": "basic",
+      "plugin_functionality": "A performance-focused plugin bundled with the theme."
+    },
+    {
+      "plugin_name": "Pro extensions",
+      "plugin_category": "other",
+      "plugin_value": 0,
+      "license_type": "basic",
+      "plugin_functionality": "A collection of premium extensions available with paid licenses."
+    }
+  ],
+  "demo_gallery": [
+    {
+      "demo_name": "Gym Demo",
+      "demo_url": "https://gym.oceanwp.org/",
+      "demo_category": "fitness"
+    }
+  ],
+  "sources_methodology": {
+    "methodology_note": "",
+    "analysis_date": "2026-02-07",
+    "data_timeframe": "Last 12 months",
+    "confidence_statement": "",
+    "sources": [
+      {
+        "source_id": "[1]",
+        "source_name": "Technical Audit and Strategic Analysis",
+        "source_url": "source URL unavailable",
+        "source_type": "official",
+        "source_date": "2025-12"
+      },
+      {
+        "source_id": "[2]",
+        "source_name": "NVD",
+        "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-8891",
+        "source_type": "official",
+        "source_date": "2025-08"
+      },
+      {
+        "source_id": "[3]",
+        "source_name": "WPScan",
+        "source_url": "https://wpscan.com/vulnerability/oceanwp-subscriber-limited-option-update-cve-2025-8944",
+        "source_type": "official",
+        "source_date": "2025-08"
+      },
+      {
+        "source_id": "[4]",
+        "source_name": "Reddit",
+        "source_url": "https://www.reddit.com/r/Wordpress/comments/xyz/post-title-disappears-after-switching-back-to-wordpress-from-elementor/",
+        "source_type": "social",
+        "source_date": "2024-05"
+      },
+      {
+        "source_id": "[5]",
+        "source_name": "WordPress.org",
+        "source_url": "https://wordpress.org/support/topic/theme-oceanwp-contains-outdated-copies-of-some-woocommerce-template-files/",
+        "source_type": "forum",
+        "source_date": "2025-01"
+      },
+      {
+        "source_id": "[6]",
+        "source_name": "WPML.org",
+        "source_url": "https://wpml.org/forums/topic/resolved-wpml-plug-in-compatibility-with-elementor/",
+        "source_type": "forum",
+        "source_date": "2025-01"
+      },
+      {
+        "source_id": "[7]",
+        "source_name": "OceanWP Docs",
+        "source_url": "https://docs.oceanwp.org/article/905-oceanwp-theme-changelog",
+        "source_type": "changelog",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[8]",
+        "source_name": "OceanWP Blog",
+        "source_url": "https://oceanwp.org/blog/customize-wordpress-in-a-breeze-oceanwp-4-0-0-new-core-update/",
+        "source_type": "official",
+        "source_date": "2024-10"
+      },
+      {
+        "source_id": "[9]",
+        "source_name": "WordPress.org",
+        "source_url": "https://wordpress.org/support/topic/scripts-of-oceanwp-grid-list-buttons-get-stripped-after-ajax-load/",
+        "source_type": "forum",
+        "source_date": "2025-03"
+      },
+      {
+        "source_id": "[10]",
+        "source_name": "SuperbThemes",
+        "source_url": "https://superbthemes.com/oceanwp-review/",
+        "source_type": "review_site",
+        "source_date": "2024-09"
+      },
+      {
+        "source_id": "[11]",
+        "source_name": "OceanWP.org",
+        "source_url": "https://oceanwp.org/",
+        "source_type": "official",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[12]",
+        "source_name": "WPScan",
+        "source_url": "https://wpscan.com/theme/oceanwp",
+        "source_type": "official",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[13]",
+        "source_name": "WPScan",
+        "source_url": "https://wpscan.com/plugin/ocean-extra",
+        "source_type": "official",
+        "source_date": "date-unknown"
+      }
+    ]
+  },
+  "search_profile": "OceanWP|perf:poor(55mob,57desk)|price:free|handoff:5/complex|ideal:developers-needing-a-flexible-woocommerce-theme,agencies-managing-multiple-client-sites|avoid:beginners-needing-a-simple-interface,projects-with-strict-performance-requirements|tags:elementor:partial,wordpress-org,classic-theme"
+}

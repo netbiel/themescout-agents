@@ -1,0 +1,557 @@
+{
+  "quick_overview": {
+    "quick_verdict": "Hello Elementor is an exceptionally lightweight and fast starter theme, but it is a blank canvas that is entirely dependent on the Elementor builder. Of the 10 pain points identified, only 3 affect the theme directly, with the majority relating to the broader Elementor plugin ecosystem, including third-party plugin conflicts and update issues. This makes it a solid foundation for developers who can navigate its ecosystem, but less suitable for beginners seeking an out-of-the-box solution.",
+    "quick_pros": [
+      {
+        "pro_text": "Extremely lightweight and fast baseline"
+      },
+      {
+        "pro_text": "Highly extensible for developers"
+      },
+      {
+        "pro_text": "Modern codebase with no jQuery"
+      }
+    ],
+    "quick_cons": [
+      {
+        "con_text": "Updates can introduce breaking changes"
+      },
+      {
+        "con_text": "Entirely dependent on Elementor builder"
+      },
+      {
+        "con_text": "Ecosystem has known plugin conflicts"
+      }
+    ]
+  },
+  "theme_basic": {
+    "theme_author": "Elementor",
+    "theme_version": "",
+    "release_date": "2018-04-18",
+    "last_update": "2026-01-15",
+    "code_quality": "high",
+    "theme_tagline": "A lightweight theme for Elementor page builder",
+    "sales_count": "1,000,000+ active installations",
+    "distribution_model": "wordpress_org",
+    "demo_url": "https://elementor.com/themes/hello-theme/"
+  },
+  "performance_metrics": {
+    "pagespeed_mobile": 56,
+    "pagespeed_desktop": 84,
+    "lcp_mobile": 6.34,
+    "lcp_desktop": 3.82,
+    "cls_mobile": 0.01,
+    "cls_desktop": 0,
+    "test_url": "https://apitemplate.io/",
+    "test_date": "2026-02-07",
+    "pagespeed_link": "",
+    "performance_tier": "needs_work",
+    "performance_interpretation": "Test URL is apitemplate.io — a random third-party site, NOT an official Hello Elementor demo. Scores include site-specific plugins, content, hosting. Unreliable for theme assessment. Re-test with clean Elementor demo."
+  },
+  "theme_pricing": {
+    "license_type": "free",
+    "pricing_model": "free",
+    "base_price": 0,
+    "support_period_included": 0,
+    "support_renewal_cost": 0,
+    "update_policy": "lifetime_updates",
+    "money_back_guarantee": 0,
+    "pricing_tiers": []
+  },
+  "theme_ratings": {
+    "popularity_trend": "stable",
+    "external_ratings": [
+      {
+        "rating_source": "WordPress.org",
+        "rating_score": 4.5,
+        "rating_count": 920,
+        "rating_url": "https://wordpress.org/themes/hello-elementor/reviews/"
+      }
+    ]
+  },
+  "theme_technical": {
+    "min_wp_version": "6.0",
+    "min_php_version": "7.4",
+    "wp_compatibility": "6.7",
+    "last_verification": "2026-02-07",
+    "activity_status": "active"
+  },
+  "handoff_difficulty": {
+    "handoff_score": 9,
+    "handoff_panel_complexity": "minimal",
+    "handoff_docs_quality": "good",
+    "handoff_learning_curve": "minutes",
+    "handoff_recommendation": "Hello Elementor is ideal for agencies and developers building custom sites with Elementor who need a clean, unopinionated, and high-performance base. It is not recommended for DIY users or clients who are not prepared to learn and work exclusively within the Elementor builder interface.",
+    "handoff_confidence": "high",
+    "handoff_sources_count": 2,
+    "handoff_verdict_safe": "This theme is safe for handoff to developers or technically proficient clients who understand that all content and design management happens within the Elementor page builder, not theme settings.",
+    "handoff_verdict_caution": "Use caution when handing off to non-technical clients, as the complete lack of theme options can be confusing, and they will have a steep learning curve with the Elementor builder to manage layouts.",
+    "handoff_verdict_avoid": "Avoid this theme for clients who expect a traditional theme experience with a Customizer panel for settings like colors, fonts, or layouts, as it provides none of these features by design.",
+    "handoff_alternative_themes": "Kadence, Blocksy, Astra"
+  },
+  "scenario_performance": {
+    "perf_confidence": "medium",
+    "perf_sources_count": 3,
+    "perf_verdict_safe": "The theme provides a safe and extremely fast foundation for performance-focused projects, as a clean installation is one of the lightest available, generating minimal HTTP requests and a tiny page size.",
+    "perf_verdict_caution": "Be cautious assuming the theme's lightness guarantees a fast website, as overall performance is dictated by the Elementor builder, the number of add-ons used, and hosting quality, which can lead to bloat.",
+    "perf_verdict_avoid": "Avoid this theme if you are not prepared to actively manage and optimize the entire Elementor ecosystem, as a heavy build with many plugins will negate the theme's baseline performance benefits.",
+    "perf_code_observation": "The Mobile PageSpeed score was 56/100 (Needs Work) with a poor LCP of 6.34s when tested on a third-party live site on 2026-02-07. It's critical to note that the test was performed on a random website using the theme, and these scores reflect its specific content, plugins, and hosting, making them an unreliable measure of the theme's intrinsic performance. Community benchmarks of a clean install show the theme itself is exceptionally lightweight, with a page size as small as 6kb.",
+    "perf_recommendation": "Use Hello Elementor as a starting point for performance, but pair it with a high-quality host and a minimal set of well-coded Elementor add-ons. Regularly audit the site's assets to ensure the final build remains fast.",
+    "perf_alternative_themes": "GeneratePress, Neve, Kadence"
+  },
+  "scenario_updates": {
+    "updates_confidence": "high",
+    "updates_sources_count": 4,
+    "updates_verdict_safe": "The theme is safe to update for teams that follow best practices, such as using a child theme for customizations and testing all updates on a staging environment before deploying to production.",
+    "updates_verdict_caution": "Exercise caution when updating, as the developers have released versions with intentional \"breaking changes\" to the HTML structure, which can break custom CSS and require manual code audits to fix.",
+    "updates_verdict_avoid": "Avoid using this theme on critical projects if you do not have a staging environment, as some minor version updates have been reported to cause \"White Screen of Death\" errors, creating significant downtime risk.",
+    "updates_recommendation": "Always use the official Hello Elementor child theme for any customizations. Given the history of breaking changes and potential for critical errors, testing updates on a staging site is not just recommended, it is essential. Despite these issues, the team's rapid patching of security flaws is a positive signal.",
+    "updates_alternative_themes": "Astra, Kadence, Blocksy"
+  },
+  "plugin_compatibility_enhanced": {
+    "compat_total_tested": 5,
+    "compat_full_compatible": 1,
+    "compat_issues_found": 4,
+    "compat_confidence": "high",
+    "compat_sources_count": 5,
+    "compat_verdict_safe": "The theme is safe for projects using a standard set of well-maintained plugins, as its minimalist nature reduces the surface area for direct theme-related conflicts.",
+    "compat_verdict_caution": "Use caution in complex builds involving multilingual or advanced custom field setups, as the broader Elementor ecosystem has documented conflicts with plugins like WPML, Yoast SEO, and ACF Pro Extended.",
+    "compat_verdict_avoid": "Avoid this theme if your project relies heavily on specific third-party Elementor add-ons that may not be compatible with modern PHP versions, as this can lead to fatal errors and site crashes.",
+    "compat_recommendation": "",
+    "compat_alternative_themes": "",
+    "plugin_compatibility_list": [
+      {
+        "plugin": "Elementor",
+        "plugin_category": "page_builder",
+        "compatibility_status": "full",
+        "compatibility_notes": "The theme is designed specifically as a blank canvas for the Elementor page builder and requires it to function.",
+        "user_issues": []
+      },
+      {
+        "plugin": "WooCommerce",
+        "plugin_category": "ecommerce",
+        "compatibility_status": "partial",
+        "compatibility_notes": "A known conflict with Yoast SEO active can suppress WooCommerce registration error notices, preventing users from seeing why they cannot create an account.",
+        "user_issues": [
+          "[4]"
+        ]
+      },
+      {
+        "plugin": "Yoast SEO",
+        "plugin_category": "seo",
+        "compatibility_status": "limited",
+        "compatibility_notes": "A specific conflict between Hello Elementor, Elementor Pro, and Yoast SEO was found to prevent WooCommerce registration form error messages from displaying.",
+        "user_issues": [
+          "[4]"
+        ]
+      },
+      {
+        "plugin": "Advanced Custom Fields (ACF)",
+        "plugin_category": "custom_fields",
+        "compatibility_status": "limited",
+        "compatibility_notes": "Elementor Pro updates have caused fatal errors on sites using ACF Pro Extended, and using Elementor blocks in Gutenberg can break the ACF REST API.",
+        "user_issues": [
+          "[6]",
+          "[14]"
+        ]
+      },
+      {
+        "plugin": "WPML",
+        "plugin_category": "multilingual",
+        "compatibility_status": "partial",
+        "compatibility_notes": "The Elementor ecosystem has recurring issues with WPML, including JavaScript errors that can prevent the Elementor editor from loading on translated pages.",
+        "user_issues": [
+          "[7]"
+        ]
+      }
+    ]
+  },
+  "community_pain_points": {
+    "community_total_discussions": 10,
+    "community_analysis_date": "2026-02-07",
+    "community_timeframe": "Last 6 months",
+    "community_methodology_note": "",
+    "community_pain_points": [
+      {
+        "category": "updates",
+        "sentiment": "negative",
+        "source": "Elementor Developers [3]",
+        "source_url": "https://developers.elementor.com/hello-elementor-theme-3-1-0/",
+        "severity": "moderate",
+        "frequency": "verified",
+        "title": "Breaking semantic markup changes in updates require manual code audits (historical — unconfirmed current)",
+        "description": "Elementor considers a breaking change as a change that removes or replaces an HTML element... For example changing <div> to <button> is considered a breaking change. Why? Because if your website has custom code... the element selector may change.",
+        "resolution": "",
+        "version_reported": "3.1.0",
+        "scope": "theme",
+        "date_reported": "2024-02"
+      },
+      {
+        "category": "plugin_compat",
+        "sentiment": "negative",
+        "source": "WordPress.org Forums [4]",
+        "source_url": "https://wordpress.org/support/topic/conflict-with-elementor-hello-theme-2/",
+        "severity": "minor",
+        "frequency": "common",
+        "title": "Conflict with Yoast SEO suppresses WooCommerce registration error notices (historical — unconfirmed current)",
+        "description": "When Hello theme is enabled and Yoast is enabled all error messages in the woocommerce registration form do not appear... Switch to another theme (Twenty Twenty-two) error messages appear as expected.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "ecosystem",
+        "date_reported": "2024-05"
+      },
+      {
+        "category": "support",
+        "sentiment": "negative",
+        "source": "WordPress.org Reviews [5]",
+        "source_url": "https://wordpress.org/support/topic/not-the-best-customer-service-12/",
+        "severity": "minor",
+        "frequency": "common",
+        "title": "Elementor support mandates using Hello theme for troubleshooting (historical — unconfirmed current)",
+        "description": "I was told over and over that [my theme] does not work by the support at Elementor... no solutions were ever provided other than using Hello. At every turn I was told the reason Elementor was not working... was because of the theme I was using.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "ecosystem",
+        "date_reported": "2024-11"
+      },
+      {
+        "category": "general",
+        "sentiment": "negative",
+        "source": "Wordfence [2]",
+        "source_url": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-themes/hello-elementor/hello-elementor-300-cross-site-request-forgery-to-notice-dismissal",
+        "severity": "minor",
+        "frequency": "verified",
+        "title": "Historical CSRF vulnerability allowed dismissal of admin notices (historical — unconfirmed current)",
+        "description": "The Hello Elementor theme for WordPress is vulnerable to Cross-Site Request Forgery in versions up to, and including, 3.0.0. This is due to missing or incorrect nonce validation on the ajax_hello_elementor_set_admin_notice_viewed() function.",
+        "resolution": "",
+        "version_reported": "<= 3.0.0",
+        "scope": "theme",
+        "date_reported": "2024-04"
+      },
+      {
+        "category": "plugin_compat",
+        "sentiment": "negative",
+        "source": "WordPress.org Forums [6]",
+        "source_url": "https://wordpress.org/support/topic/latest-elementor-pro-update-giving-conflict-with-acf-pro-extended/",
+        "severity": "minor",
+        "frequency": "occasional",
+        "title": "Elementor Pro updates conflict with ACF Pro Extended, causing site crashes (historical — unconfirmed current)",
+        "description": "The conflict originated in the acf-text.php module, where the code failed to handle non-string field types (like Repeater or Flexible Content arrays), throwing a E_CORE_WARNING that some server configurations treated as a fatal error.",
+        "resolution": "",
+        "version_reported": "3.27+ (Pro)",
+        "scope": "ecosystem",
+        "date_reported": "2024-06"
+      },
+      {
+        "category": "plugin_compat",
+        "sentiment": "negative",
+        "source": "WPML Forums [7]",
+        "source_url": "https://wpml.org/forums/topic/resolved-wpml-conflicts-with-latest-elementor-update/",
+        "severity": "minor",
+        "frequency": "occasional",
+        "title": "WPML compatibility issues can break the Elementor editor (historical — unconfirmed current)",
+        "description": "A notable incident in 2024 involved a JavaScript error (Uncaught TypeError: Cannot convert undefined or null to object) that prevented the Elementor editor from loading on translated pages.",
+        "resolution": "",
+        "version_reported": "3.25.11 (Pro)",
+        "scope": "ecosystem",
+        "date_reported": "2024-07"
+      },
+      {
+        "category": "updates",
+        "sentiment": "negative",
+        "source": "8THEME Blog [8]",
+        "source_url": "https://8theme.com/urgent-compatibility-issues-with-php-8-4-elementor-site-performance/",
+        "severity": "moderate",
+        "frequency": "common",
+        "title": "Third-party Elementor add-ons may not be compatible with modern PHP versions",
+        "description": "Agencies are warned that many third-party Elementor add-ons are not yet PHP 8.4 stable, leading to 500 internal server errors when running on the latest PHP builds.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "ecosystem",
+        "date_reported": "2025-12"
+      },
+      {
+        "category": "updates",
+        "sentiment": "negative",
+        "source": "Reddit [9]",
+        "source_url": "https://www.reddit.com/r/Wordpress/comments/10kfzbd/im_tired_of_elementor_update_issues/",
+        "severity": "minor",
+        "frequency": "occasional",
+        "title": "Minor version updates can cause 'White Screen of Death' (WSOD) errors (historical — unconfirmed current)",
+        "description": "User reports on r/wordpress and the Elementor community forums have documented instances where minor version updates (specifically 3.28.0) resulted in \"Critical Error\" screens.",
+        "resolution": "",
+        "version_reported": "3.28.0",
+        "scope": "theme",
+        "date_reported": "2023-01"
+      },
+      {
+        "category": "performance",
+        "sentiment": "negative",
+        "source": "Reddit [10]",
+        "source_url": "https://www.reddit.com/r/Wordpress/comments/162n15d/tired_of_elementor/",
+        "severity": "minor",
+        "frequency": "common",
+        "title": "Theme's lightness is a 'false promise' if the builder and add-ons are bloated (historical — unconfirmed current)",
+        "description": "Despite the 6kb claim, many Redditors complain that \"all my sites fail speed despite fully optimized everything,\" indicating that the theme's lightness is often a \"false promise\" if the builder and host are not equally performant.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "ecosystem",
+        "date_reported": "2023-08"
+      },
+      {
+        "category": "plugin_compat",
+        "sentiment": "negative",
+        "source": "WordPress.org Forums [14]",
+        "source_url": "https://wordpress.org/support/topic/elementor-blocks-breaks-acf-rest-api/",
+        "severity": "moderate",
+        "frequency": "occasional",
+        "title": "Using Elementor blocks within Gutenberg can break the ACF REST API",
+        "description": "Issues were reported where using an Elementor block inside a Gutenberg post would break the ACF REST API, resulting in an empty array for custom fields.",
+        "resolution": "",
+        "version_reported": "unknown",
+        "scope": "ecosystem",
+        "date_reported": "date-unknown"
+      }
+    ],
+    "community_praise_stats": [
+      {
+        "scope": "theme",
+        "category": "performance",
+        "sentiment": "positive",
+        "positive_aspect": "Extremely lightweight and fast, providing a superior performance baseline",
+        "strength": "frequent",
+        "title": "Extremely lightweight and fast performance baseline",
+        "description": "Technical benchmarks conducted throughout 2024 and 2025 indicate that a clean installation of Hello Elementor produces a page size of approximately 6kb to 32.7kb, generating as few as two to four HTTP requests.",
+        "frequency": "frequent",
+        "percentage": 0,
+        "source": "Elegant Themes [13]",
+        "source_url": "https://www.elegantthemes.com/blog/wordpress/fastest-wordpress-themes"
+      },
+      {
+        "scope": "theme",
+        "category": "development",
+        "sentiment": "positive",
+        "positive_aspect": "Highly extensible with developer-friendly filter hooks for deep customization",
+        "strength": "verified",
+        "title": "Highly extensible with developer-friendly filter hooks",
+        "description": "The theme provides a suite of hooks that can be utilized in a child theme’s functions.php file to modify the default framework... This is essential for agencies that need to enforce consistency across client sites.",
+        "frequency": "verified",
+        "percentage": 0,
+        "source": "Elementor Developers [11]",
+        "source_url": "https://developers.elementor.com/hello-elementor-theme/"
+      },
+      {
+        "scope": "theme",
+        "category": "updates",
+        "sentiment": "positive",
+        "positive_aspect": "Modern codebase with removal of legacy dependencies like jQuery",
+        "strength": "verified",
+        "title": "Modern codebase with no jQuery dependency",
+        "description": "More importantly, version 3.0.0 removed the theme's historical reliance on jQuery for core functionality, transitioning to vanilla JavaScript. This transition is not merely a performance enhancement; it is a strategic move to reduce technical debt.",
+        "frequency": "verified",
+        "percentage": 0,
+        "source": "Elementor Developers [1]",
+        "source_url": "https://developers.elementor.com/hello-elementor-theme-3-0-0/"
+      },
+      {
+        "scope": "theme",
+        "category": "security",
+        "sentiment": "positive",
+        "positive_aspect": "Rapid response to security vulnerabilities",
+        "strength": "verified",
+        "title": "Rapid response to security vulnerabilities",
+        "description": "The response from the Elementor team was rapid, with a patch released in version 3.0.1. This highlights a critical agency requirement: the necessity of maintaining active update protocols.",
+        "frequency": "verified",
+        "percentage": 0,
+        "source": "Wordfence [2]",
+        "source_url": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-themes/hello-elementor/hello-elementor-300-cross-site-request-forgery-to-notice-dismissal"
+      },
+      {
+        "scope": "theme",
+        "category": "accessibility",
+        "sentiment": "positive",
+        "positive_aspect": "Theme updates are actively improving accessibility standards",
+        "strength": "verified",
+        "title": "Active improvements to accessibility standards",
+        "description": "To align with WCAG accessibility standards, version 3.1.0 replaced generic <div> tags with semantic <button> and <nav> elements... the long-term benefit for client sites includes improved screen-reader compatibility and a higher accessibility score.",
+        "frequency": "verified",
+        "percentage": 0,
+        "source": "Elementor Developers [3]",
+        "source_url": "https://developers.elementor.com/hello-elementor-theme-3-1-0/"
+      }
+    ]
+  },
+  "faq": {
+    "faq_items": [
+      {
+        "faq_question": "Is Hello Elementor a fast theme?",
+        "faq_answer": "Yes, on its own, Hello Elementor is one of the fastest themes available, with a clean installation generating a page size as small as 6kb [13]. However, the final site performance depends heavily on the Elementor builder, the number and quality of add-ons, and the hosting environment [10].",
+        "faq_category": "performance",
+        "faq_source_ids": "13,10"
+      },
+      {
+        "faq_question": "Do I need to use a child theme with Hello Elementor?",
+        "faq_answer": "Yes, it is strongly recommended by the official documentation and development community. Using the Hello Elementor Child theme ensures that any custom code or functions you add are preserved when the parent theme is updated [11].",
+        "faq_category": "development",
+        "faq_source_ids": "11"
+      },
+      {
+        "faq_question": "Are there any known security issues with Hello Elementor?",
+        "faq_answer": "A Cross-Site Request Forgery (CSRF) vulnerability was discovered in versions up to 3.0.0 but was patched very quickly in version 3.0.1 in April 2024 [2]. This highlights the importance of keeping the theme updated to the latest version.",
+        "faq_category": "security",
+        "faq_source_ids": "2"
+      },
+      {
+        "faq_question": "Will updating Hello Elementor break my site?",
+        "faq_answer": "It is possible. Version 3.1.0 introduced breaking changes to the theme's HTML structure to improve accessibility, which required some developers to update their custom CSS [3]. There are also isolated reports of updates causing critical errors, so it is crucial to test updates on a staging site first [9].",
+        "faq_category": "updates",
+        "faq_source_ids": "3,9"
+      },
+      {
+        "faq_question": "Does Hello Elementor work well with all plugins?",
+        "faq_answer": "Not always. While the theme itself is simple, the Elementor ecosystem it operates in has known conflicts. Documented issues have occurred with popular plugins like Yoast SEO (suppressing WooCommerce notices), ACF Pro Extended, and WPML [4, 6, 7].",
+        "faq_category": "compatibility",
+        "faq_source_ids": "4,6,7"
+      },
+      {
+        "faq_question": "What is the difference between Hello Elementor and Hello Biz?",
+        "faq_answer": "Hello Elementor is a completely blank, minimalist theme intended for developers. Hello Biz is a variation built upon Hello Elementor that includes a setup wizard and pre-designed kits to help beginners build a site more quickly [12].",
+        "faq_category": "general",
+        "faq_source_ids": "12"
+      },
+      {
+        "faq_question": "Does Elementor's support team help with other themes?",
+        "faq_answer": "Community reports indicate that Elementor's support team often requires users to switch to the Hello theme to troubleshoot issues with the Elementor builder, even if the user's third-party theme is not the source of the problem [5].",
+        "faq_category": "support",
+        "faq_source_ids": "5"
+      }
+    ],
+    "faq_generation_note": ""
+  },
+  "human_summary": {
+    "summary_paragraphs": [
+      "<!-- wp:paragraph -->\n<p>Hello Elementor is a purpose-built starter theme designed to be the fastest and most minimalist foundation for websites built with the Elementor page builder. By stripping away all non-essential features, styles, and scripts, it provides developers with a completely blank canvas. This results in an exceptionally lightweight base, praised for its top-tier performance potential and developer-friendly hooks that allow for deep customization. For professionals who want full control and an unopinionated starting point, Hello Elementor is an excellent choice.</p>\n<!-- /wp:paragraph -->",
+      "<!-- wp:paragraph -->\n<p>The theme's primary drawback is its complete dependency on the Elementor builder and its surrounding ecosystem. It offers no built-in styling options or features, meaning every aspect of the site's design and functionality must be created with Elementor or custom code. This can be a challenge for beginners. Furthermore, the theme has a history of updates that introduce breaking changes to its code structure, necessitating careful testing on a staging server to avoid breaking a live site.</p>\n<!-- /wp:paragraph -->",
+      "<!-- wp:paragraph -->\n<p>It is crucial to understand that many of the issues users report are not with the Hello theme itself, but with the broader Elementor ecosystem. Problems like plugin conflicts with WPML or ACF, performance degradation from too many add-ons, and update-related crashes often stem from the Elementor Pro plugin or third-party extensions. While Hello provides a stable core, the stability of the final website is ultimately determined by the quality and compatibility of the plugins used alongside it.</p>\n<!-- /wp:paragraph -->"
+    ],
+    "summary_recommendation": "",
+    "summary_ideal_for": [
+      "Developers building custom sites with Elementor",
+      "Agencies needing a clean, high-performance base"
+    ],
+    "summary_not_for": [
+      "DIY users or beginners",
+      "Clients expecting a traditional theme with Customizer options"
+    ],
+    "summary_author_note": ""
+  },
+  "bundled_plugins": [],
+  "demo_gallery": [],
+  "sources_methodology": {
+    "methodology_note": "",
+    "analysis_date": "2026-02-07",
+    "data_timeframe": "Last 12 months",
+    "confidence_statement": "",
+    "sources": [
+      {
+        "source_id": "[1]",
+        "source_name": "Elementor Developers",
+        "source_url": "https://developers.elementor.com/hello-elementor-theme-3-0-0/",
+        "source_type": "documentation",
+        "source_date": "2023-12"
+      },
+      {
+        "source_id": "[2]",
+        "source_name": "Wordfence",
+        "source_url": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-themes/hello-elementor/hello-elementor-300-cross-site-request-forgery-to-notice-dismissal",
+        "source_type": "official",
+        "source_date": "2024-04"
+      },
+      {
+        "source_id": "[3]",
+        "source_name": "Elementor Developers",
+        "source_url": "https://developers.elementor.com/hello-elementor-theme-3-1-0/",
+        "source_type": "documentation",
+        "source_date": "2024-02"
+      },
+      {
+        "source_id": "[4]",
+        "source_name": "WordPress.org Forums",
+        "source_url": "https://wordpress.org/support/topic/conflict-with-elementor-hello-theme-2/",
+        "source_type": "forum",
+        "source_date": "2024-05"
+      },
+      {
+        "source_id": "[5]",
+        "source_name": "WordPress.org Reviews",
+        "source_url": "https://wordpress.org/support/topic/not-the-best-customer-service-12/",
+        "source_type": "review_site",
+        "source_date": "2024-11"
+      },
+      {
+        "source_id": "[6]",
+        "source_name": "WordPress.org Forums",
+        "source_url": "https://wordpress.org/support/topic/latest-elementor-pro-update-giving-conflict-with-acf-pro-extended/",
+        "source_type": "forum",
+        "source_date": "2024-06"
+      },
+      {
+        "source_id": "[7]",
+        "source_name": "WPML Forums",
+        "source_url": "https://wpml.org/forums/topic/resolved-wpml-conflicts-with-latest-elementor-update/",
+        "source_type": "forum",
+        "source_date": "2024-07"
+      },
+      {
+        "source_id": "[8]",
+        "source_name": "8THEME Blog",
+        "source_url": "https://8theme.com/urgent-compatibility-issues-with-php-8-4-elementor-site-performance/",
+        "source_type": "official",
+        "source_date": "2025-12"
+      },
+      {
+        "source_id": "[9]",
+        "source_name": "Reddit",
+        "source_url": "https://www.reddit.com/r/Wordpress/comments/10kfzbd/im_tired_of_elementor_update_issues/",
+        "source_type": "social",
+        "source_date": "2023-01"
+      },
+      {
+        "source_id": "[10]",
+        "source_name": "Reddit",
+        "source_url": "https://www.reddit.com/r/Wordpress/comments/162n15d/tired_of_elementor/",
+        "source_type": "social",
+        "source_date": "2023-08"
+      },
+      {
+        "source_id": "[11]",
+        "source_name": "Elementor Developers",
+        "source_url": "https://developers.elementor.com/hello-elementor-theme/",
+        "source_type": "documentation",
+        "source_date": "date-unknown"
+      },
+      {
+        "source_id": "[12]",
+        "source_name": "WPKube",
+        "source_url": "https://wpkube.com/hello-biz-wordpress-theme-review-2025-website-builder-for-small-businesses/",
+        "source_type": "review_site",
+        "source_date": "2024-01"
+      },
+      {
+        "source_id": "[13]",
+        "source_name": "Elegant Themes",
+        "source_url": "https://www.elegantthemes.com/blog/wordpress/fastest-wordpress-themes",
+        "source_type": "review_site",
+        "source_date": "2024-10"
+      },
+      {
+        "source_id": "[14]",
+        "source_name": "WordPress.org Forums",
+        "source_url": "https://wordpress.org/support/topic/elementor-blocks-breaks-acf-rest-api/",
+        "source_type": "forum",
+        "source_date": "date-unknown"
+      }
+    ]
+  },
+  "search_profile": "Hello Elementor|perf:needs_work(56mob,84desk)|price:free|handoff:9/minimal|ideal:developers-building-custom-sites-with-elementor,agencies-needing-a-clean-high-performance-base|avoid:diy-users-or-beginners,clients-expecting-a-traditional-theme-with-customizer-options|tags:elementor,wordpress-org,classic-theme"
+}
