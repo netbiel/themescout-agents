@@ -142,5 +142,100 @@ def parity_test(themes: str | None):
         )
 
 
+@cli.command("wp-test")
+def wp_test():
+    """Test WordPress API connection."""
+    from modules.theme_collector.wp.client import WordPressClient
+    wp = WordPressClient()
+    info = wp.test_connection()
+    click.echo(f"WordPress: {info['name']} ({info['url']}) — {info['status']}")
+
+
+@cli.command("resolve-id")
+@click.argument("theme_name")
+def resolve_id(theme_name: str):
+    """Resolve WP post ID for a theme name."""
+    from modules.theme_collector.wp.client import WordPressClient
+    from modules.theme_collector.wp.post_id_resolver import resolve_post_id
+    wp = WordPressClient()
+    pid = resolve_post_id(theme_name, wp)
+    click.echo(f"{theme_name} → post_id={pid}")
+
+
+@cli.command("import")
+@click.argument("theme_slug")
+@click.option("--no-dry-run", is_flag=True, default=False, help="Actually import (default: dry run)")
+def import_cmd(theme_slug: str, no_dry_run: bool):
+    """Import theme JSON to WordPress (dry run by default)."""
+    from modules.theme_collector.wp.client import WordPressClient
+    from modules.theme_collector.wp.post_id_resolver import resolve_post_id
+    from modules.theme_collector.wp.importer import import_theme_to_wp
+
+    final_path = Path(REPO_ROOT) / "data" / "cache" / "final" / f"{theme_slug}.json"
+    if not final_path.exists():
+        raise click.ClickException(f"No pipeline output found at {final_path}. Run pipeline first.")
+
+    theme_json = json.loads(final_path.read_text(encoding="utf-8"))
+    theme_name = theme_json.get("theme_basic", {}).get("theme_tagline", theme_slug)
+
+    wp = WordPressClient()
+    post_id = resolve_post_id(theme_slug.replace("-", " ").title(), wp)
+    if not post_id:
+        raise click.ClickException(f"Could not resolve WP post ID for '{theme_slug}'")
+
+    dry_run = not no_dry_run
+    mode = "DRY RUN" if dry_run else "LIVE IMPORT"
+    click.echo(f"[{mode}] Importing {theme_slug} → post_id={post_id}...")
+
+    result = import_theme_to_wp(theme_slug, theme_json, wp, post_id, dry_run=dry_run)
+    if result.success:
+        click.echo(f"{'Would write' if dry_run else 'Wrote'} {result.fields_written} fields")
+        if result.skipped_fields:
+            click.echo(f"Skipped (manual overrides): {result.skipped_fields}")
+    else:
+        click.echo(f"FAILED: {result.errors}", err=True)
+        raise SystemExit(1)
+
+
+@cli.command("full-run")
+@click.argument("theme_slug")
+@click.option("--inputs", type=click.Path(exists=True), required=True)
+@click.option("--import-wp", is_flag=True, default=False, help="Also import to WP after pipeline")
+@click.option("--no-dry-run", is_flag=True, default=False, help="Actually import (requires --import-wp)")
+def full_run(theme_slug: str, inputs: str, import_wp: bool, no_dry_run: bool):
+    """Run pipeline + optional WP import."""
+    _ensure_gemini_configured()
+    from modules.theme_collector.pipeline.orchestrator import run_pipeline
+
+    inputs_data = json.loads(Path(inputs).read_text(encoding="utf-8"))
+    theme_name = inputs_data.get("theme_name", theme_slug)
+
+    click.echo(f"Running full pipeline for {theme_name}...")
+    result = run_pipeline(
+        theme_name=theme_name,
+        scraped_json=inputs_data.get("scraped_json", {}),
+        perplexity_text=inputs_data.get("perplexity_text", ""),
+        changelog=inputs_data.get("changelog", ""),
+        theme_slug=theme_slug,
+    )
+    click.echo(f"Pipeline done: {result['output_path']}")
+
+    if import_wp:
+        from modules.theme_collector.wp.client import WordPressClient
+        from modules.theme_collector.wp.post_id_resolver import resolve_post_id
+        from modules.theme_collector.wp.importer import import_theme_to_wp
+
+        wp = WordPressClient()
+        post_id = resolve_post_id(theme_name, wp)
+        if not post_id:
+            click.echo(f"WARNING: Could not resolve post_id for {theme_name}", err=True)
+            return
+        dry_run = not no_dry_run
+        mode = "DRY RUN" if dry_run else "LIVE"
+        click.echo(f"[{mode}] Importing → post_id={post_id}...")
+        imp = import_theme_to_wp(theme_slug, result["theme_json"], wp, post_id, dry_run=dry_run)
+        click.echo(f"Import: success={imp.success}, fields={imp.fields_written}")
+
+
 if __name__ == "__main__":
     cli()
