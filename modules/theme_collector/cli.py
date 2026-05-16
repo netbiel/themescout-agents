@@ -58,12 +58,12 @@ def test_gemini():
             prompt="Reply with exactly: CONNECTION_OK",
             step_name="test",
             theme_slug="test",
-            max_output_tokens=50,
+            max_output_tokens=1000,
         )
-        if "CONNECTION_OK" in result:
+        if result and "CONNECTION_OK" in result:
             click.echo("Gemini API: OK")
         else:
-            click.echo(f"Gemini API responded: {result[:100]}")
+            click.echo(f"Gemini API responded: {(result or '(empty)')[:100]}")
     except Exception as e:
         click.echo(f"Error: {e}", err=True)
         raise SystemExit(1)

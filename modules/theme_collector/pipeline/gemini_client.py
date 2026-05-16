@@ -6,7 +6,8 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-import google.generativeai as genai
+from google import genai
+from google.genai import types
 from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
 
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent.parent
@@ -16,10 +17,13 @@ LLM_LOG = REPO_ROOT / "data" / "llm-calls.log"
 COST_PER_1M_INPUT = 1.25
 COST_PER_1M_OUTPUT = 10.00
 
+_client = None
+
 
 def configure(api_key: str):
     """Configure Gemini with API key."""
-    genai.configure(api_key=api_key)
+    global _client
+    _client = genai.Client(api_key=api_key)
 
 
 @retry(
@@ -37,24 +41,29 @@ def call_gemini(
     json_mode: bool = False,
 ) -> str:
     """Call Gemini API with retry and logging."""
-    model = genai.GenerativeModel(model_name)
+    if _client is None:
+        raise RuntimeError("Gemini client not configured. Call configure(api_key) first.")
 
-    generation_config = {
-        "temperature": temperature,
-        "max_output_tokens": max_output_tokens,
-    }
+    config = types.GenerateContentConfig(
+        temperature=temperature,
+        max_output_tokens=max_output_tokens,
+    )
     if json_mode:
-        generation_config["response_mime_type"] = "application/json"
+        config.response_mime_type = "application/json"
 
     start_ms = time.monotonic_ns() // 1_000_000
-    response = model.generate_content(prompt, generation_config=generation_config)
+    response = _client.models.generate_content(
+        model=model_name,
+        contents=prompt,
+        config=config,
+    )
     latency_ms = (time.monotonic_ns() // 1_000_000) - start_ms
 
     text = response.text
 
     # Extract token counts
-    input_tokens = getattr(response.usage_metadata, 'prompt_token_count', 0)
-    output_tokens = getattr(response.usage_metadata, 'candidates_token_count', 0)
+    input_tokens = getattr(response.usage_metadata, 'prompt_token_count', 0) or 0
+    output_tokens = getattr(response.usage_metadata, 'candidates_token_count', 0) or 0
     est_cost = (input_tokens / 1_000_000 * COST_PER_1M_INPUT) + (output_tokens / 1_000_000 * COST_PER_1M_OUTPUT)
 
     # Log
