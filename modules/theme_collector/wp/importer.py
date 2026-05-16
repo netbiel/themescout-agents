@@ -72,8 +72,8 @@ def import_theme_to_wp(
     try:
         response = wp_client.import_theme_profile(post_id, final_json)
         result.success = response.get("success", False)
-        result.fields_written = response.get("fields_written", 0)
-        result.skipped_fields = response.get("skipped_fields", [])
+        result.fields_written = response.get("written_count", 0) or response.get("fields_written", 0)
+        result.skipped_fields = [s.get("json_key", "") for s in response.get("skipped", [])]
         if not result.success and "error" in response:
             result.errors.append(response["error"])
     except Exception as e:

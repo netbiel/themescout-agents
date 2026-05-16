@@ -100,7 +100,7 @@ def step1(theme_slug: str, inputs: str):
 @click.argument("theme_slug")
 @click.option("--inputs", type=click.Path(exists=True), required=True)
 def run(theme_slug: str, inputs: str):
-    """Run full pipeline (Step 1 → Step 2 → Step 3 → Cleanup → Taxonomies → Search Profile)."""
+    """Run full pipeline (Step 1 ->Step 2 ->Step 3 ->Cleanup ->Taxonomies ->Search Profile)."""
     _ensure_gemini_configured()
     from modules.theme_collector.pipeline.orchestrator import run_pipeline
 
@@ -159,7 +159,7 @@ def resolve_id(theme_name: str):
     from modules.theme_collector.wp.post_id_resolver import resolve_post_id
     wp = WordPressClient()
     pid = resolve_post_id(theme_name, wp)
-    click.echo(f"{theme_name} → post_id={pid}")
+    click.echo(f"{theme_name} ->post_id={pid}")
 
 
 @cli.command("import")
@@ -185,7 +185,7 @@ def import_cmd(theme_slug: str, no_dry_run: bool):
 
     dry_run = not no_dry_run
     mode = "DRY RUN" if dry_run else "LIVE IMPORT"
-    click.echo(f"[{mode}] Importing {theme_slug} → post_id={post_id}...")
+    click.echo(f"[{mode}] Importing {theme_slug} ->post_id={post_id}...")
 
     result = import_theme_to_wp(theme_slug, theme_json, wp, post_id, dry_run=dry_run)
     if result.success:
@@ -232,7 +232,7 @@ def full_run(theme_slug: str, inputs: str, import_wp: bool, no_dry_run: bool):
             return
         dry_run = not no_dry_run
         mode = "DRY RUN" if dry_run else "LIVE"
-        click.echo(f"[{mode}] Importing → post_id={post_id}...")
+        click.echo(f"[{mode}] Importing ->post_id={post_id}...")
         imp = import_theme_to_wp(theme_slug, result["theme_json"], wp, post_id, dry_run=dry_run)
         click.echo(f"Import: success={imp.success}, fields={imp.fields_written}")
 
