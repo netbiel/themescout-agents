@@ -1,0 +1,57 @@
+# WP term IDs from Apps Script v3.20.3
+# Source: assignTaxonomies() function / TAXONOMY_CONFIG
+
+theme_types:
+  agency: 1189
+  blog-magazine: 1110
+  corporate: 1107
+  creative-portfolio: 1108
+  multipurpose: 1105
+  niche-specific: 1109
+  woocommerce: 1106
+
+pricing_model:
+  free: 1089
+  freemium: 1090
+  one-time: 1091
+  premium: 1194
+  subscription: 1092
+
+handoff_difficulty:
+  easy: 1093
+  moderate: 1094
+  hard: 1095
+  very-hard: 1096
+
+vendor_lock_in:
+  minimal: 1097
+  moderate: 1098
+  high: 1099
+  critical: 1100
+
+performance_tier:
+  excellent: 1192
+  good: 1101
+  needs_work: 1102
+  poor: 1103
+  unknown: 1104
+
+page_builders:
+  bricks: 1115
+  divi-builder: 1114
+  elementor: 1111
+  gutenberg: 1112
+  proprietary: 1116
+  wpbakery: 1113
+
+theme_architecture:
+  block-theme-fse: 1118
+  classic-theme: 1117
+  hybrid: 1119
+
+support_quality:
+  excellent: 1085
+  good: 1086
+  average: 1193
+  poor: 1087
+  unknown: 1088

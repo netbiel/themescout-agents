@@ -96,5 +96,51 @@ def step1(theme_slug: str, inputs: str):
     click.echo(f"Output length: {len(output)} chars")
 
 
+@cli.command()
+@click.argument("theme_slug")
+@click.option("--inputs", type=click.Path(exists=True), required=True)
+def run(theme_slug: str, inputs: str):
+    """Run full pipeline (Step 1 → Step 2 → Step 3 → Cleanup → Taxonomies → Search Profile)."""
+    _ensure_gemini_configured()
+    from modules.theme_collector.pipeline.orchestrator import run_pipeline
+
+    inputs_data = json.loads(Path(inputs).read_text(encoding="utf-8"))
+    theme_name = inputs_data.get("theme_name", theme_slug)
+
+    click.echo(f"Running full pipeline for {theme_name}...")
+    result = run_pipeline(
+        theme_name=theme_name,
+        scraped_json=inputs_data.get("scraped_json", {}),
+        perplexity_text=inputs_data.get("perplexity_text", ""),
+        changelog=inputs_data.get("changelog", ""),
+        theme_slug=theme_slug,
+    )
+    click.echo(f"Pipeline complete!")
+    click.echo(f"Output: {result['output_path']}")
+    click.echo(f"Search profile: {result['search_profile'][:120]}...")
+    click.echo(f"Taxonomy keys: {list(result['taxonomy'].keys())}")
+
+
+@cli.command("parity-test")
+@click.option("--themes", default=None, help="Comma-separated theme slugs (default: all)")
+def parity_test(themes: str | None):
+    """Run Step 1 parity check on benchmark themes."""
+    from modules.theme_collector.validation.parity import run_parity_check
+
+    theme_list = themes.split(",") if themes else None
+    results = run_parity_check(theme_list)
+
+    for slug, data in sorted(results.items()):
+        if "error" in data:
+            click.echo(f"  {slug}: ERROR — {data['error']}")
+            continue
+        click.echo(
+            f"  {slug}: pain={data['pain_points_python']}/{data['pain_points_reference']} "
+            f"praise={data['praise_python']}/{data['praise_reference']} "
+            f"urls={data['source_url_overlap']:.0%} "
+            f"len={data['length_ratio']}x"
+        )
+
+
 if __name__ == "__main__":
     cli()
