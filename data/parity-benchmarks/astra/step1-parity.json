@@ -1,0 +1,34 @@
+{
+  "section_match": true,
+  "sections_python": [
+    "bundled plugins",
+    "faq candidates",
+    "pain points (minimum 8 required)",
+    "praise points (minimum 3 required \u2014 treat as seriously as pain points)",
+    "scope summary",
+    "signals",
+    "source integrity check",
+    "sources index",
+    "stats"
+  ],
+  "sections_reference": [
+    "bundled plugins",
+    "faq candidates",
+    "pain points (minimum 8 required)",
+    "praise points (minimum 3 required \u2014 treat as seriously as pain points)",
+    "scope summary",
+    "signals",
+    "source integrity check",
+    "sources index",
+    "stats"
+  ],
+  "pain_points_python": 9,
+  "pain_points_reference": 10,
+  "praise_python": 5,
+  "praise_reference": 5,
+  "sources_python": 26,
+  "sources_reference": 28,
+  "source_url_overlap": 0.929,
+  "length_ratio": 1.09,
+  "notes": []
+}
