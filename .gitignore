@@ -16,6 +16,7 @@ config/secrets.env
 *.key
 *.pem
 service-account*.json
+.secret/
 
 # Local data
 data/cache/
