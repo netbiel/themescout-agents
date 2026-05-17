@@ -311,9 +311,11 @@ def _get_psi_key() -> str:
     """Get PSI/Gemini API key."""
     key = os.environ.get("PSI_API_KEY") or os.environ.get("GEMINI_API_KEY")
     if not key:
-        key_file = secret_dir / "gemini_api_key.txt"
-        if key_file.exists():
-            key = key_file.read_text().strip()
+        for fname in ("psi_api_key.txt", "gemini_api_key.txt"):
+            key_file = secret_dir / fname
+            if key_file.exists():
+                key = key_file.read_text().strip()
+                break
     if not key:
         raise click.ClickException("No PSI API key. Set PSI_API_KEY or use Gemini key in .secret/gemini_api_key.txt")
     return key
