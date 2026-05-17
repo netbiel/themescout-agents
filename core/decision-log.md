@@ -88,6 +88,26 @@ Originally planned for Sprint 5 (Step 5.7). Moving to Sprint 4 because Sprint 4 
 
 L1 flagged performance_tier mismatch: tier='needs_work' but pagespeed_mobile=92 (should be 'excellent'). This is a pipeline/Gemini classification error that cleanup should fix. Validates the value of running L1 automatically.
 
+## 2026-05-17 | DECISION | GA4 auth via OAuth instead of service account
+
+Google Cloud Console error prevented service account creation. Switched to OAuth 2.0 flow (browser login, token cached). Functionally equivalent for our read-only use case.
+
+## 2026-05-17 | DECISION | Reddit RSS fallback instead of PRAW API
+
+Reddit killed self-service API keys in November 2025. New apps require manual approval. Built RSS fallback using public JSON feeds (reddit.com/r/X/new.json) -- no auth needed, sufficient for monitoring.
+
+## 2026-05-17 | DECISION | Migrated from google-generativeai to google-genai SDK
+
+Deprecated package. Gemini 2.5 Pro is a "thinking model" -- requires higher max_output_tokens (thinking tokens consume output budget). Minimum ~1000 tokens for simple responses.
+
+## 2026-05-17 | DECISION | Apps Script decommission recommended
+
+Sprint 6 retro recommends decommissioning Apps Script v3.20.3 as primary path. Python pipeline: 92.4% parity, $0.19/theme (vs $0.30-0.80), L1 validation, fully scriptable. Apps Script stays as emergency fallback. Awaiting Piotr's confirmation.
+
+## 2026-05-17 | DECISION | Session wrapup skill created
+
+Documentation drift detected after Sprint 0 -- README and docs outdated. Created `skills/session-wrapup/` to enforce docs sync at end of every productive session. Updates CURRENT-STATE.md, ARCHITECTURE.md (if changed), CLI-REFERENCE.md (if changed), and verifies decision-log completeness.
+
 ---
 
 <!-- New entries below this line. Format: ## YYYY-MM-DD | TYPE | One-line title -->

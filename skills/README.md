@@ -5,6 +5,7 @@ Operational playbooks for recurring agent workflows. Claude Code consults skills
 ## Active skills
 
 - `themescout-weekly-pulse/` — Weekly pulse report generation. Triggered by "weekly pulse", "weekly report", or Monday session start.
+- `session-wrapup/` — End-of-session documentation sync. Triggered by "wrapup", "zakoncz sesje", "update docs", or end of productive session.
 
 ## Adding new skills
 
