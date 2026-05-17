@@ -211,6 +211,23 @@ def clean_short_verdicts(data: dict) -> dict:
     return data
 
 
+def fix_performance_tier(data: dict) -> dict:
+    """Ensure performance_tier matches pagespeed_mobile score."""
+    pm = data.get("performance_metrics", {})
+    mobile = pm.get("pagespeed_mobile", 0) or 0
+    if mobile > 0:
+        if mobile >= 90:
+            expected = "excellent"
+        elif mobile >= 70:
+            expected = "good"
+        elif mobile >= 50:
+            expected = "needs_work"
+        else:
+            expected = "poor"
+        pm["performance_tier"] = expected
+    return data
+
+
 def validate_performance_consistency(data: dict) -> dict:
     """Ensure perf_verdict_safe is empty when pagespeed_mobile < 50."""
     mobile = data.get("performance_metrics", {}).get("pagespeed_mobile", 0) or 0
@@ -272,6 +289,7 @@ def cleanup_output(raw_json: dict, theme_name: str = "", taxonomy_json: dict | N
     data = cleanup_plugin_compat(data, theme_name)
     data = clear_faq_if_few_sources(data)
     data = clean_short_verdicts(data)
+    data = fix_performance_tier(data)
     data = validate_performance_consistency(data)
     data = fix_handoff_score(data)
     data = remove_nulls(data)
