@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-05-16T00:00:00Z",
+  "last_updated": "2026-05-17T20:20:22.479161+00:00",
   "current_sprint": 0,
   "sprint_status": "in_progress",
   "open_loops": [
@@ -26,11 +26,11 @@
     "rich_snippets_count": null,
     "captured_at": null
   },
-  "last_run": null,
+  "last_run": "2026-05-17T20:19:51.938684+00:00",
   "next_scheduled_run": null,
   "pending_review_count": 0,
   "drafts_awaiting_publish": 0,
-  "cost_week_to_date_usd": 0.0,
+  "cost_week_to_date_usd": 1.98,
   "cost_month_to_date_usd": 0.0,
   "active_warnings": []
 }
