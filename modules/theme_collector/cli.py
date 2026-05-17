@@ -69,6 +69,44 @@ def test_gemini():
         raise SystemExit(1)
 
 
+@cli.command("test-local")
+def test_local():
+    """Test local LLM (Ollama) connection."""
+    from modules.theme_collector.pipeline.local_llm import check_ollama, call_local_llm
+
+    click.echo("Testing Ollama...")
+    status = check_ollama()
+    if status["status"] != "ok":
+        click.echo(f"Ollama not available: {status.get('error')}", err=True)
+        raise SystemExit(1)
+
+    click.echo(f"Ollama OK. Models: {status['models']}")
+    click.echo(f"Default model available: {status['default_available']}")
+
+    if status["default_available"]:
+        click.echo("Testing generation...")
+        result = call_local_llm(
+            prompt="Reply with exactly: LOCAL_LLM_OK",
+            step_name="test",
+            theme_slug="test",
+            max_tokens=100,
+        )
+        if result and "LOCAL_LLM_OK" in result:
+            click.echo("Local LLM: OK")
+        else:
+            click.echo(f"Local LLM responded: {(result or '(empty)')[:100]}")
+
+
+@cli.command("routing")
+def show_routing():
+    """Show current LLM routing table."""
+    from modules.theme_collector.pipeline.local_llm import ROUTING
+    click.echo("LLM Routing:")
+    for step, target in ROUTING.items():
+        icon = {"cloud": "C", "local": "L", "none": "-"}[target]
+        click.echo(f"  [{icon}] {step}: {target}")
+
+
 @cli.command()
 @click.argument("theme_slug")
 @click.option("--inputs", type=click.Path(exists=True), required=True,

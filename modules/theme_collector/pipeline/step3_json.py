@@ -4,7 +4,7 @@ Port of Apps Script buildStep3Prompt() from v3.20.3.
 
 Input: Step 1 + Step 2 outputs + scraped JSON
 Output: Raw JSON (~80 fields) for WordPress import
-Model: Gemini Pro 2.5 (JSON mode)
+Model: Routed — local (Qwen 2.5 14B) by default, cloud (Gemini) as fallback
 """
 
 import json
@@ -12,6 +12,7 @@ from pathlib import Path
 from string import Template
 
 from .gemini_client import call_gemini
+from .local_llm import call_local_llm, get_router
 from .step1_community import get_distribution_model, get_distribution_instructions
 
 PROMPT_PATH = Path(__file__).resolve().parent.parent / "prompts" / "step3_json.txt"
@@ -25,6 +26,7 @@ def run_step3(
     step1_output: str,
     step2_output: str,
     theme_slug: str | None = None,
+    force_cloud: bool = False,
 ) -> dict:
     """Run Step 3 JSON Formatter. Returns parsed JSON dict."""
     if isinstance(scraped_json, str):
@@ -52,12 +54,23 @@ def run_step3(
         json_schema=json_schema,
     )
 
-    output_text = call_gemini(
-        prompt=prompt,
-        step_name="step3",
-        theme_slug=theme_slug,
-        json_mode=True,
-    )
+    # Route to local or cloud LLM
+    route = "cloud" if force_cloud else get_router("step3")
+
+    if route == "local":
+        output_text = call_local_llm(
+            prompt=prompt,
+            step_name="step3",
+            theme_slug=theme_slug,
+            json_mode=True,
+        )
+    else:
+        output_text = call_gemini(
+            prompt=prompt,
+            step_name="step3",
+            theme_slug=theme_slug,
+            json_mode=True,
+        )
 
     # Parse JSON — strip markdown fences if present
     text = output_text.strip()

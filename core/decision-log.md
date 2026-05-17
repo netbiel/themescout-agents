@@ -133,6 +133,10 @@ PSI API key: reuses Gemini API key (same Google Cloud project). Requires PageSpe
 
 PageSpeed Insights API returns "blocked" for current Gemini API key. Need to enable it in Google Cloud Console -> APIs & Services -> Library -> PageSpeed Insights API -> Enable.
 
+## 2026-05-17 | DECISION | PSI API -- osobny klucz, batch validation deferred
+
+PSI API wymaga osobnego klucza (Gemini key ma restrykcje). Klucz w .secret/psi_api_key.txt. Validator + PSI Fetcher verified on Neve (55mob/86desk). Batch validation na pelnym katalogu przesuniety -- wrocimy po wdrozeniu dalszych specyfikacji.
+
 ---
 
 <!-- New entries below this line. Format: ## YYYY-MM-DD | TYPE | One-line title -->
