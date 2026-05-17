@@ -4,6 +4,22 @@ All commands run from repo root with venv activated.
 
 ---
 
+## Pre-Pipeline (Candidate Validation + PSI)
+
+```bash
+# Validate candidate URLs (marketplace, vendor, demo) + PSI reachability test
+python -m modules.theme_collector.cli validate-candidates --input data/candidates/input/<batch>.json
+python -m modules.theme_collector.cli validate-candidates --input <path> --resume  # resume interrupted
+
+# Fetch full PSI measurements (3 mobile + 3 desktop runs per theme, ~30s each)
+python -m modules.theme_collector.cli fetch-psi --input data/candidates/validated/<batch>.json
+python -m modules.theme_collector.cli fetch-psi --input <path> --output-dir data/candidates/base-json/ --resume
+```
+
+Requires: PageSpeed Insights API enabled in Google Cloud Console for API key.
+
+---
+
 ## Theme Collector Pipeline
 
 ```bash

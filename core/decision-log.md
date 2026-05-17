@@ -108,6 +108,31 @@ Sprint 6 retro recommends decommissioning Apps Script v3.20.3 as primary path. P
 
 Documentation drift detected after Sprint 0 -- README and docs outdated. Created `skills/session-wrapup/` to enforce docs sync at end of every productive session. Updates CURRENT-STATE.md, ARCHITECTURE.md (if changed), CLI-REFERENCE.md (if changed), and verifies decision-log completeness.
 
+## 2026-05-17 | DECISION | Candidate Validator + PSI Fetcher architecture
+
+Pre-pipeline validation: 2 new components in theme_collector module.
+
+validator.py:
+- Checks marketplace_url, vendor_url, demo_url reachability (HTTP 2xx/3xx)
+- PSI API test call to verify demo is measurable
+- Bot protection detection (captcha, Cloudflare challenge)
+- Atomic writes for resume capability
+- Input: data/candidates/input/<batch>.json
+- Output: data/candidates/validated/<batch>.json
+
+psi_fetcher.py:
+- 3 runs mobile + 3 runs desktop per theme (6 PSI calls total)
+- Median of 3 runs for all metrics (score, LCP, CLS)
+- Variance tracking: flags themes >10 point spread for re-verification
+- 5s pause between calls (rate limit + reduce correlation)
+- Output: data/candidates/base-json/<slug>.json with pagespeed_data
+
+PSI API key: reuses Gemini API key (same Google Cloud project). Requires PageSpeed Insights API enabled in Cloud Console.
+
+## 2026-05-17 | BLOCKED | PSI API not enabled for current API key
+
+PageSpeed Insights API returns "blocked" for current Gemini API key. Need to enable it in Google Cloud Console -> APIs & Services -> Library -> PageSpeed Insights API -> Enable.
+
 ---
 
 <!-- New entries below this line. Format: ## YYYY-MM-DD | TYPE | One-line title -->

@@ -1,7 +1,7 @@
 # ThemeScout Agent -- Architecture
 
 **Last updated:** 2026-05-17
-**Version:** Post Sprint 6 (pipeline migration complete)
+**Version:** Post Sprint 6 + Validator/PSI patch
 
 ---
 
@@ -38,8 +38,17 @@
 ### theme_collector (`modules/theme_collector/`)
 **Purpose:** 3-step pipeline replacing Apps Script v3.20.3. Generates theme profile JSON for WordPress import.
 
+**Pre-pipeline (candidate validation):**
+```
+candidates input JSON -> validator.py (URL checks + PSI test) -> validated JSON
+                         -> psi_fetcher.py (3+3 runs, median) -> base JSON with pagespeed_data
+```
+
+**Full pipeline:**
 ```
 theme_collector/
+  validator.py           # pre-pipeline: URL reachability + PSI test (gate for psi_fetcher)
+  psi_fetcher.py         # pre-pipeline: 3 mobile + 3 desktop PSI runs, median metrics
   pipeline/
     orchestrator.py      # full pipeline: step1 -> step2 -> step3 -> cleanup -> taxonomies -> search_profile -> L1
     step1_community.py   # Gemini: community pain points + praise extraction

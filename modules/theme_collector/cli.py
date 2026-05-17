@@ -307,5 +307,46 @@ def validate(theme_slug: str):
         click.echo(f"  [{icon}] {issue['field_path']}: {issue['expected_or_issue']}")
 
 
+def _get_psi_key() -> str:
+    """Get PSI/Gemini API key."""
+    key = os.environ.get("PSI_API_KEY") or os.environ.get("GEMINI_API_KEY")
+    if not key:
+        key_file = secret_dir / "gemini_api_key.txt"
+        if key_file.exists():
+            key = key_file.read_text().strip()
+    if not key:
+        raise click.ClickException("No PSI API key. Set PSI_API_KEY or use Gemini key in .secret/gemini_api_key.txt")
+    return key
+
+
+@cli.command("validate-candidates")
+@click.option("--input", "input_path", type=click.Path(exists=True), required=True,
+              help="Path to candidates input JSON")
+@click.option("--resume", is_flag=True, default=False, help="Resume interrupted batch")
+def validate_candidates(input_path: str, resume: bool):
+    """Validate theme candidate URLs + PSI reachability."""
+    from modules.theme_collector.validator import validate_batch
+    api_key = _get_psi_key()
+    click.echo("Validating candidates...")
+    result = validate_batch(input_path, api_key, resume=resume)
+    m = result["_meta"]
+    click.echo(f"Done: {m['passed']} passed, {m['failed']} failed out of {m['total_input']}")
+
+
+@cli.command("fetch-psi")
+@click.option("--input", "input_path", type=click.Path(exists=True), required=True,
+              help="Path to validated candidates JSON")
+@click.option("--output-dir", default="data/candidates/base-json/",
+              help="Output directory for base JSON files")
+@click.option("--resume", is_flag=True, default=False, help="Resume interrupted batch")
+def fetch_psi(input_path: str, output_dir: str, resume: bool):
+    """Fetch full PSI measurements for validated candidates (3 mobile + 3 desktop runs)."""
+    from modules.theme_collector.psi_fetcher import fetch_batch
+    api_key = _get_psi_key()
+    click.echo("Fetching PSI data (6 calls per theme, ~30s each)...")
+    summary = fetch_batch(input_path, output_dir, api_key, resume=resume)
+    click.echo(f"Done: {summary['completed']} completed, {summary['skipped']} skipped, {summary['failed']} failed")
+
+
 if __name__ == "__main__":
     cli()

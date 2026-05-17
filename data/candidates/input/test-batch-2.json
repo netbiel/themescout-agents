@@ -1,0 +1,26 @@
+{
+  "_meta": {
+    "batch_name": "test-batch-2",
+    "discovery_source": "Integration test",
+    "discovery_date": "2026-05-17",
+    "discovery_method": "manual"
+  },
+  "candidates": [
+    {
+      "theme_name": "Astra",
+      "theme_slug": "astra",
+      "marketplace_url": "https://wordpress.org/themes/astra/",
+      "vendor_url": "https://wpastra.com/",
+      "demo_url": "https://wpastra.com/",
+      "marketplace_source": "WordPress.org"
+    },
+    {
+      "theme_name": "Neve",
+      "theme_slug": "neve",
+      "marketplace_url": "https://wordpress.org/themes/neve/",
+      "vendor_url": "https://themeisle.com/themes/neve/",
+      "demo_url": "https://themeisle.com/themes/neve/",
+      "marketplace_source": "WordPress.org"
+    }
+  ]
+}
