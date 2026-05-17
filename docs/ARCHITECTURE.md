@@ -35,6 +35,17 @@
 
 ## Modules
 
+### orchestrator (`modules/orchestrator/`)
+**Purpose:** Scheduler for recurring tasks with error isolation and alerting.
+
+- `scheduler.py` -- 4 scheduled tasks: GA4 daily pull (07:00), alert check (07:30), Reddit scan (6h), cost check (23:00)
+- `cli.py` -- start (scheduler loop), run-now (all tasks immediately), status (show state + alerts)
+
+**Run modes:**
+- Interactive: `python -m modules.orchestrator.cli start`
+- Windows Task Scheduler: trigger `run-now` daily
+- Manual: `python -m modules.orchestrator.cli run-now`
+
 ### theme_collector (`modules/theme_collector/`)
 **Purpose:** 3-step pipeline replacing Apps Script v3.20.3. Generates theme profile JSON for WordPress import.
 

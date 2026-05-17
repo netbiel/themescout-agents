@@ -96,6 +96,31 @@ python -m modules.stats_analyzer.cli clarity-test
 python -m modules.research.cli scan --hours 72
 ```
 
+## Orchestrator
+
+```bash
+# Start scheduler (blocks, runs tasks on schedule)
+python -m modules.orchestrator.cli start
+
+# Run all tasks immediately (GA4, Reddit, alerts, cost check)
+python -m modules.orchestrator.cli run-now
+
+# Show current state, open loops, today's alerts
+python -m modules.orchestrator.cli status
+```
+
+## LLM Routing
+
+```bash
+# Test local LLM (Ollama + Qwen 2.5 14B)
+python -m modules.theme_collector.cli test-local
+
+# Show current routing table (cloud/local/none per step)
+python -m modules.theme_collector.cli routing
+```
+
+---
+
 ## Dashboard
 
 ```bash
