@@ -6,48 +6,63 @@ A modular AI agent system for running ThemeScout (themescout.pro) with human-in-
 
 Does a regularly-running agent team with human-in-the-loop outperform a human who only occasionally updates and verifies the site?
 
+## Status
+
+Pipeline migration complete (Sprint 6). Python pipeline replaces Apps Script v3.20.3 as primary path. Parity: 92.4% on 10 benchmark themes.
+
 ## Architecture
 
-- **Modules** (`modules/`): autonomous data collectors and processors
-  - `theme_collector/` — fetches theme data via APIs/scraping
-  - `stats_analyzer/` — processes GA4 + Clarity data
-  - `research/` — Reddit + community monitoring
-- **Core** (`core/`): agent constitution, state, decision log
-- **Dashboard** (`dashboard/`): local web UI for review and approvals
-- **Reasoning**: happens in Claude Code sessions triggered by the user
+- **Theme Collector** (`modules/theme_collector/`) -- 3-step Gemini pipeline + cleanup + WP import
+- **Stats Analyzer** (`modules/stats_analyzer/`) -- GA4 + Clarity metrics
+- **Research** (`modules/research/`) -- Reddit monitoring via public RSS
+- **Dashboard** (`dashboard/`) -- local web UI for metrics
+- **Validation** -- 3-layer: L1 automatic, L2 Claude editorial, L3 WordPress human
 
-## Constraints
+See [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) for full system design.
 
-- All external APIs are read-only (GA4, Reddit, Sheets)
-- WordPress writes = drafts only (initially)
-- Claude reasoning via interactive Claude Code sessions (no API key in scripts)
-- Local LLM (Qwen 2.5 14B / Llama 3.1 8B) handles classification + filtering
+## Documentation
 
-## Sprint plan
-
-- [x] Sprint 0: Foundation (this sprint)
-- [ ] Sprint 1: Stats Analyzer
-- [ ] Sprint 2: Dashboard MVP
-- [ ] Sprint 3: Research module (Reddit API)
-- [ ] Sprint 4: Theme Collector
-- [ ] Sprint 5: Orchestration + local LLM + scheduler
+| Document | Purpose |
+|---|---|
+| [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) | System design, modules, data flow |
+| [`docs/CURRENT-STATE.md`](docs/CURRENT-STATE.md) | Sprint status, metrics, open blockers |
+| [`docs/CLI-REFERENCE.md`](docs/CLI-REFERENCE.md) | All CLI commands with examples |
+| [`docs/wp-integration.md`](docs/wp-integration.md) | WordPress REST API endpoints |
+| [`core/agent-charter.md`](core/agent-charter.md) | Mission, scope, success criteria |
+| [`core/agent-permissions.md`](core/agent-permissions.md) | What the agent can/cannot do |
+| [`core/cost-guardrails.md`](core/cost-guardrails.md) | Cost zones and budgets |
+| [`core/decision-log.md`](core/decision-log.md) | All decisions (append-only) |
 
 ## Quick start
 
 ```bash
-# 1. Setup venv
+# 1. Setup
 python -m venv venv
-source venv/bin/activate  # or `venv\Scripts\activate` on Windows
-
-# 2. Install
+venv\Scripts\activate        # Windows
 pip install -r requirements.txt
 
-# 3. Configure secrets
-cp config/secrets.env.example config/secrets.env
-# Fill in API keys (GA4 service account, Reddit, etc.)
+# 2. Secrets (in ../.secret/, not in repo)
+# gemini_api_key.txt, wp_credentials.txt, client_secret_*.json
 
-# 4. Start a session
-claude
+# 3. Run pipeline on a theme
+python -m modules.theme_collector.cli run neve --inputs data/parity-benchmarks/neve/inputs.json
+
+# 4. Validate output
+python -m modules.theme_collector.cli validate neve
+
+# 5. Import to WordPress (dry run)
+python -m modules.theme_collector.cli import neve
+
+# 6. Dashboard
+python serve.py --port 8080
 ```
 
-See `core/agent-charter.md` for what the agent does and does not do.
+## Sprint plan
+
+- [x] Sprint 0: Foundation
+- [x] Sprint 1: Stats Analyzer (GA4 + Clarity)
+- [x] Sprint 2: Dashboard MVP
+- [x] Sprint 3: Research (Reddit RSS)
+- [x] Sprint 4-6: Pipeline migration + WP integration + validation
+- [ ] Sprint 7: Local LLM integration (Qwen 2.5 14B)
+- [ ] Sprint 8: Orchestration + scheduler
