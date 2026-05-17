@@ -137,6 +137,13 @@ PageSpeed Insights API returns "blocked" for current Gemini API key. Need to ena
 
 PSI API wymaga osobnego klucza (Gemini key ma restrykcje). Klucz w .secret/psi_api_key.txt. Validator + PSI Fetcher verified on Neve (55mob/86desk). Batch validation na pelnym katalogu przesuniety -- wrocimy po wdrozeniu dalszych specyfikacji.
 
+## 2026-05-17 | DECISION | Sprint 1.5: Clarity MCP server added
+
+Configured @microsoft/clarity-mcp-server in Claude Code project config. Ad-hoc Clarity queries during sessions. Python client remains for scheduled use.
+
+Routing: weekly pulse/dashboard -> Python client. Interactive investigation -> MCP.
+Quota: 10 calls/day shared between Python + MCP. Both use same token.
+
 ---
 
 <!-- New entries below this line. Format: ## YYYY-MM-DD | TYPE | One-line title -->
