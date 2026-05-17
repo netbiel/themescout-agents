@@ -7,8 +7,15 @@ Safety: dry_run=True by default. Must explicitly pass dry_run=False.
 
 import json
 from dataclasses import dataclass, field
+from pathlib import Path
 
 from .client import WordPressClient
+
+VALIDATION_DIR = Path(__file__).resolve().parent.parent.parent.parent / "data" / "cache" / "validation"
+
+
+class ImportBlocked(Exception):
+    pass
 
 
 @dataclass
@@ -28,6 +35,7 @@ def import_theme_to_wp(
     wp_client: WordPressClient,
     post_id: int,
     dry_run: bool = True,
+    skip_validation: bool = False,
 ) -> ImportResult:
     """
     Import theme JSON to WordPress.
@@ -40,6 +48,17 @@ def import_theme_to_wp(
         post_id=post_id,
         theme_slug=theme_slug,
     )
+
+    # Check L1 validation
+    if not skip_validation:
+        l1_path = VALIDATION_DIR / f"l1-{theme_slug}.json"
+        if l1_path.exists():
+            l1 = json.loads(l1_path.read_text(encoding="utf-8"))
+            if l1["summary"]["blocks_import"]:
+                raise ImportBlocked(
+                    f"L1 validation has {l1['summary']['errors']} error(s). "
+                    "Fix issues or use --skip-validation to override."
+                )
 
     # Validate payload
     if not final_json:

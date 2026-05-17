@@ -12,6 +12,7 @@ from .step3_json import run_step3
 from .cleanup import cleanup_output
 from .taxonomies import assign_taxonomies
 from .search_profile import generate_search_profile
+from ..validation.l1_structural import run_and_save as run_l1_validation
 
 CACHE_DIR = Path(__file__).resolve().parent.parent.parent.parent / "data" / "cache"
 
@@ -82,6 +83,9 @@ def run_pipeline(
     profile = generate_search_profile(cleaned, theme_name, taxonomy)
     cleaned["search_profile"] = profile
 
+    # L1 Validation (automatic after cleanup)
+    l1_result = run_l1_validation(cleaned, theme_slug, taxonomy)
+
     # Save final output
     final_dir = CACHE_DIR / "final"
     final_dir.mkdir(parents=True, exist_ok=True)
@@ -97,4 +101,5 @@ def run_pipeline(
         "taxonomy": taxonomy,
         "search_profile": profile,
         "output_path": str(final_path),
+        "l1_validation": l1_result["summary"],
     }

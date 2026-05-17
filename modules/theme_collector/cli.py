@@ -165,7 +165,8 @@ def resolve_id(theme_name: str):
 @cli.command("import")
 @click.argument("theme_slug")
 @click.option("--no-dry-run", is_flag=True, default=False, help="Actually import (default: dry run)")
-def import_cmd(theme_slug: str, no_dry_run: bool):
+@click.option("--skip-validation", is_flag=True, default=False, help="Skip L1 validation gate")
+def import_cmd(theme_slug: str, no_dry_run: bool, skip_validation: bool):
     """Import theme JSON to WordPress (dry run by default)."""
     from modules.theme_collector.wp.client import WordPressClient
     from modules.theme_collector.wp.post_id_resolver import resolve_post_id
@@ -187,7 +188,14 @@ def import_cmd(theme_slug: str, no_dry_run: bool):
     mode = "DRY RUN" if dry_run else "LIVE IMPORT"
     click.echo(f"[{mode}] Importing {theme_slug} ->post_id={post_id}...")
 
-    result = import_theme_to_wp(theme_slug, theme_json, wp, post_id, dry_run=dry_run)
+    try:
+        result = import_theme_to_wp(theme_slug, theme_json, wp, post_id, dry_run=dry_run, skip_validation=skip_validation)
+    except Exception as e:
+        if "L1 validation" in str(e):
+            click.echo(f"BLOCKED: {e}", err=True)
+            click.echo("Use --skip-validation to override.", err=True)
+            raise SystemExit(1)
+        raise
     if result.success:
         click.echo(f"{'Would write' if dry_run else 'Wrote'} {result.fields_written} fields")
         if result.skipped_fields:
@@ -235,6 +243,68 @@ def full_run(theme_slug: str, inputs: str, import_wp: bool, no_dry_run: bool):
         click.echo(f"[{mode}] Importing ->post_id={post_id}...")
         imp = import_theme_to_wp(theme_slug, result["theme_json"], wp, post_id, dry_run=dry_run)
         click.echo(f"Import: success={imp.success}, fields={imp.fields_written}")
+
+
+@cli.command("review")
+@click.argument("theme_slug")
+def review(theme_slug: str):
+    """Generate L2 review artifact for Claude Code session."""
+    from modules.theme_collector.validation.l2_review import generate_review_artifact
+    path = generate_review_artifact(theme_slug)
+    click.echo(f"L2 review artifact ready: {path}")
+    click.echo(f"Open Claude Code and ask: 'Review the L2 artifact for {theme_slug}'")
+
+
+@cli.command("apply-l2")
+@click.argument("theme_slug")
+@click.option("--no-dry-run", is_flag=True, default=False, help="Apply auto-merges")
+def apply_l2(theme_slug: str, no_dry_run: bool):
+    """Apply L2 verdicts (auto-merge high-confidence, flag rest for L3)."""
+    from modules.theme_collector.validation.l2_apply import apply_l2_verdicts
+    result = apply_l2_verdicts(theme_slug, dry_run=not no_dry_run)
+
+    if result.aborted:
+        click.echo(f"ABORTED: {result.abort_reason}", err=True)
+        return
+
+    mode = "DRY RUN" if result.dry_run else "APPLIED"
+    click.echo(f"[{mode}] L2 results for {theme_slug}:")
+    click.echo(f"  Agreed: {result.agreed}")
+    click.echo(f"  Auto-merge candidates: {len(result.auto_merged)}")
+    for m in result.auto_merged:
+        click.echo(f"    {m['field_path']}: {m['old_value']} -> {m['new_value']} (conf={m['confidence']})")
+    click.echo(f"  Flagged for L3: {len(result.flagged_for_l3)}")
+    for f in result.flagged_for_l3:
+        click.echo(f"    {f['field_path']}: {f['verdict']} (conf={f['confidence']})")
+
+    if not no_dry_run and result.auto_merged:
+        click.echo("Run with --no-dry-run to apply auto-merges.")
+
+
+@cli.command("validate")
+@click.argument("theme_slug")
+def validate(theme_slug: str):
+    """Run L1 validation on a theme's final JSON."""
+    from modules.theme_collector.validation.l1_structural import run_and_save
+    import json
+
+    final_path = Path(REPO_ROOT) / "data" / "cache" / "final" / f"{theme_slug}.json"
+    if not final_path.exists():
+        raise click.ClickException(f"No final JSON for {theme_slug}")
+
+    theme_json = json.loads(final_path.read_text(encoding="utf-8"))
+    result = run_and_save(theme_json, theme_slug)
+
+    s = result["summary"]
+    click.echo(f"L1 Validation: {s['errors']} errors, {s['warnings']} warnings, {s['info']} info")
+    if s["blocks_import"]:
+        click.echo("STATUS: BLOCKS IMPORT (has errors)")
+    else:
+        click.echo("STATUS: OK (can import)")
+
+    for issue in result["issues"]:
+        icon = {"error": "E", "warning": "W", "info": "I"}[issue["severity"]]
+        click.echo(f"  [{icon}] {issue['field_path']}: {issue['expected_or_issue']}")
 
 
 if __name__ == "__main__":

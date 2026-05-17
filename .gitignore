@@ -39,6 +39,12 @@ reports/weekly-pulse/*
 *.swp
 .DS_Store
 
+# Validation outputs (regenerated)
+data/cache/validation/
+data/pending-review/
+data/l2-verdicts/
+data/l2-auto-merges.log
+
 # Logs
 *.log
 logs/

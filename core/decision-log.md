@@ -69,6 +69,25 @@ Watch list for future extraction:
 
 Rationale: premature skill creation produces brittle playbooks based on assumptions, not evidence.
 
+## 2026-05-17 | DECISION | Validation architecture -- Path D (L1 Python + L2 in-session)
+
+Three-layer validation system:
+- L1 (Python, automatic): port of validateThemeJSON() -- structural, deterministic
+- L2 (Claude Code session, manual trigger): editorial review by Claude in interactive session
+- L3 (WordPress): existing Verify Dashboard -- unchanged
+
+L2 trigger flow: CLI `review <theme>` generates artifact, Piotr opens Claude Code session, Claude writes verdicts, CLI `apply-l2 <theme>` auto-merges fields with confidence >= 0.95, flags rest for L3.
+
+Auto-merge safety: original values preserved, audit logged, max 5 fields per theme, dry-run default.
+
+## 2026-05-17 | DECISION | L1 validation moved from Sprint 5 to Sprint 4
+
+Originally planned for Sprint 5 (Step 5.7). Moving to Sprint 4 because Sprint 4 produces first real Python outputs needing validation. L1 rules must exist before Sprint 5 fixes can reference them.
+
+## 2026-05-17 | OBSERVATION | First L1 validation caught real bug in Neve output
+
+L1 flagged performance_tier mismatch: tier='needs_work' but pagespeed_mobile=92 (should be 'excellent'). This is a pipeline/Gemini classification error that cleanup should fix. Validates the value of running L1 automatically.
+
 ---
 
 <!-- New entries below this line. Format: ## YYYY-MM-DD | TYPE | One-line title -->
